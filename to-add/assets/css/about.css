@@ -1,0 +1,314 @@
+
+body {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: smooth;
+    margin:0;
+  }
+  body.horizontal {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  /* Adjust length of horizontal page */
+  body.horizontal .container {
+    display: flex;
+    height: calc(100vh + 50px);
+    min-width: 3000px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    
+  }
+  body.horizontal .container div {
+    width: 100vw;
+    height: 100vh;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  } 
+  .test {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+  }
+
+/* Start of Grid - Page 1 */
+.item-a {
+  grid-area: title;
+  align-self: end;
+}
+.item-b {
+  grid-area: header;
+  font-size: 18px;
+  color:#3D3D3D; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.item-c {
+  grid-area: edu1;
+  max-width: 100%;
+}
+.item-d {
+  grid-area: edu2;
+  max-width: 100%;
+}
+.item-e {
+  grid-area: image;
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  box-shadow: 12px 6px 6px #9C9C9C;
+}
+.sheet1 {
+  background-color: #EAEAEA;
+  max-width: 1125px;
+  max-height: 80%;
+  display: grid;
+  grid-template-columns: 275px 420px 350px;
+  grid-template-rows: 1fr 1.1fr 2.25fr;
+  grid-template-areas: 
+    "title . . "
+    "image header header"
+    "image edu1 edu2";
+  gap: 20px;
+  padding: 2%;
+  margin: 2% 3% 2% calc(60px + 3%);
+}
+/* End of Grid - Page 1 */
+
+/* Start of Grid - Page 2 */
+.item-f {
+  grid-area: work1;
+  display: inline;
+}
+.item-g {
+  grid-area: work2;
+  max-width: 100%;
+}
+.item-h {
+  grid-area: work3;
+  max-width: 100%;
+}
+.sheet2 {
+  background-color: #EAEAEA;
+  max-width: 1125px;
+  max-height: 80%;
+  display: grid;
+  grid-template-columns: 540px 540px;
+  grid-template-rows: 25px 1000px;
+  grid-template-areas: 
+    "work1 work1"
+    "work2 work3";
+  gap: 30px;
+  padding: 2%;
+  margin: 2% 3% 2% calc(60px + 3%);
+}
+/* End of Grid - Page 2 */
+
+/* Start of Grid - Page 3 */
+.item-i {
+  grid-area: program;
+  display: inline;
+}
+.item-j {
+  grid-area: model;
+  max-width: 100%;
+}
+.item-k {
+  grid-area: graphic;
+  max-width: 100%;
+}
+.item-l {
+  grid-area: code;
+  max-width: 100%;
+}
+.item-m {
+  grid-area: rhino;
+  max-width: 100%;
+}
+.item-n {
+  grid-area: photo;
+  max-width: 100%;
+}
+.item-o {
+  grid-area: html;
+  max-width: 100%;
+}
+.item-p {
+  grid-area: revit;
+  max-width: 100%;
+}
+.item-q {
+  grid-area: illust;
+  max-width: 100%;
+}
+.item-r {
+  grid-area: css;
+  max-width: 100%;
+}
+.item-s {
+  grid-area: cad;
+  max-width: 100%;
+}
+.item-t {
+  grid-area: indes;
+  max-width: 100%;
+}
+.item-u {
+  grid-area: java;
+  max-width: 100%;
+}
+.item-v {
+  grid-area: sketch;
+  max-width: 100%;
+}
+.item-w {
+  grid-area: xd;
+  max-width: 100%;
+}
+
+.sheet3 {
+  background-color: #EAEAEA;
+  max-width: 1125px;
+  max-height: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows:  15px 5px 100px 80px 60px 40px;
+  grid-template-areas: 
+    "program . ."
+    "model graphic code"
+    "rhino photo html"
+    "revit illust css"
+    "cad indes java"
+    "sketch xd .";
+  gap: 30px;
+  padding: 2%;
+  margin: 2% 3% 2% calc(60px + 3%);
+}
+/* End of Grid - Page 3 */
+
+  .title {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    width: 100%;
+  }
+  .title span {
+    display: inline-block;
+    color: grey;
+    font-weight: 300;
+  }
+  .left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0));
+    opacity: 0;
+    transition: background 0.15s ease, opacity 0.5s ease, transform 0.5s ease;
+  } 
+  .right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0));
+    transition: background 0.15s ease, opacity 0.5s ease, transform 0.5s ease;
+  }
+  .container {
+    display: block;
+    height: 100vh;
+    width: 300vw;
+  }
+
+/* Nav Bar Background */
+.sidebar-fixed{ 
+  position:fixed; 
+  top: 0px; 
+  left: 0px; 
+  right: 0px;
+  z-index: 999;
+  height: 100%;
+  width: 60px;
+  background: #EAEAEA;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+/* Home Button */
+.sidehome {
+ position: absolute;
+ display: inline-block;
+ left: 15px;
+ top: 5vh;
+}
+/* Dropdown Button */
+.sidedropbtn {
+position: fixed;
+background-color: transparent;
+color: rgb(0, 0, 0);
+left: 15px;
+bottom: 5vh;
+border: none;
+}
+/* The container <div> - needed to position the dropdown content */
+.sidedropdown {
+position: fixed;
+display: inline-block;
+left: 110px;
+bottom: 5vh;
+}
+/* Dropdown Content (Hidden by Default) */
+.sidedropdown-content {
+display: none;
+position: relative;
+background-color: #EAEAEA;
+min-width: 140px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+right: 5vw;
+}
+/* Links inside the dropdown */
+.sidedropdown-content a {
+color:#3D3D3D; 
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+font-family: 'Montserrat', sans-serif;
+text-align: center; 
+}
+
+/* Change color of dropdown links on hover */
+.sidedropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.sidedropdown:hover .sidedropdown-content {display: block;}
+
+/* Footer for side scroll */
+.sidefooter{
+  padding-right: 110px;
+  padding-left: 110px;
+  background-color: #EAEAEA;
+}
+.sideinfo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: regular;
+  display:block;
+  padding: 100px 0px;
+  color:#707070;
+  font-size: 22px;
+  line-height: 24px;
+}
+.sideinfo-centre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Footer Style Ends */
+
