@@ -10,19 +10,21 @@
     
     <!-- CSS only -->
     <link rel="stylesheet" type="text/css" href="assets/css/world.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/pushbar.css">
 
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500&display=swap" rel="stylesheet">  
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169251944-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169251944-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-169251944-1');
-</script>
+      gtag('config', 'UA-169251944-2');
+    </script>
+
 
 <!-- Cookie Consent -->
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
@@ -30,68 +32,81 @@
 </head>
 
 <body>
-<!-- Navbar -->
- <div class="navbar-fixed">
-  <a class="homebutton" href="index.html"><img src="assets/icons/home-icon.png" height="30px" width="33px"></a>
+  <!-- Navbar -->
+  <div class="navbar-fixed">
+    <a class="homebutton" href="index.html"><img src="assets/icons/home-icon.png"></a>
+    <button data-pushbar-target="right" class="dropbtn"><img src="assets/icons/menu-icon.png"></button>
+  </div> 
 
-   <div class="dropdown">
-      <button class="dropbtn"><img src="assets/icons/menu-icon.png" height="30px" width="30px"></button>
-       <div class="dropdown-content">
-        <a href="about.html">About</a>
-        <a href="architecture.html">Architecture</a>
-        <a href="photography.html">Photography</a>
-        <a href="https://carderna.wixsite.com/learntocode">Blog</a>
-       </div>
-   </div>
- </div> 
+  <aside data-pushbar-id="right" data-pushbar-direction="right">
+		<div class="title"><span data-pushbar-close class="close push_left"></span> Menu</div>
+		<ul class="menu">
+			<li><a href="about.html">About</a></li>
+			<li><a href="architecture.html">Architecture</a></li>
+			<li><a href="photography.html">Photography</a></li>
+			<li><a href="https://carderna.wixsite.com/learntocode">Blog</a></li>
+		</ul>
+  </aside>
+  <!-- End Navbar -->
+  
 
- <!-- Hero Page -->
-   <div class= "hero">
-     <h1>Hello!</h1>
-     <h2>My name is Neil.</h2>
-     <h3>And I’ve made this website to easily showcase myself and to learn a bit more about web design in the process. Please take a look around!</h3>
-     <a href="#section2"><img class="arrow" src="assets/icons/down-arrow.png"></a>  
-   </div>
+  <!-- Hero Page -->
+  <div class= "hero">
+    <h1>Hello!</h1>
+    <h2>My name is Neil.</h2>
+    <h3>And I’ve made this website to easily showcase myself and to learn a bit more about web design in the process. Please take a look around!</h3>
+    <a href="#section2"><img class="arrow" src="assets/icons/down-arrow.png"></a>  
+  </div>
+
+  <div class="quick-link" id="section2"></div>
+  <!-- Links -->
+  <div class="post">
+    <a href="about.html"><img alt="About" src="assets/images/profiles/about.jpg" class="overlay"><h5>About</h5></a>
+  </div>
+  <div class="post">
+    <a href="architecture.html"><img alt="Architecture" src="assets/images/profiles/portfolio.jpg" class="overlay"><h5>Architecture</h5></a>
+  </div>
+  <div class="post">
+    <a href="photography.html"><img alt="Photography" src="assets/images/profiles/photography.jpg" class="overlay"><h5>Photography</h5></a> 
+  </div>
     
-   <!-- Links -->
-   <div class="post">
-        <a href="about.html" id= "section2"><img alt="About" src="assets/images/profiles/about.jpg" class="overlay"><h5>About</h5></a>
-   </div>
-   <div class="post">
-        <a href="architecture.html"><img alt="Architecture" src="assets/images/profiles/portfolio.jpg" class="overlay"><h5>Architecture</h5></a>
-    </div>
-    <div class="post">
-        <a href="photography.html"><img alt="Photography" src="assets/images/profiles/photography.jpg" class="overlay"><h5>Photography</h5></a> 
-    </div>
-    
-<!-- Footer -->
+  <!-- Footer -->
   <div class= "footer">
     <div class= "info-centre">
-     <p><b>Contact:</b><br>carderna@gmail.com</p>
-     <p><strong>Living In:</strong><br>Dublin</p>
-     <p><strong>Currently working for:</strong><br>Open to new positions</p>
+      <p><b>Contact:</b><br>carderna@gmail.com</p>
+      <p><b>Living In:</b><br>Dublin</p>
+      <p><b>Currently working for:</b><br>Open to new positions</p>
     </div>
   </div>
 
 
-<!-- Cookie Consent Message -->
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-<script>
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#EAEAEA"
+  <!-- Cookie Consent Message -->
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#EAEAEA"
+      },
+      "button": {
+        "background": "#ffffff",
+        "text": "##3D3D3D"
+      }
     },
-    "button": {
-      "background": "#ffffff",
-      "text": "##3D3D3D"
+    "content": {
+      "href": "https://carderdesign.github.io/privacy.html"
     }
-  },
-  "content": {
-    "href": "https://carderdesign.github.io/privacy.html"
-  }
-});
-</script>
+  });
+  </script>
+
+  <!-- Menu Bar Script -->
+  <script type="text/javascript" src="assets/js/pushbar.js"></script>
+  <script type="text/javascript">
+    const pushbar = new Pushbar({
+      blur: true,
+      overlay: true,
+    });
+  </script>
 
 </body>
 </html>
