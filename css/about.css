@@ -1,0 +1,356 @@
+/*  ============= WEB BROWSER RESETS ============ */
+* { margin: 0; padding: 0; border: 0; box-sizing: border-box }
+html { height: 100% }
+body { min-height: 100% }  
+img { width: 100%; height: auto; max-width: 1600px; display: block }
+
+body {
+    overflow-x: hidden;
+    margin:0;
+  }
+  body.horizontal {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  /* Adjust length of horizontal page */
+  body.horizontal .container {
+    display: flex;
+    height: calc(100vh + 50px);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    
+  }
+  body.horizontal .container div {
+    width: 98vw;
+  }
+
+/* Start of Grid - Page 1 */
+.item-a {
+  grid-area: title;
+  align-self: end;
+}
+.item-b {
+  grid-area: header;
+  color:#3D3D3D; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.item-c {
+  grid-area: edu1;
+  max-width: 100%;
+}
+.item-d {
+  grid-area: edu2;
+  max-width: 100%;
+}
+.item-e {
+  grid-area: image;
+  object-fit: cover;
+  width: 100%;
+  max-height: 120%;
+  box-shadow: 12px 6px 6px #9C9C9C;
+}
+.sheet1 {
+  background-color: #EAEAEA;
+  min-width: 768px;
+  max-width: 92%;
+  max-height: 90%;
+  min-height: 525px;
+  height: 85%;
+  display: grid;
+  grid-template-columns: 23% 38% 32%;
+  grid-template-rows: 1fr 1.2fr 3.6fr;
+  grid-template-areas: 
+    "title . . "
+    "image header header"
+    "image edu1 edu2";
+  gap: 20px;
+  padding: 2%;
+  margin: 2% 3% 2% calc(60px + 3%);
+}
+/* End of Grid - Page 1 */
+
+/* Start of Grid - Page 2 */
+.item-f {
+  grid-area: work1;
+  display: inline;
+  align-self: end;
+}
+.item-g {
+  grid-area: work2;
+  max-width: 100%;
+}
+.item-h {
+  grid-area: work3;
+  max-width: 100%;
+}
+.sheet2 {
+  background-color: #EAEAEA;
+  min-width: 768px;
+  max-width: 92%;
+  max-height: 90%;
+  min-height: 525px;
+  height: 85%;
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  grid-template-areas: 
+    "work1 work1"
+    "work2 work3";
+  gap: 20px;
+  padding: 2%;
+  margin: 2% 3% 2% calc(60px + 3%);
+}
+/* End of Grid - Page 2 */
+
+/* Start of Grid - Page 3 */
+.item-i {
+  grid-area: program;
+  display: inline;
+}
+.item-j {
+  grid-area: model;
+  max-width: 100%;
+}
+.item-k {
+  grid-area: graphic;
+  max-width: 100%;
+}
+.item-l {
+  grid-area: code;
+  max-width: 100%;
+}
+.item-m {
+  grid-area: rhino;
+  max-width: 100%;
+}
+.item-n {
+  grid-area: photo;
+  max-width: 100%;
+}
+.item-o {
+  grid-area: html;
+  max-width: 100%;
+}
+.item-p {
+  grid-area: revit;
+  max-width: 100%;
+}
+.item-q {
+  grid-area: illust;
+  max-width: 100%;
+}
+.item-r {
+  grid-area: css;
+  max-width: 100%;
+}
+.item-s {
+  grid-area: cad;
+  max-width: 100%;
+}
+.item-t {
+  grid-area: indes;
+  max-width: 100%;
+}
+.item-u {
+  grid-area: java;
+  max-width: 100%;
+}
+.item-v {
+  grid-area: sketch;
+  max-width: 100%;
+}
+.item-w {
+  grid-area: xd;
+  max-width: 100%;
+}
+
+.sheet3 {
+  background-color: #EAEAEA;
+  min-width: 768px;
+  max-width: 91%;
+  max-height: 90%;
+  min-height: 525px;
+  height: 85%;
+  display: grid;
+  grid-template-columns: repeat(3, 31%);
+  grid-template-rows: 1fr 18px 20fr 16fr 12fr 8fr;
+  grid-template-areas: 
+    "program . ."
+    "model graphic code"
+    "rhino photo html"
+    "revit illust css"
+    "cad indes java"
+    "sketch xd .";
+  gap: 10px;
+  padding: 2%;
+  margin: 2% 3% 2% calc(60px + 3%);
+}
+/* End of Grid - Page 3 */
+
+  .title {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    width: 100%;
+  }
+  .title span {
+    display: inline-block;
+    color: grey;
+    font-weight: 70;
+  }
+  .left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: linear-gradient(to right, white 50%, rgba(255, 255, 255, 0));
+    opacity: 0;
+    transition: background 0.15s ease, opacity 0.5s ease, transform 0.5s ease;
+  } 
+  .right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: linear-gradient(to left, white 50%, rgba(255, 255, 255, 0));
+    transition: background 0.15s ease, opacity 0.5s ease, transform 0.5s ease;
+  }
+  .container {
+    display: block;
+    height: 100vh;
+    width: 300vw;
+  }
+/* Nav Bar Background */
+.sidebar-fixed{ 
+  position:fixed; 
+  top: 0px; 
+  left: 0px; 
+  right: 0px;
+  height: 100vh;
+  width: 60px;
+  background: #EAEAEA;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+/* Home Button */
+.sidehome {
+ position: absolute;
+ display: inline-block;
+ left: 15px;
+ top: 5vh;
+ height: 30px; 
+ width: 30px;
+}
+/* Dropdown Button */
+.sidedropbtn {
+position: fixed;
+background-color: transparent;
+color: rgb(0, 0, 0);
+left: 15px;
+top: 90vh;
+border: none;
+height: 30px; 
+width: 30px;
+}
+
+/* Desktops */
+@media all and (min-width:768px) {
+.item-b {font-size: calc(10px + (18 - 10) * ((100vw - 320px) / (1600 - 320)));;; }
+p {font-size: calc(6px + (15 - 6) * ((100vw - 320px) / (1600 - 320)));;;
+   line-height: 1.5;
+}
+}
+
+/* Mobiles */
+@media all and (max-width:475px) {
+.item-b {font-size: calc(8px + (16 - 8) * ((100vw - 320px) / (1600 - 320)));;; }
+p {font-size: calc(8px + (12 - 8) * ((100vw - 320px) / (1600 - 320)));;; }
+}
+
+/* Layout for Modile */
+@media only screen and (max-width: 678px) {
+  h5 {
+    font-size: 16px;
+  }
+  h6 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .container {
+    width: 100vh;
+  }
+  body.horizontal .container {
+    display: inline-block;
+    height: auto;
+    width: 100vw;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+body.horizontal .container div {
+  width: 100%;
+}
+
+  .item-e {
+    width: 80%;
+    align-self: center;
+  }
+  .sheet1 {
+    min-width: 85%;
+    margin: 80px auto 20px auto;
+    grid-template-columns: 90vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "title "
+      "image"
+      "header"
+      "edu1"
+      "edu2";
+  }
+  .sheet2 {
+    min-width: 85%;
+    margin: 20px auto;
+    grid-template-columns: 90vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "work1"
+      "work2"
+      "work3";
+  }
+  .sheet3 {
+    min-width: 85%;
+    margin: 20px auto;
+    grid-template-columns: 90vw;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "program"
+      "model"
+      "cad"
+      "revit"
+      "sketch"
+      "rhino"
+      "graphic"
+      "photo"
+      "illust"
+      "indes"
+      "xd"
+      "code"
+      "html"
+      "css"
+      "java";
+    }
+    body.horizontal {
+      overflow-y: auto;
+    }
+  }
+/* End of Layout for Modile */
