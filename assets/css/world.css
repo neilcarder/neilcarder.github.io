@@ -38,6 +38,7 @@ h3 {
     font-weight: 700;
     margin-bottom: 0px;
     margin-left: 30px;
+    margin-right: 10%;
     padding: 0px 0px 0px 10%;
     margin: 0;
     max-width: 680px;
@@ -153,7 +154,7 @@ p {
     width: 100%;
     margin-bottom: 150px;
     padding-top: 0px;
-    min-height: 600px;
+    min-height: 80%;
 }
 /* Nav Bar Background */
 .navbar-fixed{ 
@@ -390,8 +391,9 @@ p {
 /* ARCHIVES Mobile Grid */
 @media all and (max-width:767px) {
     .back3 {
-        margin: 80px 10% 20px 10%;
+        margin: -20px 10% 20px 10%;
         min-width: 0;
+        padding: 5%;
     } 
     .back3 div {
         min-width: auto;
@@ -511,8 +513,9 @@ p {
 /* COMMUNITY Mobile Grid */
 @media all and (max-width:767px) { 
     .back4 { 
-        margin: 80px 10% 20px 10%;
+        margin: -20px 10% 20px 10%;
         min-width: 0;
+        padding: 5%;
     }
     .grid-c { 
         min-width: auto;
@@ -622,8 +625,9 @@ p {
 /* REASEARCH Mobile Grid */
 @media all and (max-width:767px) {
     .back5 {
-        margin: 80px 10% 20px 10%;
+        margin: -20px 10% 20px 10%;
         min-width: 0;
+        padding: 5%;
     } 
     .grid-w { 
         min-width: auto;
@@ -684,6 +688,7 @@ p {
 /* General mobiles */
 @media only screen and (max-width: 767px) { 
     .back3 *, .back4 *, .back5 * { text-align: center; }
+    .back3 p, .back4 p, .back5 p { text-align: left; }
     .post .overlay {
         visibility: visible;
         opacity: 60%;
