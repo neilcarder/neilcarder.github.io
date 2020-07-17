@@ -300,9 +300,11 @@ p {font-size: calc(8px + (12 - 8) * ((100vw - 320px) / (1600 - 320)));;; }
 body.horizontal .container div {
   width: 100%;
 }
-
+  .item-b{
+    font-size: 15px;
+  }
   .item-e {
-    width: 80%;
+    width: 70%;
     align-self: center;
   }
   .sheet1 {
@@ -311,8 +313,8 @@ body.horizontal .container div {
     grid-template-columns: 90vw;
     grid-template-rows: auto;
     grid-template-areas: 
-      "title "
       "image"
+      "title"
       "header"
       "edu1"
       "edu2";
