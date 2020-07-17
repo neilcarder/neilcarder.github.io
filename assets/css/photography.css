@@ -5,12 +5,10 @@ body { min-height: 100% }
 img { width: 100%; height: auto; max-width: 1600px; display: block }
 
 html {overflow-y: scroll; }
-.group:after { visibility: hidden; font-size: 0; clear: both; height: 0; }
-.group { 
-	margin: 50px auto;
-}
 nav ul { 
 	display:flex;
+	flex-wrap: wrap;
+	margin: 50px auto;
 	justify-content: space-between;
 	list-style: none; 
 	width: 70%;
@@ -63,4 +61,17 @@ nav ul li a:active, nav ul li a.current {
 }
 .animate__animated.animate__fadeIn {
 	--animate-duration: 3s;
+}
+
+/* ---Mobile Adjustments--- */
+
+@media all and (max-width:767px) {
+	.mobile-last { 
+		width: 100%;
+		padding: 50px;
+		align-self: center;
+	}
+	.thumbnail {
+		padding: 10px;
+	}
 }
