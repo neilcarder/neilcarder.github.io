@@ -253,14 +253,8 @@ p {
     align-items: left;
     margin: -55px 0px 0px 0px;
 }
-.back-flex.right-just div { 
-    text-align: right;
+.back-flex.right-just div { text-align: right;
 }
-@media all and (min-width:768px) { 
-    .back-flex { 
-        margin-left: 8%;
-        margin-right: 8%;
-    }
     .back-flex div { 
         width: 52%; 
         padding: 2% 1%;
@@ -271,8 +265,11 @@ p {
         padding: 2% 1%;
         align-self: center;
     }
-}
 @media all and (max-width:767px) { 
+    .back-flex { 
+        margin-left: 8%;
+        margin-right: 8%;
+    }
     .back-flex div { 
         width: 70%; 
         padding: 2% 1%;
@@ -376,8 +373,9 @@ p {
     margin: -90px 1.5% 0px 1.5%;
     max-width: 1000px;
     display: grid;
+    overflow: hidden;
     grid-template-columns: 2fr repeat(2, 1fr);
-    grid-template-rows: 90px 300px 220px 330px 300px 500px;
+    grid-template-rows: 90px 300px 220px 330px 300px 600px;
     grid-template-areas: 
       ". concept-a concept-a"
       "title-a concept-a concept-a"
@@ -587,11 +585,11 @@ p {
 .wind-i {
     grid-area: section-w;
     min-width: 0;
-    place-self: center;
 }
 .wind-j {
     grid-area: elevation-w;
     min-width: 0;
+    align-self: end;
 }
 .back5 img { 
     object-fit: cover;
