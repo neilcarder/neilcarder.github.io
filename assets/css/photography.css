@@ -25,8 +25,9 @@ nav ul li a {
 	text-decoration: none;
 }
 nav ul li a:hover {
-	color: #856c85; 
+	opacity: 65%; 
 	text-decoration: underline;
+	transition: 0.4s ease;
 }
 nav ul li a:active, nav ul li a.current {
 	position: relative;

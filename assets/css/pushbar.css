@@ -93,6 +93,10 @@ textarea {
     text-align: center;
     cursor: pointer;
 }
+.close:hover {
+    opacity: 50%;
+    transition: transform 0.5s ease;
+}
 
 .close:before, .close:after {
     position: absolute;
@@ -142,6 +146,8 @@ textarea {
 }
 .menu a:hover {
     text-decoration: underline;
+    transition: 0.5s ease;
+    opacity: 70%;
 }
 
 .button, button, input[type='button'], input[type='reset'], input[type='submit'] {
@@ -154,15 +160,10 @@ textarea {
 @media only screen and (max-width: 678px) {
   .sidebar-fixed{ 
     position:fixed; 
-    top: 0px; 
-    left: 0px; 
-    right: 0px;
     z-index: 999;
     height: 60px;
     width: 100%;
     background: #EAEAEA;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
   }
   .sidehome {
    position: fixed;
