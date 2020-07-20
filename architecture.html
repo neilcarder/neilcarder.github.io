@@ -166,6 +166,11 @@
         </div>
     </div>
 
+    <div id="back-to-top">
+        <a href="#"><img src="assets/icons/arrow-up.png" alt="Back to top"></a>
+    </div>
+
+    <!-- Fade Script -->
     <script src="assets/js/aos.js"></script>
     <script>
     AOS.init({
@@ -181,5 +186,19 @@
             overlay: true,
     });
     </script>
+
+    <!-- Back to Top Script -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    var btn = $('#back-to-top');
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+    </script>
+    
 </body>
 </html>
