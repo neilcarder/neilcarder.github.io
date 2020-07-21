@@ -33,7 +33,11 @@ nav ul li a:active, nav ul li a.current {
 	position: relative;
 	top: 1px; 
 }
-
+nav ul li img {
+	width: 40px;
+	height: 40px;
+	margin: 10px auto 0 auto;
+}
 /*Photography Layouts*/
 .canada-flex {
     display: flex;
@@ -46,11 +50,18 @@ nav ul li a:active, nav ul li a.current {
 .thumbnail {
 	padding: 3px;
 	max-width: 1000px;
-	width: 350px;
+	width: 375px;
 	height: auto;
 }
+.thumbnail:hover,
+.thumbnail:focus {
+  opacity: 75%;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
 .montage-flex {
-	padding: 0px 20% 50px 20%;
+	padding: 0px 25% 50px 25%;
 	flex-direction: column;
 }
 .montage-flex li {
@@ -63,6 +74,21 @@ nav ul li a:active, nav ul li a.current {
 .animate__animated.animate__fadeIn {
 	--animate-duration: 3s;
 }
+.animate__animated.animate__shakeY {
+	--animate-duration: 4s;
+	--animate-delay: 0.5s;
+  }
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+	.modal-content {
+	  width: 100%;
+	}
+  } 
+
+
+
+
+
 
 /* ---Mobile Adjustments--- */
 
@@ -74,5 +100,8 @@ nav ul li a:active, nav ul li a.current {
 	}
 	.thumbnail {
 		padding: 10px;
+	}
+	.montage-flex {
+		padding: 0px 5% 50px 5%;
 	}
 }
