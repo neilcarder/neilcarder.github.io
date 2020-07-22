@@ -86,7 +86,7 @@ h8 {
 }
 .block{
     display:inline-block;
-    margin: 250px 0px 0px 5%;
+    margin: 20% 0px 0px 5%;
     width: 80%;
     height: 20%;
 }
@@ -268,7 +268,13 @@ p {
 .back-flex.right-just div { 
     text-align: right;
 }
-
+/* Desktop */
+@media all and (min-width:1600px) {
+    .back-flex {
+        margin: 115px 18%;
+    } 
+}
+/* Mobile */
 @media all and (max-width:767px) { 
     .back-flex { 
         margin: 75px 8%;
@@ -308,6 +314,7 @@ p {
     min-width: 0;
     border: solid;
     border-width: 1px;
+    align-self: end;
 }
 .arch-b {
     grid-area: title-a;
@@ -319,6 +326,8 @@ p {
     grid-area: intro-a;
     text-align: right;
     min-width: 0;
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1600 - 320)));
+    line-height: 1.4;
 }
 .arch-d {
     grid-area: interior1-a;
@@ -330,6 +339,8 @@ p {
 .arch-e {
     grid-area: description-a;
     min-width: 0;
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1600 - 320)));
+    line-height: 1.4;
 }
 .arch-f {
     grid-area: section1-a;
@@ -372,12 +383,11 @@ p {
 }
 .back3 div {
     background-color: none;
-    margin: -90px 1.5% 0px 1.5%;
-    max-width: 1000px;
+    margin: -90px auto 0px auto;
     display: grid;
     overflow: hidden;
     grid-template-columns: 2fr repeat(2, 1fr);
-    grid-template-rows: 90px 300px 220px 330px 300px 600px;
+    grid-template-rows: 90px 300px 220px 370px 300px 700px;
     grid-template-areas: 
       ". concept-a concept-a"
       "title-a concept-a concept-a"
@@ -388,15 +398,20 @@ p {
     row-gap: 10px;
     column-gap: 20px
 }
+/* ARCHIVES Desktop */
+@media all and (min-width:1600px) {
+    .back3 {
+        margin: -20px 18% 200px 18%;
+        min-width: 0;
+        padding: 5%;
+    } 
+}
 /* ARCHIVES Mobile Grid */
 @media all and (max-width:767px) {
     .back3 {
         margin: -20px 8% 100px 8%;
-        min-width: 0;
-        padding: 5%;
     } 
     .back3 div {
-        min-width: auto;
         margin: 5px auto 5px auto;
         grid-template-columns: 70vw;
         grid-template-rows: auto;
@@ -493,8 +508,7 @@ p {
 }
 .grid-c {
     background-color: none;
-    margin: -90px 1.5% 0px 1.5%;
-    max-width: 1000px;
+    margin: -90px auto 0px auto;
     display: grid;
     grid-template-columns: 1.1fr 1fr;
     grid-template-rows: 100px 200px repeat(2, 300px) repeat(2, 150px) 250px 400px;
@@ -510,6 +524,12 @@ p {
     row-gap: 10px;
     column-gap: 20px
 }
+/* COMMUNITY Desktop */
+@media all and (min-width:1600px) {
+    .back4 {
+        margin: -20px 18% 200px 18%;
+    } 
+}
 /* COMMUNITY Mobile Grid */
 @media all and (max-width:767px) { 
     .back4 { 
@@ -518,7 +538,6 @@ p {
         padding: 5%;
     }
     .grid-c { 
-        min-width: auto;
         margin: 5px auto 5px auto;
         grid-template-columns: 70vw;
         grid-template-rows: auto;
@@ -606,8 +625,7 @@ p {
 }
 .grid-w {
     background-color: none;
-    margin: -180px 1.5% 0px 1.5%;
-    max-width: 1000px;
+    margin: -180px auto 0px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 90px 200px 300px 375px 300px 500px 400px;
@@ -621,6 +639,12 @@ p {
       "elevation-w elevation-w";
     row-gap: 10px;
     column-gap: 20px;
+}
+/* RESEARCH Desktop */
+@media all and (min-width:1600px) {
+    .back5 {
+        margin: -20px 18% 200px 18%;
+    } 
 }
 /* REASEARCH Mobile Grid */
 @media all and (max-width:767px) {
