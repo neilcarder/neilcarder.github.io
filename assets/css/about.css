@@ -266,6 +266,15 @@ p {
     line-height: 1.5;
   }
 }
+
+@media all and (min-width:1600px) {
+  .item-b {font-size: calc(8px + (20 - 8) * ((100vw - 320px) / (1600 - 320)));;; }
+  p {
+      font-size: calc(6px + (18 - 6) * ((100vw - 320px) / (1600 - 320)));;;
+      line-height: 1.5;
+    }
+  }
+
 /* Layout for Small Screens */
 @media only screen and (max-width: 678px) {
   body.horizontal {
