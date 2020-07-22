@@ -16,7 +16,7 @@ nav ul {
 }
 nav ul li { display: inline; }
 nav ul li a {
-	font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));;;
+	font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1600 - 320)));;;
     color:#3D3D3D; 
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -24,10 +24,16 @@ nav ul li a {
 	text-shadow: rgba(0,0,0,.4) 0 1px 0;
 	text-decoration: none;
 }
+nav ul li a div {
+	border: solid 2px #3D3D3D;
+	padding: 5px 15px;
+	box-shadow: 5px 7px 5px lightgrey;
+}
 nav ul li a:hover {
 	opacity: 65%; 
 	text-decoration: underline;
 	transition: 0.4s ease;
+	border:
 }
 nav ul li a:active, nav ul li a.current {
 	position: relative;
@@ -85,18 +91,14 @@ nav ul li img {
 	}
   } 
 
-
-
-
-
-
 /* ---Mobile Adjustments--- */
 
 @media all and (max-width:767px) {
 	.mobile-last { 
-		width: 100%;
-		padding: 50px;
+		width: 80%;
+		padding: 20px;
 		align-self: center;
+		margin: auto;
 	}
 	.thumbnail {
 		padding: 10px;
