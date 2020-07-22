@@ -265,6 +265,9 @@ p {
     height: 32px;
     width: 32px;
 }
+.back-flex.right-just div { 
+    text-align: right;
+}
 
 @media all and (max-width:767px) { 
     .back-flex { 
