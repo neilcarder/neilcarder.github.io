@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -97,4 +98,105 @@
     });
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I have been in the design mindset for over 8 years. I have decided to make this website to learn more about programing and web design.">
+    <meta name="author" content="Neil Carder">
+    <link rel="icon" href="assets/icons/favicon.png"/>
+    <title>Neil Carder | Creative Designer</title>
+    
+    <!-- CSS only -->
+    <link rel="stylesheet" type="text/css" href="assets/css/world.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/photography.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/pushbar.css">
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500&display=swap" rel="stylesheet">  
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169251944-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-169251944-2');
+    </script>
+
+    <!-- Fade In Script-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+        <a class="homebutton" href="index.html"><img src="assets/icons/home-icon.png" alt="Home"></a>
+        <button data-pushbar-target="right" class="dropbtn"><img src="assets/icons/menu-icon.png" alt="Menu"></button>
+    </div> 
+
+    <aside data-pushbar-id="right" data-pushbar-direction="right">
+		<div class="title"><span data-pushbar-close class="close push_left"></span> Menu</div>
+		<ul class="menu">
+			<li><a href="about.html">About</a></li>
+			<li><a href="architecture.html">Architecture</a></li>
+			<li><a href="photography.html">Photography</a></li>
+            <li><a href="https://carderna.wixsite.com/learntocode">Blog</a></li>
+            <li><a href="https://github.com/neilcarder/neilcarder.github.io">Github</a></li>
+		</ul>
+    </aside>
+    <!-- End Navbar -->
+
+    <div class= "photo-block">
+        <h4>PHOTOGRAPHY</h4><br>
+        <h7>This is a collection of photos from my travels and places I have lived.</h7>
+        <nav>
+            <ul>
+                <li><a href="canada.html">Canada</a></li>
+                <li><a href="europe.html">Europe</a></li>
+                <li class="mobile-last"><a href="photo-montage.html">Photo<br>Montage</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <!-- Footer -->
+    <div class= "footer">
+        <div class= "info-centre">
+            <p><b>Contact:</b><br>carderna@gmail.com</p>
+            <p><b>Living In:</b><br>Dublin</p>
+            <p><b>Currently working for:</b><br>Open to new positions</p>
+        </div>
+    </div>
+
+    <div id="back-to-top">
+        <a href="#"><img src="assets/icons/arrow-up.png" alt="Back to top"></a>
+    </div>
+
+    <!-- Menu Bar Script -->
+    <script type="text/javascript" src="assets/js/pushbar.js"></script>
+    <script type="text/javascript">
+        const pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+    });
+    </script>
+
+    <!-- Back to Top Script -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    var btn = $('#back-to-top');
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+    </script>
+</body>
+>>>>>>> 8644154974185b03c75a6fc04de52e027fec6706
 </html>
