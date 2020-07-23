@@ -90,6 +90,9 @@ h8 {
     width: 80%;
     height: 20%;
 }
+.block h4{
+    text-shadow: 5px 5px 5px lightgrey;
+}
 p {
     color:#707070; 
     font-family: 'Verdana', serif;
@@ -268,11 +271,17 @@ p {
 .back-flex.right-just div { 
     text-align: right;
 }
+.back-flex p { 
+    font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (1600 - 320)));
+}
 /* Desktop */
 @media all and (min-width:1600px) {
     .back-flex {
         margin: 115px 18%;
-    } 
+    }
+    .back-flex.right-just {
+        margin-bottom: 180px;
+    }
 }
 /* Mobile */
 @media all and (max-width:767px) { 
@@ -315,6 +324,8 @@ p {
     border: solid;
     border-width: 1px;
     align-self: end;
+    display: flex;
+
 }
 .arch-b {
     grid-area: title-a;
@@ -326,7 +337,7 @@ p {
     grid-area: intro-a;
     text-align: right;
     min-width: 0;
-    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (1600 - 320)));
     line-height: 1.4;
 }
 .arch-d {
@@ -339,7 +350,7 @@ p {
 .arch-e {
     grid-area: description-a;
     min-width: 0;
-    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (1600 - 320)));
     line-height: 1.4;
 }
 .arch-f {
@@ -376,18 +387,20 @@ p {
     max-height: 100%;
 }
 .back3 {
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: space-between;
     margin: 200px 12%;
-    min-width: 700px;
     background-color: #EAEAEA;
     padding: 3.5%;
 }
-.back3 div {
+.grid-a {
     background-color: none;
-    margin: -90px auto 0px auto;
+    margin: -15% auto 0px auto;
     display: grid;
     overflow: hidden;
     grid-template-columns: 2fr repeat(2, 1fr);
-    grid-template-rows: 90px 300px 220px 370px 300px 700px;
+    grid-template-rows: 100px 270px 260px 370px 300px 700px;
     grid-template-areas: 
       ". concept-a concept-a"
       "title-a concept-a concept-a"
@@ -399,7 +412,7 @@ p {
     column-gap: 20px
 }
 /* ARCHIVES Desktop */
-@media all and (min-width:1600px) {
+@media all and (min-width:1500px) {
     .back3 {
         margin: -20px 18% 200px 18%;
         min-width: 0;
@@ -409,9 +422,10 @@ p {
 /* ARCHIVES Mobile Grid */
 @media all and (max-width:767px) {
     .back3 {
+        display: block;
         margin: -20px 8% 100px 8%;
     } 
-    .back3 div {
+    .grid-a {
         margin: 5px auto 5px auto;
         grid-template-columns: 70vw;
         grid-template-rows: auto;
@@ -444,8 +458,12 @@ p {
 }
 .comm-c {
     grid-area: intro-c;
+    font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (1600 - 320)));
     text-align: right;
     min-width: 0;
+}
+.comm-c p {
+    font-size: (8px + (14 - 8) * ((100vw - 320px) / (1600 - 320)));
 }
 .comm-d {
     grid-area: birdseye-c;
@@ -494,13 +512,17 @@ p {
     grid-area: section-c;
     min-width: 0;
     object-fit: cover;
+    overflow: hidden;
 }
 .back4 img { 
     object-fit: cover;
     width: 100%;
     max-height: 100%;
 }
-.back4 { 
+.back4 {
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: space-between;
     margin: 200px 12%;
     min-width: 700px;
     background-color: #EAEAEA;
@@ -508,8 +530,9 @@ p {
 }
 .grid-c {
     background-color: none;
-    margin: -90px auto 0px auto;
+    margin: -15% auto 0px auto;
     display: grid;
+    overflow: hidden;
     grid-template-columns: 1.1fr 1fr;
     grid-template-rows: 100px 200px repeat(2, 300px) repeat(2, 150px) 250px 400px;
     grid-template-areas: 
@@ -533,6 +556,7 @@ p {
 /* COMMUNITY Mobile Grid */
 @media all and (max-width:767px) { 
     .back4 { 
+        display: block;
         margin: -20px 8% 100px 8%;
         min-width: 0;
         padding: 5%;
@@ -576,10 +600,11 @@ p {
 }
 .wind-d {
     grid-area: intro-w;
+    text-align: right;
     min-width: 0;
 }
-.wind-d h6 {
-    text-align: center;
+.wind-d p {
+    font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (1600 - 320)));
 }
 .wind-e {
     grid-area: birdeye-w;
@@ -618,6 +643,9 @@ p {
     max-height: 100%;
 }
 .back5 {
+    display: flex; 
+    flex-flow: row wrap; 
+    justify-content: space-between;
     margin: 200px 12%;
     min-width: 700px;
     background-color: #EAEAEA;
@@ -625,7 +653,7 @@ p {
 }
 .grid-w {
     background-color: none;
-    margin: -180px auto 0px auto;
+    margin: -20% auto 0px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 90px 200px 300px 375px 300px 500px 400px;
@@ -649,6 +677,7 @@ p {
 /* REASEARCH Mobile Grid */
 @media all and (max-width:767px) {
     .back5 {
+        display: block;
         margin: -20px 8% 20px 8%;
         min-width: 0;
         padding: 5%;
