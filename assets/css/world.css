@@ -275,7 +275,7 @@ p {
     font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (1600 - 320)));
 }
 /* Desktop */
-@media all and (min-width:1600px) {
+@media all and (min-width:1500px) {
     .back-flex {
         margin: 115px 18%;
     }
