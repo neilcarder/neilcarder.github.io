@@ -287,7 +287,7 @@ p {
 /* Mobile */
 @media all and (max-width:767px) { 
     .back-flex { 
-        margin: 75px 8%;
+        margin: 75px 5%;
     }
     .back-flex div { 
         width: 75%; 
@@ -402,8 +402,8 @@ p {
       "interior1-a description-a description-a"
       "interior1-a section1-a section2-a"
       "interior2-a interior3-a interior3-a";
-    row-gap: 10px;
-    column-gap: 20px
+    row-gap: 15px;
+    column-gap: 15px;
 }
 /* ARCHIVES Desktop */
 @media all and (min-width:1500px) {
@@ -416,9 +416,14 @@ p {
 /* ARCHIVES Mobile Grid */
 @media all and (max-width:767px) {
     .back3 {
-        display: block;
-        margin: -20px 8% 100px 8%;
+        margin: -20px 5% 100px 5%;
     } 
+    .arch-d {
+        height: auto;
+    }
+    .arch-i {
+        height: 100%;
+    }
     .grid-a {
         margin: 5px auto 5px auto;
         grid-template-columns: 70vw;
@@ -529,8 +534,8 @@ p {
       "plan2-c ext2-c"
       "elev-c elev-c"
       "section-c section-c";
-    row-gap: 10px;
-    column-gap: 20px
+      row-gap: 15px;
+      column-gap: 15px;
 }
 /* COMMUNITY Desktop */
 @media all and (min-width:1600px) {
@@ -541,10 +546,12 @@ p {
 /* COMMUNITY Mobile Grid */
 @media all and (max-width:767px) { 
     .back4 { 
-        display: block;
-        margin: -20px 8% 100px 8%;
+        margin: -20px 5% 100px 5%;
         min-width: 0;
         padding: 5%;
+    }
+    .comm-d {
+        height: auto;
     }
     .grid-c { 
         margin: 5px auto 5px auto;
@@ -645,8 +652,8 @@ p {
       "exterior1-w exterior2-w"
       "rose-w section-w"
       "elevation-w elevation-w";
-    row-gap: 10px;
-    column-gap: 20px;
+    row-gap: 15px;
+    column-gap: 15px;
 }
 /* RESEARCH Desktop */
 @media all and (min-width:1600px) {
@@ -657,8 +664,7 @@ p {
 /* REASEARCH Mobile Grid */
 @media all and (max-width:767px) {
     .back5 {
-        display: block;
-        margin: -20px 8% 20px 8%;
+        margin: -20px 5% 20px 5%;
         min-width: 0;
         padding: 5%;
     } 
