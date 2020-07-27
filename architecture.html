@@ -51,14 +51,12 @@
     <div class= "hero">
         <div class= "block">
             <h4>ARCHITECTURE</h4><br>
-            <h7>These are some projects I worked on from my previous employment with John Fleming Architects and ICON Architects. There are also some creative projects from my Bachelor’s Degree at Carleton University. All the work below involved working creatively with others, whether it was with employers, professors fellow co-workers or students. They all display my ability to combine a designer’s perception with technical understanding.</h7>
-        </div>
-        <a href="#section2"><img class="arrow" src="assets/icons/down-arrow.png" alt="arrow"></a>  
+            <h7>These are some projects I worked on from my previous employment with John Fleming Architects and ICON Architects. There are also some creative projects from my Bachelor’s Degree at Carleton University. All the work below involved working creatively with others, whether it was with employers, professors fellow co-workers or students. They all display my ability to combine a designer’s perception with technical understanding. Sections include <a href="#jfa">John Fleming Architects</a>, <a href="#icon">Icon Architects</a>, <a href="#archives">Archives of Unfinished Work</a>, a <a href="#community-center">Community Center Design</a> and a <a href="#wind-energy">Wind Energy Reseach Centre</a></h7>
+        </div> 
     </div>
-    <div class="quick-link" id="section2"></div>
     <!-- JFA Page -->
     <section class="back-flex aos-item" data-aos="fade-up">
-        <h8 class="ronnie">John Fleming Architects</h8><br><br>
+        <h8 id="jfa" class="ronnie">John Fleming Architects</h8><br><br>
         <img src="assets/images/architecture/01-john-fleming-architects/malahide-road.jpg" alt="Malahide Road">
         <div>
             <h6>Malahide Road</h6><p>Participated in the submission of this two – tower apartment scheme for planning approval in order to meet submission deadlines. Completed sections & elevations using AutoCAD and provided additional support for completion of floor plans. Calculated floor areas and recorded statistics for schedule of accommodation and housing quality assessment. Also assisted with physical submission of project for planning approval.</p>
@@ -83,7 +81,7 @@
 
     <!-- ICON Page -->
     <section class="back-flex right-just aos-item" data-aos="fade-up">
-        <h8 class="larry">ICON Architects</h8><br><br>
+        <h8 id="icon" class="larry">ICON Architects</h8><br><br>
         <div>
             <h6>565 North Service Road (Waterview Condos)</h6><p>Waterview Condominiums consists of two high rise buildings in two phases. I entered the project when Phase 1 was breaking ground and Phase 2 was going through site plan approval for an additional six stories from the original design. SPA was completed by ICON while the construction drawing were given to a drafting company called TechniCAD. I was tasked with minor revisions for resubmission if site plan approval (co-ordinating with building permit drawings from techniCAD, creation of black line drawings for marketing purposes and review of building permit/construction drawings).</p>
         </div>
@@ -107,7 +105,7 @@
     </section>
     <!-- ARCHIVES Page -->
     <section class="back3 aos-item" data-aos="fade-up">
-        <div class="grid-a">
+        <div id="archives" class="grid-a">
             <div class="arch-a">
             <img src="assets/images/architecture/03-archives-of-unfinished-work/web/concept.jpg" alt="Concept">
             </div>
@@ -131,7 +129,7 @@
     </section>
     <!-- COMMUNITY Page -->
     <section class="back4 aos-item" data-aos="fade-up">
-        <div class="grid-c">
+        <div id="community-center" class="grid-c">
             <img class="comm-a" src="assets/images/architecture/04-community-centre/web/concept.jpg" alt="Concept">
             <h8 class="comm-b">HOUSING & COMMUNITY CENTRE</h8>
             <div class="comm-c">
@@ -150,7 +148,7 @@
     </section>
     <!-- WIND RESEARCH Page -->
     <section class="back5 aos-item" data-aos="fade-up">
-        <div class="grid-w">
+        <div id="wind-energy" class="grid-w">
             <img class="wind-a" src="assets/images/architecture/05-wind-research-centre/web/sketch.png" alt="Building Sketch">
             <h8 class="wind-b">URBAN<br>WIND<br>ENERGY<br>RESEARCH<br>CENTRE</h8>
             <img class="wind-c" src="assets/images/architecture/05-wind-research-centre/web/concept2.png" alt="Concept Image">
@@ -209,6 +207,26 @@
         }
     });
     </script>
-    
+
+    <!-- Internal Hyperlink Script (Location Fix) -->
+    <script>
+    (function($, window) {
+        var adjustAnchor = function() {
+            var $anchor = $(':target'),
+                    fixedElementHeight = 150;
+            if ($anchor.length > 0) {
+            $('html, body')
+                .stop()
+                .animate({
+                    scrollTop: $anchor.offset().top - fixedElementHeight
+                }, 200);
+        }
+    };
+    $(window).on('hashchange load', function() {
+        adjustAnchor();
+    });
+    })(jQuery, window);
+    </script>
+
 </body>
 </html>
