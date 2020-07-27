@@ -11,6 +11,7 @@
     <!-- CSS only -->
     <link rel="stylesheet" type="text/css" href="assets/css/world.css">
     <link rel="stylesheet" type="text/css" href="assets/css/pushbar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500&display=swap" rel="stylesheet">  
@@ -53,9 +54,9 @@
 
   <!-- Hero Page -->
   <div class= "hero">
-    <h1>Hello!</h1>
-    <h2>My name is Neil.</h2>
-    <h3>And I’ve made this website to easily showcase myself and to learn a bit more about web design in the process. Please take a look around!</h3>
+    <h1 class="rellax" data-rellax-speed="-3.5">Hello!</h1>
+    <h2 class="rellax" data-rellax-speed="-2.5">My name is Neil.</h2>
+    <h3 class="rellax" data-rellax-speed="-2.5">And I’ve made this website to easily showcase myself and to learn a bit more about web design in the process. Please take a look around!</h3>
     <a href="#section2"><img class="arrow" src="assets/icons/down-arrow.png" img alt="Arrow"></a>  
   </div>
 
@@ -95,7 +96,7 @@
       }
     },
     "content": {
-      "href": "https://carderdesign.github.io/privacy.html"
+      "href": "privacy.html"
     }
   });
   </script>
@@ -106,6 +107,28 @@
     const pushbar = new Pushbar({
       blur: true,
       overlay: true,
+    });
+  </script>
+  
+
+  <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+  <script src="assets/js/locomotive-scroll.min.js"></script>
+  <script>
+    (function () {
+        var scroll = new LocomotiveScroll();
+    })();
+  </script>
+
+  <!-- Rellax Script -->
+  <script type="text/javascript" src="assets/js/rellax.js"></script>
+  <script>
+    var rellax = new Rellax('.rellax', {
+      // center: true
+      callback: function (position) {
+        // callback every position change
+        console.log(position);
+      },
+      breakpoints: [576, 768, 1024]
     });
   </script>
 
