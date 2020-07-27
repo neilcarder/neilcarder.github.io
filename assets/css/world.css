@@ -143,6 +143,21 @@ p {
 }
 /* LINK IMAGES AND HOVERS ENDS */
 
+/* PARAGRAPH LINKS */
+h7 a:link, h7 a:visited {
+    text-decoration: none;
+    color: #455C80;
+    padding-bottom: 2px;
+    border-bottom: solid 2px #455C80;
+}
+h7 a:hover, h7 a:focus, h7 a:active {
+    text-decoration: none;
+    color: green;
+    padding-bottom: 2px;
+    border-bottom: solid 2px green;
+}
+/* PARAGRAPH LINKS ENDS */
+
 .portfolio {
     size: 130px;
     background-color: #3D3D3D; 
