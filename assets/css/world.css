@@ -170,6 +170,9 @@ h7 a:hover, h7 a:focus, h7 a:active {
     margin-bottom: 100px;
     min-height: 80%;
 }
+.hero h3 {
+    margin-right: 10%
+}
 /* Nav Bar Background */
 .navbar-fixed{ 
     position:fixed; 

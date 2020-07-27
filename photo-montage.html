@@ -52,7 +52,7 @@
     </aside>
     <!-- End Navbar -->
 
-    <div class= "photo-block">
+    <div class= "photo-block rellax" data-rellax-speed="-3">
         <h4>PHOTOGRAPHY</h4><br>
         <h7>This is a collection of photos from my travels and places I have lived. I've got some city and landscape shots from <a href="canada.html">Canada</a> and <a href="europe.html">Europe</a> as well as my special <a href="photo-montage.html">photo-montage</a> section</h7>  
     </div>
@@ -153,6 +153,19 @@
             btn.removeClass('show');
         }
     });
+    </script>
+
+    <!-- Rellax Script -->
+    <script type="text/javascript" src="assets/js/rellax.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function (position) {
+            // callback every position change
+            console.log(position);
+        },
+        breakpoints: [576, 768, 1024]
+        });
     </script>
 </body>
 </html>
