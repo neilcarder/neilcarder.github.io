@@ -5,45 +5,7 @@ body { min-height: 100% }
 img { width: 100%; height: auto; max-width: 1600px; display: block }
 
 html {overflow-y: scroll; }
-nav ul { 
-	display:flex;
-	flex-wrap: wrap;
-	margin: 50px auto;
-	justify-content: space-between;
-	list-style: none; 
-	width: 70%;
-	text-align: center;
-}
-nav ul li { display: inline; }
-nav ul li a {
-	font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1600 - 320)));;;
-    color:#3D3D3D; 
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    letter-spacing: 3px;
-	text-shadow: rgba(0,0,0,.4) 0 1px 0;
-	text-decoration: none;
-}
-nav ul li a div {
-	border: solid 2px #3D3D3D;
-	padding: 5px 15px;
-	box-shadow: 5px 7px 5px lightgrey;
-}
-nav ul li a:hover {
-	opacity: 65%; 
-	text-decoration: underline;
-	transition: 0.4s ease;
-	border:
-}
-nav ul li a:active, nav ul li a.current {
-	position: relative;
-	top: 1px; 
-}
-nav ul li img {
-	width: 40px;
-	height: 40px;
-	margin: 10px auto 0 auto;
-}
+
 /*Photography Layouts*/
 .canada-flex {
     display: flex;
@@ -74,7 +36,7 @@ nav ul li img {
 	margin: 30px 0;
 }
 .photo-block{
-    margin: 100px auto 0px auto;
+    margin: 100px 10% 0px 10%;
     text-align:center;
 }
 .photo-block h4{
@@ -97,12 +59,6 @@ nav ul li img {
 /* ---Mobile Adjustments--- */
 
 @media all and (max-width:767px) {
-	.mobile-last { 
-		width: 80%;
-		padding: 20px;
-		align-self: center;
-		margin: auto;
-	}
 	.thumbnail {
 		padding: 10px;
 	}
