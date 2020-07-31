@@ -77,13 +77,16 @@ html.pushbar_locked .pushbar_overlay {
 .push_left {
     margin-left: 10px;
 }
+
 .push_right {
     margin-right: 10px;
 }
+
 textarea {
     margin-bottom: 0px;
     min-height: 200px;
 }
+
 .close {
     width: 20px;
     height: 21px;
@@ -93,6 +96,7 @@ textarea {
     text-align: center;
     cursor: pointer;
 }
+
 .close:hover {
     opacity: 50%;
     transition: transform 0.5s ease;
@@ -146,7 +150,7 @@ textarea {
 }
 .menu a:hover {
     text-decoration: underline;
-    transition: 0.5s ease;
+    transition: all 0.2s linear; 
     opacity: 70%;
 }
 

@@ -14,6 +14,7 @@ h1 {
     letter-spacing: 3px;
     margin: 0;
 }
+
 h2 {
     font-size: calc(32px + (70 - 32) * ((100vw - 320px) / (1600 - 320)));;;
     color:#3D3D3D; 
@@ -22,6 +23,7 @@ h2 {
     padding: 0px 0px 0px 10%;
     margin: -.5em 0 0 0;
 }
+
 h3 {
     font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 320)));;;
     color:#3D3D3D; 
@@ -34,6 +36,7 @@ h3 {
     margin: 0;
     max-width: 680px;
 }
+
 h4 {
     font-size: calc(30px + (75 - 30) * ((100vw - 320px) / (1600 - 320)));;;
     color:#3D3D3D; 
@@ -43,6 +46,7 @@ h4 {
     margin: -15px 0px -25px 0px;
     letter-spacing: 3px;
 }
+
 h5 {
     font-size: calc(14px + (35 - 14) * ((100vw - 320px) / (1600 - 320)));;;
     color:#3D3D3D; 
@@ -51,6 +55,7 @@ h5 {
     padding-bottom: 5px;
     margin: 0px 0px -8px 0px;
 }
+
 h6 {
     font-size: 19px;
     color:#3D3D3D; 
@@ -59,6 +64,7 @@ h6 {
     padding: 0px;
     margin: 0px;
 }
+
 h7 {
     font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 320)));;;
     color:#3D3D3D; 
@@ -67,6 +73,7 @@ h7 {
     font-weight: 600;
     line-height: 1.4;
 }
+
 h8 {
     font-size: calc(30px + (80 - 30) * ((100vw - 320px) / (1600 - 320)));;;
     color:#3D3D3D; 
@@ -75,21 +82,25 @@ h8 {
     font-weight: 500;
     line-height: 1;
 }
+
 .block{
     display:inline-block;
     margin: 20% 0px 0px 5%;
     width: 80%;
     height: 20%;
 }
+
 .block h4{
     text-shadow: 5px 5px 5px lightgrey;
 }
+
 p {
     color:#707070; 
     font-family: 'Verdana', serif;
     font-size: 12px;
     line-height: 1.6;
 }
+
 .arrow{
     height: 50px;
     width: 50px;
@@ -108,22 +119,25 @@ p {
     border-color: #767676;
     border-width: 8px;
     padding: 0px;
-  }
+}
   
 .overlay {
     display: block;
     text-align: center;
     transition: all 0.2s ease;
 }
+
 .post:hover .overlay {
     visibility: visible;
     opacity: 40%;
     background: #F2F2F2;
 }
+
 .post:hover h5 {
     visibility: visible;
     opacity: 80%;
 }
+
 .post h5 {
     visibility: hidden;
     text-align: center;
@@ -141,6 +155,7 @@ h7 a:link, h7 a:visited {
     padding-bottom: 2px;
     border-bottom: solid 2px #455C80;
 }
+
 h7 a:hover, h7 a:focus, h7 a:active {
     text-decoration: none;
     color: green;
@@ -154,6 +169,7 @@ h7 a:hover, h7 a:focus, h7 a:active {
     background-color: #3D3D3D; 
     font-family: 'Oswald', sans-serif;
 } 
+
 .hero {
     background: #EAEAEA;
     height: calc(100vh + 100px);
@@ -161,9 +177,11 @@ h7 a:hover, h7 a:focus, h7 a:active {
     margin-bottom: 100px;
     min-height: 80%;
 }
+
 .hero h3 {
     margin-right: 10%
 }
+
 /* Nav Bar Background */
 .navbar-fixed{ 
     position:fixed; 
@@ -173,6 +191,7 @@ h7 a:hover, h7 a:focus, h7 a:active {
     width: 100%;
     background: #EAEAEA;
 }
+
 /* Home Button */
 .homebutton {
    position: fixed;
@@ -182,10 +201,12 @@ h7 a:hover, h7 a:focus, h7 a:active {
    height: 35px;
    width: 35px;
 }
+
 .homebutton:hover {
     opacity: 70%;
     transition: 0.5s ease;
  }
+
  /* Dropdown Button */
 .dropbtn {
    position: fixed;
@@ -197,22 +218,26 @@ h7 a:hover, h7 a:focus, h7 a:active {
    height: 35px;
    width: 35px;
 }
+
 .dropbtn:hover {
     opacity: 70%;
     transition: 0.5s ease;
 }
+
 /* Footer Style */
 .footer {
     width: 100%;
     padding: 100px 0;
     background-color: #EAEAEA;
 }
+
 .info-centre {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 18px;
 }
+
 .info-centre p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -221,12 +246,14 @@ h7 a:hover, h7 a:focus, h7 a:active {
     font-size: 22px;
     line-height: 24px;
 }
+
 /* Footer Style Ends */
 .blue {
     color: blue;
     text-decoration: underline;
     font-weight: 700;
 }
+
 /* ==== PAGE SETUP DESKTOPS ==== */
 /* JFA & ICON Page Setup */
 .back-flex { 
@@ -237,27 +264,32 @@ h7 a:hover, h7 a:focus, h7 a:active {
     margin: 0 12% 150px 12%;
     background-color: #EAEAEA;
 }
+
 .ronnie { 
     padding: 0 50px;
     width: 100%;
     text-align: right;
     margin: -70px 0px 0px 0px;
 }
+
 .larry { 
     padding: 0 50px;
     width: 100%;
     margin: -70px 0px 0px 0px;
 }
+
 .back-flex div { 
     width: 52%; 
     padding: 2% 1%;
     align-self: center;
 }
+
 .back-flex img { 
     width: 38%;
     padding: 2% 1%;
     align-self: center;
 }
+
 #back-to-top {
     position: fixed;
     bottom: 30px;
@@ -268,22 +300,27 @@ h7 a:hover, h7 a:focus, h7 a:active {
     opacity .5s, visibility .5s;
     opacity: 0;
 }
+
 #back-to-top.show {
     opacity: 1;
     visibility: visible;
 }
+
 #back-to-top a {
     display: block;
     height: 32px;
     width: 32px;
 }
+
 .back-flex.right-just div { 
     text-align: right;
 }
+
 .back-flex p { 
     font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (1600 - 320)));
     line-height: 1.4;
 }
+
 /* Desktop */
 @media all and (min-width:1500px) {
     .back-flex {
@@ -293,6 +330,7 @@ h7 a:hover, h7 a:focus, h7 a:active {
         margin-bottom: 180px;
     }
 }
+
 /* Mobile */
 @media all and (max-width:767px) { 
     .back-flex { 
@@ -324,7 +362,7 @@ h7 a:hover, h7 a:focus, h7 a:active {
     .right-just *:nth-child(11) { order: 10; }
     .right-just *:nth-child(12) { order: 13; }
     .right-just *:nth-child(13) { order: 12; }
-    }
+}
 /* End of JFA & ICON Page Setup */
 
 /* ARCHIVES Page Setup */
@@ -335,12 +373,14 @@ h7 a:hover, h7 a:focus, h7 a:active {
     border-width: 1px;
     align-self: end;
 }
+
 .arch-b {
     grid-area: title-a;
     text-align: right;
     min-width: 0;
     align-self: end;
 }
+
 .arch-c {
     grid-area: intro-a;
     text-align: right;
@@ -348,6 +388,7 @@ h7 a:hover, h7 a:focus, h7 a:active {
     font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (1600 - 320)));
     line-height: 1.4;
 }
+
 .arch-d {
     grid-area: interior1-a;
     min-width: 0;
@@ -355,6 +396,7 @@ h7 a:hover, h7 a:focus, h7 a:active {
     border-width: 1px;
     height: 100%;
 }
+
 .arch-e {
     grid-area: description-a;
     min-width: 0;
@@ -362,6 +404,7 @@ h7 a:hover, h7 a:focus, h7 a:active {
     line-height: 1.4;
     align-self: center;
 }
+
 .arch-f {
     grid-area: section1-a;
     min-width: 0;
@@ -369,14 +412,15 @@ h7 a:hover, h7 a:focus, h7 a:active {
     border-width: 1px;
     align-self: end;
 }
+
 .arch-g {
     grid-area: section2-a;
     min-width: 0;
     border: solid;
     border-width: 1px;
-    align-self: end;
-    
+    align-self: end; 
 }
+
 .arch-h {
     grid-area: interior2-a;
     min-width: 0;
@@ -384,6 +428,7 @@ h7 a:hover, h7 a:focus, h7 a:active {
     border-width: 1px;
     object-fit: cover;
 }
+
 .arch-i {
     grid-area: interior3-a;
     min-width: 0;
@@ -391,6 +436,7 @@ h7 a:hover, h7 a:focus, h7 a:active {
     border-width: 1px;
     height: 100%;
 }
+
 .back3 {
     display: flex; 
     flex-flow: row wrap; 
@@ -399,6 +445,7 @@ h7 a:hover, h7 a:focus, h7 a:active {
     background-color: #EAEAEA;
     padding: 3.5%;
 }
+
 .grid-a {
     background-color: none;
     margin: -15% auto 0px auto;
@@ -414,6 +461,7 @@ h7 a:hover, h7 a:focus, h7 a:active {
     row-gap: 15px;
     column-gap: 15px;
 }
+
 /* ARCHIVES Desktop */
 @media all and (min-width:1500px) {
     .back3 {
@@ -427,12 +475,15 @@ h7 a:hover, h7 a:focus, h7 a:active {
     .back3 {
         margin: -20px 5% 100px 5%;
     } 
+
     .arch-d {
         height: auto;
     }
+
     .arch-i {
         height: 100%;
     }
+
     .grid-a {
         margin: 5px auto 5px auto;
         grid-template-columns: 70vw;
@@ -459,11 +510,13 @@ h7 a:hover, h7 a:focus, h7 a:active {
     border: solid;
     border-width: 1px;
 }
+
 .comm-b {
     grid-area: title-c;
     min-width: 0;
     align-self: end;
 }
+
 .comm-c {
     grid-area: intro-c;
     font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (1600 - 320)));
@@ -471,9 +524,11 @@ h7 a:hover, h7 a:focus, h7 a:active {
     text-align: right;
     align-self: center;
 }
+
 .comm-c p {
     font-size: (8px + (14 - 8) * ((100vw - 320px) / (1600 - 320)));
 }
+
 .comm-d {
     grid-area: birdseye-c;
     min-width: 0;
@@ -482,44 +537,52 @@ h7 a:hover, h7 a:focus, h7 a:active {
     height: 100%;
     min-height: 350px;
 }
+
 .comm-e {
     grid-area: diagram-c;
     min-width: 0;
 }
+
 .comm-f {
     grid-area: plan1-c;
     min-width: 0;
     width: 75%;
     margin: 0 auto;
 }
+
 .comm-g {
     grid-area: plan2-c;
     min-width: 0;
     width: 75%;
     margin: 0 auto;
 }
+
 .comm-h {
     grid-area: ext1-c;
     min-width: 0;
     border: solid;
     border-width: 1px;
 }
+
 .comm-i {
     grid-area: ext2-c;
     min-width: 0;
     border: solid;
     border-width: 1px;
 }
+
 .comm-j {
     grid-area: elev-c;
     min-width: 0;
     border: solid;
     border-width: 1px;
 }
+
 .comm-k {
     grid-area: section-c;
     min-width: 0;
 }
+
 .back4 {
     display: flex; 
     flex-flow: row wrap; 
@@ -529,6 +592,7 @@ h7 a:hover, h7 a:focus, h7 a:active {
     background-color: #EAEAEA;
     padding: 3.5%;
 }
+
 .grid-c {
     background-color: none;
     margin: -15% auto 0px auto;
@@ -546,12 +610,14 @@ h7 a:hover, h7 a:focus, h7 a:active {
       row-gap: 15px;
       column-gap: 15px;
 }
+
 /* COMMUNITY Desktop */
 @media all and (min-width:1600px) {
     .back4 {
         margin: -20px 18% 200px 18%;
     } 
 }
+
 /* COMMUNITY Mobile Grid */
 @media all and (max-width:767px) { 
     .back4 { 
@@ -559,9 +625,11 @@ h7 a:hover, h7 a:focus, h7 a:active {
         min-width: 0;
         padding: 5%;
     }
+
     .comm-d {
         height: auto;
     }
+
     .grid-c { 
         margin: 5px auto 5px auto;
         grid-template-columns: 70vw;
@@ -588,6 +656,7 @@ h7 a:hover, h7 a:focus, h7 a:active {
     grid-area: concept1-w;
     min-width: 0;
 }
+
 .wind-b {
     grid-area: title-w;
     text-align: right;
@@ -595,50 +664,60 @@ h7 a:hover, h7 a:focus, h7 a:active {
     align-self: end;
     padding-bottom: 50px;
 }
+
 .wind-c {
     grid-area: concept2-w;
     min-width: 0;
 }
+
 .wind-d {
     grid-area: intro-w;
     text-align: right;
     min-width: 0;
 }
+
 .wind-d p {
     font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (1600 - 320)));
     line-height: 1.4;
 }
+
 .wind-e {
     grid-area: birdeye-w;
     min-width: 0;
     border: solid;
     border-width: 1px;
 }
+
 .wind-f {
     grid-area: exterior1-w;
     min-width: 0;
     border: solid;
     border-width: 1px;
 }
+
 .wind-g {
     grid-area: exterior2-w;
     min-width: 0;
     border: solid;
     border-width: 1px;
 }
+
 .wind-h {
     grid-area: rose-w;
     min-width: 0;
 }
+
 .wind-i {
     grid-area: section-w;
     min-width: 0;
 }
+
 .wind-j {
     grid-area: elevation-w;
     min-width: 0;
     align-self: end;
 }
+
 .back5 {
     display: flex; 
     flex-flow: row wrap; 
@@ -648,6 +727,7 @@ h7 a:hover, h7 a:focus, h7 a:active {
     background-color: #EAEAEA;
     padding: 3.5%;
 }
+
 .grid-w {
     background-color: none;
     margin: -20% auto 0px auto;
@@ -664,12 +744,14 @@ h7 a:hover, h7 a:focus, h7 a:active {
     row-gap: 15px;
     column-gap: 15px;
 }
+
 /* RESEARCH Desktop */
 @media all and (min-width:1600px) {
     .back5 {
         margin: -20px 18% 200px 18%;
     } 
 }
+
 /* REASEARCH Mobile Grid */
 @media all and (max-width:767px) {
     .back5 {
@@ -677,6 +759,7 @@ h7 a:hover, h7 a:focus, h7 a:active {
         min-width: 0;
         padding: 5%;
     } 
+
     .grid-w { 
         min-width: auto;
         margin: 5px auto 5px auto;
@@ -704,6 +787,7 @@ h7 a:hover, h7 a:focus, h7 a:active {
     margin-top: -250px;
     margin-bottom: 350px;
 }
+
 /* ==== Privacy Layout  ==== */
 .privacy ul{
     color:#707070; 
@@ -711,24 +795,28 @@ h7 a:hover, h7 a:focus, h7 a:active {
     font-size: 12px;
     line-height: 1.6;
 }
+
 .privacy h2{
     margin: 100px auto;
 }
+
 .privacy h3{
     margin: 50px 0 10px 0;
     padding: 0;
 }
+
 /* Desktop */
 @media all and (min-width:768px) {
     .privacy { padding: 4% 20% 5% 20% }
     }
+
 /* Privacy - Mobiles Layout */
 @media all and (max-width:767px) {
     .privacy { 
          padding: 7% 7% 10% 7%;
          text-align: center;
     }
-    }
+}
 /* ==== End Privacy Layout  ==== */
 
 /* General mobiles */
@@ -740,40 +828,49 @@ h7 a:hover, h7 a:focus, h7 a:active {
         opacity: 65%;
         background: #F2F2F2;
     }
+
     .post h5 {
         visibility: visible;
     }
+
     .footer { 
         width: 100%;
         padding: 0;
         margin-top: 30px;
     }
+
     .info-centre {
         display: block;
         align-items: left;
         justify-content: center;
     }
+
     .info-centre p {
         padding: 5px 0 5px 20%;
         font-size: 15px;
     }
+
     p {
         font-size: 10px;
         line-height: 1.4;
     }
+
     .block{
         text-align:center;
         margin: 100px 10%;
         height: 100%;
     }
+
     .block h7{
         padding-top: 5px;
     }
+
     .post {
         width: 85%;
         margin: 30px auto
     }
 }
+
 @media (max-width: 576px) { 
     p {font-size: 14px;}
-    }
+}
