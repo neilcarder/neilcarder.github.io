@@ -26,6 +26,9 @@
         gtag('config', 'UA-169251944-2');
         </script>
 
+        <!-- Cookie Consent -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
 </head>
 
 <body>
@@ -240,7 +243,26 @@
       },
       breakpoints: [576, 768, 1024]
     });
-  </script>
+   </script>
+
+    <!-- Cookie Consent Message -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#EAEAEA"
+        },
+        "button": {
+          "background": "#ffffff",
+          "text": "##3D3D3D"
+        }
+      },
+      "content": {
+        "href": "privacy.html"
+      }
+    });
+    </script>
 
 </body>
 </html>
