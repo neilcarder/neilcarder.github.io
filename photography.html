@@ -11,10 +11,9 @@
     <!-- CSS only -->
     <link rel="stylesheet" type="text/css" href="assets/css/world.css">
     <link rel="stylesheet" type="text/css" href="assets/css/photography.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/pushbar.css">
 
     <!-- Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169251944-2"></script>
@@ -26,86 +25,174 @@
         gtag('config', 'UA-169251944-2');
     </script>
 
+    <!-- Link to icons for Font Awesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
     <!-- Fade In Script-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
+    <!-- Photo Grid Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/js/jquery-tjgallery.min.js"></script>
+	
     <!-- Cookie Consent -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
 </head>
 
-<body>
-    <!-- Navbar -->
-    <div class="navbar-fixed">
-        <a class="homebutton" href="index.html"><img src="assets/icons/home-icon.png" alt="Home"></a>
-        <button data-pushbar-target="right" class="dropbtn"><img src="assets/icons/menu-icon.png" alt="Menu"></button>
-    </div> 
+<body class="homepage">
 
-    <aside data-pushbar-id="right" data-pushbar-direction="right">
-		<div class="title"><span data-pushbar-close class="close push_left"></span> Menu</div>
-		<ul class="menu">
-			<li><a href="about.html">About</a></li>
-			<li><a href="architecture.html">Architecture</a></li>
-			<li><a href="photography.html">Photography</a></li>
-            <li><a href="https://carderna.wixsite.com/learntocode" target="_blank" rel="noopener">Blog</a></li>
-            <li><a href="https://github.com/neilcarder/neilcarder.github.io" target="_blank" rel="noopener">Github</a></li>
-            <li><a href="https://carderdesign.github.io/" target="_blank" rel="noopener">IBAT Portfolio</a></li>
-		</ul>
-    </aside>
-    <!-- End Navbar -->
+    <!-- Begin desktop menu -->
+  <div class="container-menu-desktop menu-transparent menu-sticky" id="navbar">
+    <a class="logo" href="index.html"><span>Neil Carder</span></a>
+		<ul>
+            <li class="holder">
+                <a class="swipe-line" href="about.html">About</a>
+            </li>
+            <li class="holder">
+                <a class="swipe-line" href="architecture.html">Architecture</a>
+            </li>
+            <li class="holder">
+                <a class="swipe-line" href="photography.html">Photography</a>
+            </li>
+            <li class="holder">
+                <a class="swipe-line" href="https://carderna.wixsite.com/learntocode" target="_blank" rel="noopener">Blog</a>
+            </li>
+            <li class="holder">
+                <a class="swipe-line" href="https://github.com/neilcarder/neilcarder.github.io" target="_blank" rel="noopener">Github</a>
+            </li>
+            <li class="holder">
+                <a class="swipe-line" href="https://carderdesign.github.io/" target="_blank" rel="noopener">IBAT Portfolio</a>
+            </li>
+        </ul>
+  </div>
+  <!-- End desktop menu -->
 
-    <div class= "photo-block rellax" data-rellax-speed="-3">
-        <h4>PHOTOGRAPHY</h4><br>
-        <h7>This is a collection of photos from my travels and places I have lived. I've got some city and landscape shots from <a href="canada.html">Canada</a> and <a href="europe.html">Europe</a> as well as my special <a href="photo-montage.html">Photo-Montage</a> section</h7>  
+  <!-- Begin mobile menu bar -->
+  <div class="container-menu-bar-mobile menu-transparent menu-sticky" id="navbar-2">
+    <!-- first child -->
+    <a class="logo" href="index.html">Neil Carder</a>
+    <!-- second child -->
+    <div class="item-icon">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br>
-    <!-- Footer -->
-    <div class= "footer">
-        <div class= "info-centre">
-            <p><b>Contact:</b><br>carderna@gmail.com</p>
-            <p><b>Living In:</b><br>Dublin</p>
-            <p><b>Currently working for:</b><br>Open to new positions</p>
+  </div>
+  
+  <!-- End mobile menu bar -->
+
+  <!-- Begin mobile menu slide-out options -->
+  <div class="flyout-menu flyout-menu-is-closed menu-light">
+    <ul>
+      <li><a href="architecture.html">Architecture</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="https://carderdesign.github.io">Web Design</a></li>
+      <li><a href="https://carderna.wixsite.com/learntocode">Blog</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="mailto:carderna@gmail.com">carderna@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/neil-carder-167179aa/">LinkedIn</a></li>  
+      <li><a href="#">GitHub</a></li>  
+    </ul>
+  </div>
+  <!-- End mobile menu slide-out options -->
+
+  <!-- Side Navigation -->
+  <div class="photo-nav">
+    <a href="photography.html">Stills</a>
+    <h3>&middot</h3>
+    <a href="joiners.html">Photo Joiners</a>
+  </div>
+
+    <section class="stills photo-layout">
+        <div class="animate__animated animate__fadeIn">
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/1.jpg" alt="Killarney, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/2.jpg" alt="Sligo, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/3.jpg" alt="Skellig Micheal, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/4.jpg" alt="Girona, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/5.jpg" alt="Street Graffiti, UK"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/6.jpg" alt="Sligo, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/7.jpg" alt="Killbear, Canada"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/8.jpg" alt="Sagrada Familia, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/9.jpg" alt="Devil's Punchbowl, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/10.jpg" alt="Mont Serrat, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/11.jpg" alt="Little Skellig, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/12.jpg" alt="Library, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/13.jpg" alt="Cadaques, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/14.jpg" alt="Cadaques, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/15.jpg" alt="Girona, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/16.jpg" alt="Mountains, Germany"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/17.jpg" alt="Barcelona, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/18.jpg" alt="Beach, Sicily"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/19.jpg" alt="Devil's Punchbowl, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/20.jpg" alt="Barcelona Cathedral"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/21.jpg" alt="Ottawa, Canada"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/22.jpg" alt="Girona, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/23.jpg" alt="Barcelona, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/24.jpg" alt="Sicily, italy"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/25.jpg" alt="Skellig Micheal, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/26.jpg" alt="Killarney, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/27.jpg" alt="Car Park, UK"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/28.jpg" alt="Sitges, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/29.jpg" alt="Cadaques, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/30.jpg" alt="Pantheon, Italy"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/31.jpg" alt="Sicily, Italy"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/32.jpg" alt="Sicily, Italy"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/33.jpg" alt="Gondolas, Italy"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/34.jpg" alt="Little Skellig, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/35.jpg" alt="Skellig Micheal, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/36.jpg" alt="Candles, Barcelona"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/37.jpg" alt="Donegal, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/38.jpg" alt="Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/39.jpg" alt="Girona, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/40.jpg" alt="Sitges, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/41.jpg" alt="Sicily, Italy"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/42.jpg" alt="Atomium, Belgium"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/43.jpg" alt="Sicily"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/44.jpg" alt="Castle, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/45.jpg" alt="Beach, Sligo, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/46.jpg" alt="Clouds, Canada"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/47.jpg" alt="Barcelona, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/48.jpg" alt="Candles, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/49.jpg" alt="Barcelona, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/50.jpg" alt="Dog in Sligo, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/51.jpg" alt="Skellig Micheal, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/52.jpg" alt="Sligo, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/53.jpg" alt="Double Exposure, Barcelona, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/54.jpg" alt="Mont Serrat, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/55.jpg" alt="Sitges, Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/56.jpg" alt="Sligo, Ireland"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/57.jpg" alt="Barcelona Spain"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/58.jpg" alt="Library, Barcelona"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/59.jpg" alt="Killarney Park, Canada"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/60.jpg" alt="Killarney Park, Canada"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/61.jpg" alt="Road, Maine"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/62.jpg" alt="Boat Fishtail"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/63.jpg" alt="old Red Beetle"/>
+            <img class="example-image" src="assets/images/photography/01-stills/full-size/64.jpg" alt="Killarney Park, Canada"/>
         </div>
-    </div>
+    </section>
 
-    <div id="back-to-top">
-        <a href="#"><img src="assets/icons/arrow-up.png" alt="Back to top"></a>
-    </div>
-
-    <!-- Menu Bar Script -->
-    <script type="text/javascript" src="assets/js/pushbar.js"></script>
-    <script type="text/javascript">
-        const pushbar = new Pushbar({
-            blur: true,
-            overlay: true,
-    });
-    </script>
-
-    <!-- Back to Top Script -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Photo Grid Script -->
     <script>
-    var btn = $('#back-to-top');
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > 300) {
-        btn.addClass('show');
-        } else {
-            btn.removeClass('show');
-        }
-    });
+        // waiting for loading page
+        $(window).on('load', function(){
+            $('.stills').tjGallery();
+        })
     </script>
 
-    <!-- Rellax Script -->
-    <script type="text/javascript" src="assets/js/rellax.js"></script>
-    <script>
-        var rellax = new Rellax('.rellax', {
-        // center: true
-        callback: function (position) {
-            // callback every position change
-            console.log(position);
-        },
-        breakpoints: [576, 768, 1024]
-        });
-    </script>
+    <!-- Back to top -->
+    <a href="#" class="back-to-top scroll display-none"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Menu Scripts -->
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+
+    <!-- Lightbox Script 
+    <script src="assets/js/lightbox.js"></script>
+    -->
 
     <!-- Cookie Consent Message -->
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
