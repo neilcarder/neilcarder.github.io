@@ -26,27 +26,65 @@
     </script>
 </head>
 
-<body>
+<body class="homepage">
 
-    <!-- Navbar -->
-    <div class="navbar-fixed">
-        <a class="homebutton" href="index.html"><img src="assets/icons/home-icon.png" alt="Home"></a>
-        <button data-pushbar-target="right" class="dropbtn"><img src="assets/icons/menu-icon.png" alt="Menu"></button>
-    </div> 
+  <!-- Begin desktop menu -->
+  <div class="container-menu-desktop menu-transparent menu-sticky" id="navbar">
+    <a class="logo" href="index.html"><span>Neil Carder</span></a>
+		<ul>
+      <li class="holder">
+        <a class="swipe-line" href="about.html">About</a>
+      </li>
+      <li class="holder">
+        <a class="swipe-line" href="architecture.html">Architecture</a>
+      </li>
+      <li class="holder">
+        <a class="swipe-line" href="photography.html">Photography</a>
+      </li>
+      <li class="holder">
+        <a class="swipe-line" href="https://carderna.wixsite.com/learntocode" target="_blank" rel="noopener">Blog</a>
+      </li>
+      <li class="holder">
+        <a class="swipe-line" href="https://github.com/neilcarder/neilcarder.github.io" target="_blank" rel="noopener">Github</a>
+      </li>
+      <li class="holder">
+        <a class="swipe-line" href="https://carderdesign.github.io/" target="_blank" rel="noopener">IBAT Portfolio</a>
+      </li>
+    </ul>
+  </div>
+  <!-- End desktop menu -->
 
-    <aside data-pushbar-id="right" data-pushbar-direction="right">
-		<div class="title"><span data-pushbar-close class="close push_left"></span> Menu</div>
-		<ul class="menu">
-			<li><a href="about.html">About</a></li>
-			<li><a href="architecture.html">Architecture</a></li>
-			<li><a href="photography.html">Photography</a></li>
-            <li><a href="https://carderna.wixsite.com/learntocode" target="_blank" rel="noopener">Blog</a></li>
-            <li><a href="https://github.com/neilcarder/neilcarder.github.io" target="_blank" rel="noopener">Github</a></li>
-            <li><a href="https://carderdesign.github.io/" target="_blank" rel="noopener">IBAT Portfolio</a></li>
-		</ul>
-    </aside>
-    <!-- End Navbar --> 
+  <!-- Begin mobile menu bar -->
+  <div class="container-menu-bar-mobile menu-transparent menu-sticky" id="navbar-2">
+    <!-- first child -->
+    <a class="logo" href="index.html">Neil Carder</a>
+    <!-- second child -->
+    <div class="item-icon">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  </div>
+  
+  <!-- End mobile menu bar -->
 
+  <!-- Begin mobile menu slide-out options -->
+  <div class="flyout-menu flyout-menu-is-closed menu-light">
+    <ul>
+      <li><a href="architecture.html">Architecture</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="https://carderdesign.github.io">Web Design</a></li>
+      <li><a href="https://carderna.wixsite.com/learntocode">Blog</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="mailto:carderna@gmail.com">carderna@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/neil-carder-167179aa/">LinkedIn</a></li>  
+      <li><a href="#">GitHub</a></li>  
+    </ul>
+  </div>
+  <!-- End mobile menu slide-out options -->
 
     <div class="privacy">
         <h2>Privacy and Legal</h2>
@@ -141,13 +179,18 @@
         <p>Additional or different terms, conditions, and notices may apply to specific materials, information, products, software, and services offered through this website. In the event of any conflict, such additional or different terms, conditions, and notices will prevail over these Terms of Use. Please see the applicable agreement or notice.</p>
     </div>
 
-    <!-- Menu Bar Script -->
-    <script type="text/javascript" src="assets/js/pushbar.js"></script>
-    <script type="text/javascript">
-        const pushbar = new Pushbar({
-            blur: true,
-            overlay: true,
-    });
-    </script>
+    <!-- Footer -->
+    <div class= "footer">
+      <div class= "info-centre">
+        <p><b>Contact:</b><br>carderna@gmail.com</p>
+        <p><b>Living In:</b><br>Dublin</p>
+        <p><b>Currently working for:</b><br>Open to new positions</p>
+      </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Menu Scripts -->
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+
 </body>
 </html>

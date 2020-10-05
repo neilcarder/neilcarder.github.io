@@ -10,11 +10,14 @@
         
         <!-- CSS only -->
         <link rel="stylesheet" type="text/css" href="assets/css/world.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/architecture.css">
         <link rel="stylesheet" type="text/css" href="assets/css/aos.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/pushbar.css">
     
         <!-- Google Fonts-->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+        <!-- Link to icons for Font Awesome 5 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
    
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169251944-2"></script>
@@ -32,35 +35,75 @@
 </head>
 
 <body>
-      <!-- Navbar -->
-    <div class="navbar-fixed">
-        <a class="homebutton" href="index.html"><img src="assets/icons/home-icon.png" alt="Home"></a>
-        <button data-pushbar-target="right" class="dropbtn"><img src="assets/icons/menu-icon.png" alt="Menu"></button>
-    </div> 
+  <!-- Begin desktop menu -->
+  <div class="container-menu-desktop menu-transparent menu-sticky" id="navbar">
+    <a class="logo" href="index.html"><span>Neil Carder</span></a>
+		<ul>
+      <li class="holder">
+        <a class="swipe-line" href="about.html">About</a>
+      </li>
+      <li class="holder">
+        <a class="swipe-line" href="architecture.html">Architecture</a>
+      </li>
+      <li class="holder">
+        <a class="swipe-line" href="photography.html">Photography</a>
+      </li>
+      <li class="holder">
+        <a class="swipe-line" href="https://carderna.wixsite.com/learntocode" target="_blank" rel="noopener">Blog</a>
+      </li>
+      <li class="holder">
+        <a class="swipe-line" href="https://github.com/neilcarder/neilcarder.github.io" target="_blank" rel="noopener">Github</a>
+      </li>
+      <li class="holder">
+        <a class="swipe-line" href="https://carderdesign.github.io/" target="_blank" rel="noopener">IBAT Portfolio</a>
+      </li>
+    </ul>
+  </div>
+  <!-- End desktop menu -->
 
-    <aside data-pushbar-id="right" data-pushbar-direction="right">
-		<div class="title"><span data-pushbar-close class="close push_left"></span> Menu</div>
-		<ul class="menu">
-			<li><a href="about.html">About</a></li>
-			<li><a href="architecture.html">Architecture</a></li>
-			<li><a href="photography.html">Photography</a></li>
-            <li><a href="https://carderna.wixsite.com/learntocode" target="_blank" rel="noopener">Blog</a></li>
-            <li><a href="https://github.com/neilcarder/neilcarder.github.io" target="_blank" rel="noopener">Github</a></li>
-            <li><a href="https://carderdesign.github.io/" target="_blank" rel="noopener">IBAT Portfolio</a></li>
-		</ul>
-    </aside>
-    <!-- End Navbar --> 
+  <!-- Begin mobile menu bar -->
+  <div class="container-menu-bar-mobile menu-transparent menu-sticky" id="navbar-2">
+    <!-- first child -->
+    <a class="logo" href="index.html">Neil Carder</a>
+    <!-- second child -->
+    <div class="item-icon">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  </div>
+  
+  <!-- End mobile menu bar -->
+
+  <!-- Begin mobile menu slide-out options -->
+  <div class="flyout-menu flyout-menu-is-closed menu-light">
+    <ul>
+      <li><a href="architecture.html">Architecture</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="https://carderdesign.github.io">Web Design</a></li>
+      <li><a href="https://carderna.wixsite.com/learntocode">Blog</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="mailto:carderna@gmail.com">carderna@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/neil-carder-167179aa/">LinkedIn</a></li>  
+      <li><a href="#">GitHub</a></li>  
+    </ul>
+  </div>
+  <!-- End mobile menu slide-out options --> 
    
     <!-- Hero Page -->
-    <div class= "hero">
-        <div class= "block rellax" data-rellax-speed="-2">
+    <header class= "hero-arch">
+        <div class= "block-it rellax" data-rellax-speed="-2">
             <h4>ARCHITECTURE</h4><br>
-            <h7>These are some projects I worked on from my previous employment with John Fleming Architects and ICON Architects. There are also some creative projects from my Bachelor’s Degree at Carleton University. All the work below involved working creatively with others, whether it was with employers, professors fellow co-workers or students. They all display my ability to combine a designer’s perception with technical understanding. Sections include <a href="#jfa">John Fleming Architects</a>, <a href="#icon">Icon Architects</a>, <a href="#archives">Archives of Unfinished Work</a>, a <a href="#community-center">Community Center Design</a> and a <a href="#wind-energy">Wind Energy Reseach Centre</a></h7>
+            <h3>These are some projects I worked on from my previous employment with John Fleming Architects and ICON Architects. There are also some creative projects from my Bachelor’s Degree at Carleton University. All the work below involved working creatively with others, whether it was with employers, professors fellow co-workers or students. They all display my ability to combine a designer’s perception with technical understanding. Sections include <a href="#jfa">John Fleming Architects</a>, <a href="#icon">Icon Architects</a>, <a href="#archives">Archives of Unfinished Work</a>, a <a href="#community-center">Community Center Design</a> and a <a href="#wind-energy">Wind Energy Reseach Centre</a></h3>
         </div> 
-    </div>
+    </header>
+    
     <!-- JFA Page -->
-    <section class="back-flex aos-item" data-aos="fade-up">
-        <h8 id="jfa" class="ronnie">John Fleming Architects</h8><br><br>
+    <section class="flex-back bg-light-gray aos-item" data-aos="fade-up">
+        <h7 id="jfa" class="title-right">John Fleming Architects</h7><br><br>
         <img src="assets/images/architecture/01-john-fleming-architects/malahide-road.jpg" alt="Malahide Road">
         <div>
             <h6>Malahide Road</h6><p>Participated in the submission of this two – tower apartment scheme for planning approval in order to meet submission deadlines. Completed sections & elevations using AutoCAD and provided additional support for completion of floor plans. Calculated floor areas and recorded statistics for schedule of accommodation and housing quality assessment. Also assisted with physical submission of project for planning approval.</p>
@@ -84,8 +127,8 @@
     </section>
 
     <!-- ICON Page -->
-    <section class="back-flex right-just aos-item" data-aos="fade-up">
-        <h8 id="icon" class="larry">ICON Architects</h8><br><br>
+    <section class="flex-back right-just bg-light-gray aos-item" data-aos="fade-up">
+        <h7 id="icon" class="title-left">ICON Architects</h7><br><br>
         <div>
             <h6>565 North Service Road (Waterview Condos)</h6><p>Waterview Condominiums consists of two high rise buildings in two phases. I entered the project when Phase 1 was breaking ground and Phase 2 was going through site plan approval for an additional six stories from the original design. SPA was completed by ICON while the construction drawing were given to a drafting company called TechniCAD. I was tasked with minor revisions for resubmission if site plan approval (co-ordinating with building permit drawings from techniCAD, creation of black line drawings for marketing purposes and review of building permit/construction drawings).</p>
         </div>
@@ -107,65 +150,66 @@
         </div>
         <img src="assets/images/architecture/02-icon-architects/web/toronto-of-the-future.png" alt="Toronto of The Fututre">
     </section>
+
     <!-- ARCHIVES Page -->
-    <section class="back3 aos-item" data-aos="fade-up">
-        <div id="archives" class="grid-a">
-            <div class="arch-a">
+    <section class="flex-grid bg-light-gray aos-item" data-aos="fade-up">
+        <div id="archives" class="grid-layout archives">
+            <div class="arch-1">
             <img src="assets/images/architecture/03-archives-of-unfinished-work/web/concept.jpg" alt="Concept">
             </div>
-            <h8 class="arch-b">ARCHIVES OF UNFINISHED WORK</h8>
-            <div class="arch-c">
+            <h7 class="arch-2">ARCHIVES OF UNFINISHED WORK</h7>
+            <div class="arch-3">
             <h6><u>THE BORDER</u></h6>
             <p>The project seeks to embody aspects of the fundamental unfinalisability at the heart of human interaction and creation. The basis for exploration is the paradoxical relationship between the self and the other, that we are all “subjects in incompleteness.” This dialogue between self and other has necessary components and useless components. Much like human emotion, understanding can be only to a certain degree: some parts are never understood. An acceptance of these unfinished aspects of human understanding reduces frustration. </p>
             </div>
-            <img class="arch-d" src="assets/images/architecture/03-archives-of-unfinished-work/web/vingette.jpg" alt="Vingette">
-            <div class="arch-e">
+            <img class="arch-4" src="assets/images/architecture/03-archives-of-unfinished-work/web/vingette.jpg" alt="Vingette">
+            <div class="arch-5">
             <h6><u>INTERVENTIONS</u></h6>
             <p>The project for an archives of unfinished plays, music and dance, connects these themes with the human creative processes. It does not store failed attempts, but lost aspirations. As a sort of  architectural sphinx, the project plays with the disposes of their own potential; it leads them in random directions, changes the exit paths and forces reflection upon those storing the incomplete creative work. It also plays with the lost potential of the creative work, inviting (partial) completion by others, and exposing the result to the elements and the eyes of the world.
             <br><br>
             The concept drawing above focuses boundaries. There is visually more interaction at the boundary. This represents the conflict between self and other; an example could be ones own ideals versus the world's current state or a conflict between two characters. An important aspect of the drawing is that although there is interaction and conflict at the border, the basic essence of self and other is virtually the same.</p>
             </div>
-            <img class="arch-f" src="assets/images/architecture/03-archives-of-unfinished-work/web/section.jpg" alt="Section 1">
-            <img class="arch-g" src="assets/images/architecture/03-archives-of-unfinished-work/web/section2.jpg" alt="Section 2">
-            <img class="arch-h" src="assets/images/architecture/03-archives-of-unfinished-work/web/vingette3.jpg" alt="Vingette 2">
-            <img class="arch-i" src="assets/images/architecture/03-archives-of-unfinished-work/web/vingette2.jpg" alt="vignette 3">
+            <img class="arch-6" src="assets/images/architecture/03-archives-of-unfinished-work/web/section.jpg" alt="Section 1">
+            <img class="arch-7" src="assets/images/architecture/03-archives-of-unfinished-work/web/section2.jpg" alt="Section 2">
+            <img class="arch-8" src="assets/images/architecture/03-archives-of-unfinished-work/web/vingette3.jpg" alt="Vingette 2">
+            <img class="arch-9" src="assets/images/architecture/03-archives-of-unfinished-work/web/vingette2.jpg" alt="vignette 3">
         </div>
     </section>
     <!-- COMMUNITY Page -->
-    <section class="back4 aos-item" data-aos="fade-up">
-        <div id="community-center" class="grid-c">
-            <img class="comm-a" src="assets/images/architecture/04-community-centre/web/concept.jpg" alt="Concept">
-            <h8 class="comm-b">HOUSING & COMMUNITY CENTRE</h8>
-            <div class="comm-c">
+    <section class="flex-grid bg-light-gray aos-item" data-aos="fade-up">
+        <div id="community-center" class="grid-layout community">
+            <img class="comm-1" src="assets/images/architecture/04-community-centre/web/concept.jpg" alt="Concept">
+            <h7 class="comm-2">HOUSING & COMMUNITY CENTRE</h7>
+            <div class="comm-3">
             <h6><u>ARCHITECTURAL CONCEPT: WEAVING</u></h6><br><p>A current issue with immigration in Canada is a lack of immigrants’ integration with current societies, communities and technologies of contemporary Canada. Whether an immigrant decides to move to Canada for cultural integration, a wealthy lifestyle or other reasons, full integration will increase the progress of the individual and the community.</p><br>
             <p>The goal to be achieved is full (while respecting cultures and beliefs) integration into a society. This raised the idea of weaving; weaving two or more strands, fabrics or materials elegantly  into a uniform fabric. The fabric creates a unified entity while maintaining its individual elements; there is a vast amount of connections in a fabric. This is the cause of its appeal and structure.</p>
             </div>
-            <img class="comm-d" src="assets/images/architecture/04-community-centre/web/site-view.jpg" alt="Birds Eye View">
-            <img class="comm-e" src="assets/images/architecture/04-community-centre/web/diagram.png" alt="Model Diagram">
-            <img class="comm-h" src="assets/images/architecture/04-community-centre/web/render-1.jpg" alt="Rendering 1">
-            <img class="comm-f" src="assets/images/architecture/04-community-centre/web/plan-one.png" alt="Floor Plan 1">
-            <img class="comm-g" src="assets/images/architecture/04-community-centre/web/plan-two.png" alt="Floor Plan 2">
-            <img class="comm-i" src="assets/images/architecture/04-community-centre/web/render-2.jpg" alt="Rendering 2">
-            <img class="comm-j" src="assets/images/architecture/04-community-centre/web/elevation.jpg" alt="Elevation">
-            <img class="comm-k" src="assets/images/architecture/04-community-centre/web/section.png" alt="Section">
+            <img class="comm-4" src="assets/images/architecture/04-community-centre/web/site-view.jpg" alt="Birds Eye View">
+            <img class="comm-5" src="assets/images/architecture/04-community-centre/web/diagram.png" alt="Model Diagram">
+            <img class="comm-8" src="assets/images/architecture/04-community-centre/web/render-1.jpg" alt="Rendering 1">
+            <img class="comm-6" src="assets/images/architecture/04-community-centre/web/plan-one.png" alt="Floor Plan 1">
+            <img class="comm-7" src="assets/images/architecture/04-community-centre/web/plan-two.png" alt="Floor Plan 2">
+            <img class="comm-9" src="assets/images/architecture/04-community-centre/web/render-2.jpg" alt="Rendering 2">
+            <img class="comm-10" src="assets/images/architecture/04-community-centre/web/elevation.jpg" alt="Elevation">
+            <img class="comm-11" src="assets/images/architecture/04-community-centre/web/section.png" alt="Section">
         </div>
     </section>
     <!-- WIND RESEARCH Page -->
-    <section class="back5 aos-item" data-aos="fade-up">
-        <div id="wind-energy" class="grid-w">
-            <img class="wind-a" src="assets/images/architecture/05-wind-research-centre/web/sketch.png" alt="Building Sketch">
-            <h8 class="wind-b">URBAN<br>WIND<br>ENERGY<br>RESEARCH<br>CENTRE</h8>
-            <img class="wind-c" src="assets/images/architecture/05-wind-research-centre/web/concept2.png" alt="Concept Image">
-            <div class="wind-d">
+    <section class="flex-grid bg-light-gray aos-item" data-aos="fade-up">
+        <div id="wind-energy" class="wind grid-layout">
+            <img class="wind-1" src="assets/images/architecture/05-wind-research-centre/web/sketch.png" alt="Building Sketch">
+            <h7 class="wind-2">URBAN<br>WIND<br>ENERGY<br>RESEARCH<br>CENTRE</h7>
+            <img class="wind-3" src="assets/images/architecture/05-wind-research-centre/web/concept2.png" alt="Concept Image">
+            <div class="wind-4">
             <h6><u>THE PROGRAM</u></h6><p>The goal of this project is to create a research centre for the town of Almonte in Ontario, Canada. The type of research project was the choice of the student; my research centre is built for the purpose of developing urban wind turbines due to many issues with large commercial turbines placed around rural areas. Almonte is a small town with a potential to grow. This mirrors the current state of urban designed renewable energy.</p><br>
             <p>Issues associated with commercial wind turbines include gears in the generators malfunctioning, birds being killed by turning blades, disturbance of people and animals (from noise and shadow movement) and falling ice debris during winter season. Due to these issues, the constant goal of this proposed research building is to maximize efficiency and reduce disturbance issues of urban wind turbines which would reduce the demand of commercial turbines.</p>
             </div>
-            <img class="wind-e" src="assets/images/architecture/05-wind-research-centre/web/birds-eye.jpg" alt="Birds Eye View">
-            <img class="wind-f" src="assets/images/architecture/05-wind-research-centre/web/tower-view.jpg" alt="View from Tower">
-            <img class="wind-g" src="assets/images/architecture/05-wind-research-centre/web/entrance.jpg" alt="Entrance Render">
-            <img class="wind-h" src="assets/images/architecture/05-wind-research-centre/web/wind-rose.png" alt="Wind Rose Diagram">
-            <img class="wind-i" src="assets/images/architecture/05-wind-research-centre/web/section.png" alt="Section">
-            <img class="wind-j" src="assets/images/architecture/05-wind-research-centre/web/elevation.png" alt="Elevation">
+            <img class="wind-5" src="assets/images/architecture/05-wind-research-centre/web/birds-eye.jpg" alt="Birds Eye View">
+            <img class="wind-6" src="assets/images/architecture/05-wind-research-centre/web/tower-view.jpg" alt="View from Tower">
+            <img class="wind-7" src="assets/images/architecture/05-wind-research-centre/web/entrance.jpg" alt="Entrance Render">
+            <img class="wind-8" src="assets/images/architecture/05-wind-research-centre/web/wind-rose.png" alt="Wind Rose Diagram">
+            <img class="wind-9" src="assets/images/architecture/05-wind-research-centre/web/section.png" alt="Section">
+            <img class="wind-10" src="assets/images/architecture/05-wind-research-centre/web/elevation.png" alt="Elevation">
         </div>
     </section>
 
@@ -177,10 +221,10 @@
             <p><b>Currently working for:</b><br>Open to new positions</p>
         </div>
     </div>
+    <!-- End footer -->
 
-    <div id="back-to-top">
-        <a href="#"><img src="assets/icons/arrow-up.png" alt="Back to top"></a>
-    </div>
+    <!-- Back to top -->
+    <a href="#" class="back-to-top scroll display-none"><i class="fas fa-chevron-up"></i></a>
 
     <!-- Fade Script -->
     <script src="assets/js/aos.js"></script>
@@ -190,29 +234,10 @@
     });
     </script>
 
-    <!-- Menu Bar Script -->
-    <script type="text/javascript" src="assets/js/pushbar.js"></script>
-    <script type="text/javascript">
-        const pushbar = new Pushbar({
-            blur: true,
-            overlay: true,
-    });
-    </script>
+    <!-- Menu Scripts -->
+    <script type="text/javascript" src="assets/js/menu.js"></script>
 
-    <!-- Back to Top Script -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-    var btn = $('#back-to-top');
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > 300) {
-        btn.addClass('show');
-        } else {
-            btn.removeClass('show');
-        }
-    });
-    </script>
-
-    <!-- Internal Hyperlink Script (Location Fix) -->
+    <!-- Internal Hyperlink Script (# Location Fix) -->
     <script>
     (function($, window) {
         var adjustAnchor = function() {
