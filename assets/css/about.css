@@ -72,31 +72,74 @@
 }
 /* ----- End of Grid - Page 1 ----- */
 
+
 /* ----- Start of Grid - Page 2 ----- */
 .g2-i-1 {
+  grid-area: work1;
+  display: inline;
+  align-self: end;
+}
+
+.g2-i-2 {
+  grid-area: work2;
+  max-width: 100%;
+}
+
+.g2-i-3 {
+  grid-area: work3;
+  max-width: 100%;
+}
+
+.two {
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  grid-template-areas: 
+    "work1 work1"
+    "work2 work3";
+  gap: 20px;
+}
+
+@media only screen and (max-width: 678px) {
+
+  .two {
+    grid-template-columns: 100%;
+    grid-template-areas: 
+      "work1"
+      "work2"
+      "work3";
+  }
+}
+
+/* ----- End of Grid - Page 2 ----- */
+
+/* ----- Start of Grid - Page 3 ----- */
+.g3-i-1 {
   grid-area: sellbytel;
   max-width: 100%;
+  text-align: center;
   align-self: end;
   /* text-align: right; */
 }
 
-.g2-i-2 {
+.g3-i-2 {
+  text-align: center;
+  max-width: 100%;
+  padding: 0 8%;
   grid-area: desc-sell;
-  max-width: 75%;
   /* align-self: end; */
 }
 
-.g2-i-3 {
+.g3-i-3 {
   grid-area: quote;
   max-width: 100%;
-  padding-top: 2%;
+  padding: 2% 15%;
   z-index: 99;
 }
 
-.g2-i-4 {
+.g3-i-4 {
   grid-area: quote2;
   max-width: 100%;
-  padding-top: 2%;
+  padding: 2% 15%;
   z-index: 99;
 }
 
@@ -111,7 +154,7 @@
   justify-self: center;
 }
 
-.two {
+.three {
   height: 75%;
   grid-template-rows: repeat(3, 18%);
   grid-template-columns: 100%;
@@ -123,7 +166,7 @@
   gap: 20px;
 }
 
-.sheet.two h3{
+.sheet.three h3{
   font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));;;
   color:#ff0000; 
   font-family: 'Libre Baskerville', sans-serif;
@@ -133,46 +176,17 @@
   line-height: 1.5em;
 }
 
-/* ----- End of Grid - Page 2 ----- */
-
-/* ----- Start of Grid - Page 3 ----- */
-.g3-i-1 {
-  grid-area: work1;
-  display: inline;
-  align-self: end;
-}
-
-.g3-i-2 {
-  grid-area: work2;
-  max-width: 100%;
-}
-
-.g3-i-3 {
-  grid-area: work3;
-  max-width: 100%;
-}
-
-.three {
-  display: grid;
-  grid-template-columns: repeat(2, 49%);
-  grid-template-areas: 
-    "work1 work1"
-    "work2 work3";
-  gap: 20px;
-}
-
 @media only screen and (max-width: 678px) {
 
-  .three {
-    grid-template-columns: 100%;
-    grid-template-areas: 
-      "work1"
-      "work2"
-      "work3";
+  .g3-i-2,
+  .g3-i-3,
+  .g3-i-4 {
+    padding: 0;
   }
+
 }
 
-/* ----- End of Grid - Page 3 ----- */
+/* ----- End of Grid - Page 2 ----- */
 
 /* ----- Start of Grid - Page 4 ----- */
 .g4-i-1 {
