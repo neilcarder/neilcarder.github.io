@@ -18,8 +18,8 @@
 		init : function(options) {
 			var $settings = $.extend({
 				selector		:'img',
-				row_min_height	: 390,
-				margin			: 22
+				row_min_height	: 370,
+				margin			: 30
 			}, options);
 
 			
