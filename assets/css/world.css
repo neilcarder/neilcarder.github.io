@@ -292,12 +292,13 @@ p {
 
 .logo {
     font-family: 'Oswald', sans-serif;
-    font-size: calc(20px + (30 - 20) * ((100vw - 320px)/(1600 - 320)));
+    font-size: calc(18px + (28 - 18) * ((100vw - 320px)/(1600 - 320)));
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
     color: #3e5769; 
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    align-self: center;
 }
 
 /* Positions all menus in front of page content */
@@ -409,6 +410,21 @@ p {
     width: 90%;
     transition: cubic-bezier(.77,0,.18,1) all .3s;
 }
+
+/*------ For Current WebPage ------*/
+.is-active {
+    display: inline-block;
+    position: relative;
+  }
+  
+.is-active:after {
+    content: '';
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    border-bottom: 1.5px solid #3e5769;
+    display: block;
+  }
 
 /*------ End Sliding Undeline ------*/
 
