@@ -1,35 +1,35 @@
-//Photgraphs scripts
+ //Photgraphs scripts
 $(document).ready(function() {
 
-    //Places Loading Spinner during Ajax Actions
-    $(function() {
-        // set global ajax options:
-        $.ajaxSetup({
-            beforeSend: function(xhr, status) {
-                // TODO: show spinner
-                $('#spinner').show();
-            },
-            complete: function() {
-                // TODO: hide spinner
-                $('#spinner').hide();
-            }
-        });
-    
-        $('#foo').click(function() {
-            // because we have overriden the global AJAX settings
-            // the spinner will be shown during the request
-            $('#content').load('b.php #abc');
-        });
+    // set global ajax options:
+    $.ajaxSetup({
+        beforeSend: function(xhr, status) {
+            // TODO: show spinner
+            $('#spinner').show();
+        },
+        complete: function() {
+            // TODO: hide spinner
+            $('#spinner').hide();
+        }
     });
 
     //Content of first load
-    $("#content").load("snippets/stills.html");
-    
+    $("#content").load("snippets/stills.html", function() {
+        // wait until image content is loaded....
+        $("#content").waitForImages(function() {
+            $('.stills').tjGallery();
+        });
+    });
+
     //Loading Content on Click script
     $('.still-content').on('click', function() {
-
-        $("#content").load("snippets/stills.html");
-    })
+        $("#content").load("snippets/stills.html", function() {
+            // wait until image content is loaded....
+            $("#content").waitForImages(function() {
+                $('.stills').tjGallery();
+            });
+        });
+    });
 
     $('.joiner-content').click(function() {
         $("#content").load("snippets/joiners.html");
@@ -42,8 +42,8 @@ $(document).ready(function() {
     });
 
     //Dissable Right click over images
-    $('#content').on('contextmenu', 'img', function(e){ 
-        return false; 
+    $('#content').on('contextmenu', 'img', function(e){
+        return false;
       });
-  
-}); 
+
+});
