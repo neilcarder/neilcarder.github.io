@@ -334,7 +334,7 @@ p {
 .container-menu-desktop {
 	display: flex;
     justify-content: space-between;
-    padding: 3% 6% 0 6%;
+    padding: 1% 6% 0 6%;
     width: 100%;
 }
 
