@@ -19,6 +19,9 @@ $(document).ready(function() {
         $("#content").waitForImages(function() {
             $('.stills').tjGallery();
         });
+        (function() {
+            var $gallery = new SimpleLightbox('.stills a', {});
+        })();
     });
 
     //Loading Content on Click script
@@ -28,6 +31,9 @@ $(document).ready(function() {
             $("#content").waitForImages(function() {
                 $('.stills').tjGallery();
             });
+            (function() {
+                var $gallery = new SimpleLightbox('.stills a', {});
+            })();
         });
     });
 
