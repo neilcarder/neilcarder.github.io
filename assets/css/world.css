@@ -44,7 +44,7 @@ h4 {
 }
 
 h5 {
-    font-size: calc(14px + (35 - 14) * ((100vw - 320px) / (1600 - 320)));;;
+    font-size: calc(15px + (42 - 15) * ((100vw - 320px) / (1600 - 320)));;;
     color:#3e5769; 
     font-family: 'Maven Pro', sans-serif;
     font-weight: 600;
@@ -64,7 +64,7 @@ h7 {
     font-size: calc(30px + (80 - 30) * ((100vw - 320px) / (1600 - 320)));;;
     color:#3e5769; 
     font-family: 'Oswald', sans-serif;
-    letter-spacing: 3px;
+    letter-spacing: 0px;
     font-weight: 500;
     line-height: 1;
 }
@@ -110,7 +110,7 @@ p {
 
 .hero h1 {
     font-size: calc(100px + (160 - 100) * ((100vw - 320px) / (1600 - 320)));;;
-    color: #f0f0f0;
+    color: black;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -200,6 +200,10 @@ p {
     padding-bottom: 15px;
 }
 
+.last {
+    margin-bottom: 15%;
+}
+
 .reduce-margin {
     margin: 5% 10% 0 0;
 }
@@ -228,7 +232,7 @@ p {
 }
 .post h3:hover {
     transform: scale(1.2);
-    transform-origin: 20% 40%;
+    transform-origin: top left;
 }
 
 #sketch{
@@ -624,3 +628,35 @@ a.back-to-top:active {
     }
 }
 /* ---------- End Privacy Layout  ---------- */
+
+
+.test-svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: scaledown 5s infinite;
+}
+
+@keyframes scaledown {
+    0% {
+      transform: scale(1.0);
+    }
+    30% {
+        transform: scale(0.3);
+    }
+    100% {
+        transform: scale(0.1);
+    }
+  }
+
+  .test {
+    position: absolute;
+}
+
+.test h1 {
+    position: absolute;
+}
+
+.t{
+    width: 25%;
+}

@@ -1,8 +1,8 @@
 // Thanks to Otis Chou for Initial Code
 
 const dots = []
-const factor = 0.003
-const count = 950
+const factor = 0.001
+const count = 200
 var radius = screen.height * 0.7 / 2
 function setup() {
 	var canvas = createCanvas(windowWidth /2 , windowWidth / 2);
@@ -16,7 +16,7 @@ function setup() {
 	ellipse(width /2, height /2, radius * 2 + 1)
 	
 	for (let i = 0; i < count; i++) {		
-		dots.push(new Dot(radius, [50,60], 18, 5))
+		dots.push(new Dot(radius, [30,30], 18, 5))
 	}
 
 }
