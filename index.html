@@ -11,6 +11,8 @@
     
     <!-- CSS only -->
     <link rel="stylesheet" type="text/css" href="assets/css/world.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
     <!-- Link to icons for Font Awesome 5 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
@@ -92,14 +94,18 @@
     </ul>
   </div>
   <!-- End mobile menu slide-out options -->
+
+  <svg class="test-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="500px" viewbox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+  <ellipse fill="#6D6E71" cx="250" cy="500" rx="250" ry="0"/>
+  <circle opacity="0.4" fill="none" stroke="#000000" stroke-width="8" stroke-miterlimit="10" cx="250" cy="250" r="239"/>
+  </svg>
   
   <!-- Hero Page -->
   
   <div class= "hero">
     <div class="test">
-    <div id="sketch-holder">
       <h1>Hello.</h1>
-    </div>
   </div>
   </div>
   <div class= "hero2">
@@ -113,29 +119,29 @@
   <div class="post reduce-margin">
       <div class="switch">
         <h2>Architecture</h2><p>The Online portfolio showing my work at John Fleming Architects, ICON Architects and Carleton University. The work shows my skills in analytical thinking, problem solving and creativity.</p>
-        <a href="architecture.html"><h3>Online Portfolio</h3></a>
+        <a href="architecture.html"><h3 class="aos-item" data-aos="fade-right" data-aos-duration="1000">Online Portfolio</h3></a>
       </div>
-      <a class="switch" href="architecture.html"><img src="assets/images/profiles/portfolio.jpg" alt="Architecture" class="overlay rellax" data-rellax-speed="0.2"></a> 
+      <a class="switch" href="architecture.html"><img src="assets/images/profiles/portfolio.jpg" alt="Architecture" class="overlay aos-item" data-aos="fade-up" data-aos-duration="1000"></a> 
   </div>
   <div class="post">
-    <a href="https://carderdesign.github.io/"><img src="assets/images/profiles/web-design.jpg" alt="WebDesign" class="overlay rellax" data-rellax-speed="0.2"></a>
+    <a href="https://carderdesign.github.io/"><img src="assets/images/profiles/web-design.jpg" alt="WebDesign" class="overlay aos-item" data-aos="fade-up" data-aos-duration="1000"></a>
     <div>
       <h2>Web Design</h2><p>These are projects from my web development program at IBAT College. The program developed an understanding of how do develop responsive web pages using modern HTML and CSS language with some basic JavaScript. Proudly received distinction from the work done in this course.</p>
-      <a href="about.html"><h3>See More</h3></a>
+      <a href="about.html"><h3 class="aos-item" data-aos="fade-left" data-aos-duration="1000">See More</h3></a>
     </div>
   </div>
   <div class="post">
     <div class="switch">
       <h2>Photography</h2><p>Photography has been an interest of mine since university. I primarily find an interest in shooting landscapes and architecture. The photographs shown are from my travels throughout Europe and North America.</p>
-      <a href="photography.html"><h3>Take a look!</h3></a>
+      <a href="photography.html"><h3 class="aos-item" data-aos="fade-right" data-aos-duration="1000">Take a look!</h3></a>
     </div>
-    <a class="switch" href="photography.html"><img src="assets/images/profiles/photography.jpg" alt="Photography" class="overlay rellax" data-rellax-speed="0.2"></a>
+    <a class="switch" href="photography.html"><img src="assets/images/profiles/photography.jpg" alt="Photography" class="overlay aos-item" data-aos="fade-up" data-aos-duration="1000"></a>
   </div>
-  <div class="post">
-    <a href="about.html"><img src="assets/images/profiles/about.jpg" alt="About" class="overlay rellax" data-rellax-speed="0.2"></a>
+  <div class="post last">
+    <a href="about.html"><img src="assets/images/profiles/about.jpg" alt="About" class="overlay aos-item" data-aos="fade-up" data-aos-duration="1000"></a>
     <div>
       <h2>About</h2><p>An online resume to learn a little bit more about me. The page describes my previous professional work experiences and my versatile set of skills. Please take a look to learn more about me!</p>
-      <a href="about.html"><h3>Learn More</h3></a>
+      <a href="about.html"><h3 class="aos-item" data-aos="fade-left" data-aos-duration="1000">Learn More</h3></a>
     </div>
   </div>
     
@@ -151,6 +157,14 @@
 
   <!-- Back to top -->
   <a href="#" class="back-to-top scroll display-none"><i class="fas fa-chevron-up"></i></a>
+
+  <!-- Fade Script -->
+  <script src="assets/js/aos.js"></script>
+  <script>
+  AOS.init({
+    easing: 'ease-in-out-sine'
+  });
+  </script>
 
   <!-- Menu Scripts -->
   <script type="text/javascript" src="assets/js/menu.js"></script>
@@ -174,21 +188,9 @@
   });
   </script>
   
-  <!-- Rellax Script -->
-  <script type="text/javascript" src="assets/js/rellax.js"></script>
-  <script>
-    var rellax = new Rellax('.rellax', {
-      // center: true
-      callback: function (position) {
-        // callback every position change
-        console.log(position);
-      },
-      breakpoints: [576, 768, 1024]
-    });
-  </script>
 
-  <!-- Processing Sketch -->
-  <script src="assets/js/mySketch.js" type="text/javascript"></script><script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js" type="text/javascript"></script>
+  <!-- Processing Sketch 
+  <script src="assets/js/mySketch.js" type="text/javascript"></script><script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js" type="text/javascript"></script>-->
 
 </body>
 </html>
