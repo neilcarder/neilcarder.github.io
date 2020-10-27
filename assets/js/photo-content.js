@@ -48,7 +48,8 @@ $(document).ready(function() {
     });
 
     //Dissable Right click over images
-    $('#content').on('contextmenu', 'img', function(e){
+
+    $(document).on('contextmenu', 'img', function(e){
         return false;
       });
 
