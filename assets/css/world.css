@@ -99,12 +99,35 @@ p {
 /* ----- Home Page Layout -----*/
 
 .hero {
-    position: absolute;
-    margin: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    background-position: bottom;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 80%;
+    width: 100%;
+    z-index: 99;
+}
+.shadow-one {background-image: url('../images/profiles/name-1.jpg')}
+.shadow-two {background-image: url('../images/profiles/name-2.jpg')}
+.shadow-three {background-image: url('../images/profiles/name-3.jpg')}
+.shadow-four {background-image: url('../images/profiles/name-4.jpg')}
+.shadow-five {background-image: url('../images/profiles/name-5.jpg')}
+
+
+.hello-intro {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 30%;
+    margin-top: 30%;
+    z-index: 99;
+    width: 30%;
 }
 
 
@@ -129,50 +152,14 @@ p {
     position: absolute;
 }
 
-.hero2 {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin-left: 50%;
-    z-index: 99;
-    width: 40%;
-}
 
 @media all and (max-width:768px) { 
-
-    .hero {
-        margin: 15% 25%;
-    }
 
     .hero h1 {
         font-size: calc(60px + (100 - 60) * ((100vw - 320px) / (1600 - 320)));;;
     }
 
-    .hero2 {
-        height: 50vh;
-        margin-left: 30%;
-        margin-top: 50%;
-    }
  
-}
-
-@media all and (max-width:480px) { 
-
-    .hero {
-        margin: 25% 25%;
-    }
-
-    .hero2 {
-        margin-top: 60%;
-    }
-
-}
-
-.title-container {
-    margin-right: auto;
-    margin-left: auto;
 }
 
 /* Home page links and image hovers */
