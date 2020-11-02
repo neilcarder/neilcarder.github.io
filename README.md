@@ -11,7 +11,7 @@ Site was built using below tools:
 ## Files & directories
 Files and directories are farily simply layed out. All html locations are in the root folder. Images, CSS and JS files can be found in their folder locations under the Assets folder. 
 
-![Directory Diagram](https://neilcarder.github.io/assets/images/redme/directory.jpg)
+![Directory Diagram](https://github.com/neilcarder/neilcarder.github.io/assets/images/redme/directory.jpg)
 
 **CSS techniques**
 about.html and architecture.html contain a combiantion of GRID and FLEXBOX. Each page layout can be found in their respective CSS file (e.x about.html and about.css). The photography page uses flexbox but also uses tjgallery.js to arrange the image layout of stills.html.
