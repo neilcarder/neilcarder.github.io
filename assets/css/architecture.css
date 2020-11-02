@@ -50,7 +50,11 @@
     font-size: calc(250px + (550 - 250) * ((100vw - 320px) / (1600 - 320)));
     font-weight: 500;
     line-height: 0.7;
+<<<<<<< HEAD
     color: #eaeaea;
+=======
+    color: #f0f0f0;
+>>>>>>> b77dc3dbd60d4a46f015c0c879cafbd7d18a4575
     width: 50%;
     margin-left: -5rem;
     margin-bottom: 0;
@@ -83,11 +87,19 @@ h3 a:hover, h3 a:focus, h3 a:active {
 /* Paragraph links ends */
 
 .container-section-heading{
+<<<<<<< HEAD
     background-color: #eaeaea;
     width: 100%;
     height: 30%;
     margin-bottom: 100px;
     z-index: 99;
+=======
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 30%;
+    margin-bottom: 100px;
+    z-index: 100;
+>>>>>>> b77dc3dbd60d4a46f015c0c879cafbd7d18a4575
     position: relative;
 }
 
