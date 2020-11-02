@@ -1,18 +1,17 @@
 # Online Portfolio | Neil Carder 
 
-Project is aimed at developing and learning front-end web-development using my previous work-experience/hobbies as the content. Will be continuously updating this project as I learn more. 
+This project is aimed at developing and learning front-end web-development using my previous work-experience/hobbies as the content. I will be continuously updating this project as I learn more. 
 
 ## Technologies
--Site uses HTML, CSS and JavaScript files
--Jquerey
--Processing
--Node.js with browsersync needed if locally running photography.html
+Site was built using below tools:
+- Site uses HTML, CSS and JavaScript files
+- Jquerey
+- Node.js with browsersync needed if locally running photography.html
 
 ## Files & directories
 Files and directories are farily simply layed out. All html locations are in the root folder. Images, CSS and JS files can be found in their folder locations under the Assets folder. 
 
-![directory](assets/images/redme/directory.jpg)
-Format: ![Alt Text](url)
+![Directory Diagram](https://neilcarder.github.io/assets/images/redme/directory.jpg)
 
 **CSS techniques**
 about.html and architecture.html contain a combiantion of GRID and FLEXBOX. Each page layout can be found in their respective CSS file (e.x about.html and about.css). The photography page uses flexbox but also uses tjgallery.js to arrange the image layout of stills.html.

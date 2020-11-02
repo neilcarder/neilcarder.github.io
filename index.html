@@ -96,39 +96,41 @@
   <!-- End mobile menu slide-out options -->
 
   <!-- Hero Page -->
-  <div id="changing-background" class= "hero shadow-one">
-    <div class= "hello-intro">
-      <div>
-        <h2>Hello.</h2>
-        <h3>I’ve made this website to easily showcase myself and to learn a bit more about web design in the process. Please take a look around!</h3>
-      </div>
-    </div>
+
+  <div class="hero r-gradient text-shadow">
+    <h1>Neil Carder</h1>
+  </div>
+  <div class= "hello-intro">
+    <a href="#cta" class="cta">
+      <i class="fas fa-arrow-down"></i>
+    </a>
+    <h3>Please have a look around! I’ve made this website to easily showcase myself and to learn a bit more about web design in the process.</h3>
   </div>
 
   <!-- Links -->
-  <div class="post reduce-margin">
+  <div class="post reduce-margin" id="cta">
       <div class="switch">
         <h2>Architecture</h2><p>The Online portfolio showing my work at John Fleming Architects, ICON Architects and Carleton University. The work shows my skills in analytical thinking, problem solving and creativity.</p>
-        <a href="architecture.html"><h3 class="aos-item" data-aos="fade-right" data-aos-duration="1000">Online Portfolio</h3></a>
+        <a href="architecture.html"><h3 class="aos-item" data-aos="fade-right" data-aos-duration="700">Online Portfolio</h3></a>
       </div>
-      <a class="switch" href="architecture.html"><img src="assets/images/profiles/portfolio.jpg" alt="Architecture" class="overlay aos-item" data-aos="fade-up" data-aos-duration="1000"></a> 
+      <a class="switch" href="architecture.html"><img src="assets/images/profiles/portfolio.jpg" alt="Architecture" class="overlay aos-item" data-aos="fade-up" data-aos-duration="700"></a> 
   </div>
   <div class="post">
-    <a href="https://carderdesign.github.io/"><img src="assets/images/profiles/web-design.jpg" alt="WebDesign" class="overlay aos-item" data-aos="fade-up" data-aos-duration="1000"></a>
-    <div>
+    <a href="https://carderdesign.github.io/"><img src="assets/images/profiles/web-design.jpg" alt="WebDesign" class="overlay aos-item" data-aos="fade-up" data-aos-duration="700"></a>
+    <div class="h3-hover">
       <h2>Web Design</h2><p>These are projects from my web development program at IBAT College. The program developed an understanding of how do develop responsive web pages using modern HTML and CSS language with some basic JavaScript. Proudly received distinction from the work done in this course.</p>
-      <a href="about.html"><h3 class="aos-item" data-aos="fade-left" data-aos-duration="1000">See More</h3></a>
+      <a href="about.html"><h3 class="aos-item" data-aos="fade-left" data-aos-duration="700">See More</h3></a>
     </div>
   </div>
   <div class="post">
     <div class="switch">
       <h2>Photography</h2><p>Photography has been an interest of mine since university. I primarily find an interest in shooting landscapes and architecture. The photographs shown are from my travels throughout Europe and North America.</p>
-      <a href="photography.html"><h3 class="aos-item" data-aos="fade-right" data-aos-duration="1000">Take a look!</h3></a>
+      <a href="photography.html"><h3 class="aos-item" data-aos="fade-right" data-aos-duration="700">Take a look!</h3></a>
     </div>
-    <a class="switch" href="photography.html"><img src="assets/images/profiles/photography.jpg" alt="Photography" class="overlay aos-item" data-aos="fade-up" data-aos-duration="1000"></a>
+    <a class="switch" href="photography.html"><img src="assets/images/profiles/photography.jpg" alt="Photography" class="overlay aos-item" data-aos="fade-up" data-aos-duration="700"></a>
   </div>
   <div class="post last">
-    <a href="about.html"><img src="assets/images/profiles/about.jpg" alt="About" class="overlay aos-item" data-aos="fade-up" data-aos-duration="1000"></a>
+    <a href="about.html"><img src="assets/images/profiles/about.jpg" alt="About" class="overlay aos-item" data-aos="fade-up" data-aos-duration="700"></a>
     <div>
       <h2>About</h2><p>An online resume to learn a little bit more about me. The page describes my previous professional work experiences and my versatile set of skills. Please take a look to learn more about me!</p>
       <a href="about.html"><h3 class="aos-item" data-aos="fade-left" data-aos-duration="1000">Learn More</h3></a>
@@ -148,6 +150,10 @@
   <!-- Back to top -->
   <a href="#" class="back-to-top scroll display-none"><i class="fas fa-chevron-up"></i></a>
 
+  <!-- Hero Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script src="assets/js/intro.js"></script>
+  
   <!-- Fade Script -->
   <script src="assets/js/aos.js"></script>
   <script>
@@ -165,7 +171,7 @@
   window.cookieconsent.initialise({
     "palette": {
       "popup": {
-        "background": "#EAEAEA"
+        "background": "#f0f0f0"
       },
       "button": {
         "background": "#ffffff",
@@ -177,6 +183,7 @@
     }
   });
   </script>
+
   
 
   <!-- Processing Sketch 
