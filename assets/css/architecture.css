@@ -294,8 +294,14 @@ h3 a:hover, h3 a:focus, h3 a:active {
     grid-area: interior1-a;
     border: solid 1px;
     height: 100%;
+    width: 100%;
 }
 
+.arch-4 img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+  }
 .arch-5 {
     grid-area: description-a;
     line-height: 1.3;

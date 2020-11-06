@@ -5,7 +5,7 @@ $(document).ready(function(){
             let count = 0, countup = true;
             var interval = setInterval(function() {
             
-                if ($(this).scrollTop() < 400) { //stops loop on scroll. 
+                if ($(window).scrollTop() < 400) { //stops loop on scroll. 
                     //reverses count when count id done. 
                     if (countup)
                     {
@@ -24,7 +24,7 @@ $(document).ready(function(){
               let textCount = ((count / 10) - 5)*(-1); //converts count to a pixel number for shadows
               let textCount2 = ((count / 5) - 10)*(-1); //converts count to a pixel number for shadows
 
-              $('.r-gradient').css({'background' : 'radial-gradient(at ' + count + '% ' + '50%, #fdfdfd, #eaeaea)'});
+              $('.r-gradient').css({'background' : 'linear-gradient(0deg, rgba(234,234,234,1) 0%, rgba(234,234,234,1) 23%, rgba(253,253,253,0) 100%), radial-gradient(at ' + count + '% ' + '50%, #fdfdfd, #eaeaea)'});
               $('h1').css({
                 'background' : 'radial-gradient(at ' + count + '% ' + '50%, #777, #000)', 
                 '-webkit-background-clip' : 'text',

@@ -2,7 +2,8 @@
 var prevScrollpos = window.pageYOffset;
 function navFunction() {
   var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+  if (prevScrollpos > currentScrollPos || window.scrollY==0)
+  {
     document.getElementById("navbar").style.top = "0"
     document.getElementById("navbar-2").style.top = "0";
   } else {
