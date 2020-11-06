@@ -300,11 +300,10 @@ h3 a:hover, h3 a:focus, h3 a:active {
 .arch-4 {
     grid-area: interior1-a;
     border: solid 1px;
-    max-width: 100%;
-    min-height: 100%;
-    min-width: 100%;
-    max-width: 100%;
-    object-fit: cover;
+    background-image: url("../images/architecture/03-archives-of-unfinished-work/web/vingette.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 
 .arch-5 {
