@@ -401,7 +401,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 .comm-4 {
     grid-area: birdseye-c;
     border: solid 1px;
-    background-image: url("images/architecture/04-community-centre/web/site-view.jpg");
+    background-image: url("../images/architecture/04-community-centre/web/site-view.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 350px;
