@@ -10,6 +10,12 @@
     height: 100vh;
 }
 
+@media(max-width: 1024px){
+    .hero-arch {
+        background-image: url('../images/architecture/background-460.jpg');  
+     }
+ }
+
 .block-it{
     display: flex;
     justify-content: space-between;
@@ -294,6 +300,11 @@ h3 a:hover, h3 a:focus, h3 a:active {
 .arch-4 {
     grid-area: interior1-a;
     border: solid 1px;
+    max-width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .arch-5 {
@@ -323,7 +334,6 @@ h3 a:hover, h3 a:focus, h3 a:active {
 .arch-9 {
     grid-area: interior3-a;
     border: solid 1px;
-    height: 100%;
 }
 
 .archives {
