@@ -294,7 +294,6 @@ h3 a:hover, h3 a:focus, h3 a:active {
 .arch-4 {
     grid-area: interior1-a;
     border: solid 1px;
-    height: 100%;
 }
 
 .arch-5 {
