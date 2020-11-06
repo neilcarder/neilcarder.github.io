@@ -413,7 +413,12 @@ h1 {
 .display-block { display: block }
 .display-none  { display: none }
 
-.bg-light-gray { background-color: #eaeaea }
+.bg-light-gray { background-color: #eaeaea; 
+                box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+                inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
+                -7px -7px 20px rgba(255, 255, 255, 1),
+                inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+}
 
 /* ============ END UTILITY CLASSES ======== */
 
@@ -471,7 +476,7 @@ h1 {
 /* menu links aligned horizontally */
 .container-menu-desktop ul li {
     display: inline-block;
-    margin: 0 35px 0 0; /* spacing at right of menu links */
+    margin: 0 30px 0 0; /* spacing at right of menu links */
 }
 
 @media all and (max-width:767px) { 

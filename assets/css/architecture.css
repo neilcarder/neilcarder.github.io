@@ -207,6 +207,18 @@ h3 a:hover, h3 a:focus, h3 a:active {
     margin: -70px 0px 0px 0px;
 }
 
+@media all and (max-width:1024px) {
+ 
+    .title-right { 
+        margin-top: -6%;
+    }
+    
+    .title-left { 
+        margin-top: -6%;
+    }
+
+}
+
 .flex-back div { 
     width: 58%; 
     padding: 2% 1%;

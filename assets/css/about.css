@@ -1,3 +1,7 @@
+.aboutpage {
+  background-color: #f0f0f0;
+}
+
 .hero-about{
   display: flex;
   width: 100%;
@@ -21,7 +25,7 @@
 
 .sheet {
   display: grid;
-  width: 95%;
+  width: 90%;
   padding: 2%;
   margin: 8% auto;
 }
@@ -113,57 +117,120 @@
 /* ----- End of Grid - Page 2 ----- */
 
 /* ----- Start of Grid - Page 3 ----- */
+
 .g3-i-1 {
-  grid-area: sellbytel;
+  grid-area: references;
   max-width: 100%;
-  text-align: center;
-  align-self: end;
+  align-self: center;
+  transform: rotate(-90deg) translateX(-85%) translateY(50%);
+  -moz-transform: rotate(-90deg) translateX(-85%) translateY(50%);
+  -webkit-transform: rotate(-90deg) translateX(-85%) translateY(50%);
+  font-size: calc(24px + (130 - 24) * ((100vw - 320px) / (1600 - 320)));;;
+  z-index: 1;
   /* text-align: right; */
 }
 
+@media only screen and (max-width: 678px) {
+
+  .g3-i-1 {
+    transform: rotate(0deg) translate(0%);
+    -moz-transform: rotate(0deg) translate(0%);
+    -webkit-transform: rotate(0deg) translate(0%);
+    justify-self: start;
+  }
+  
+}
+
 .g3-i-2 {
-  text-align: center;
+  text-align: left;
   max-width: 100%;
-  padding: 0 8%;
-  grid-area: desc-sell;
+  padding: 2% 15%;
+  grid-area: desc-ref;
+  z-index: 1;
   /* align-self: end; */
 }
 
 .g3-i-3 {
   grid-area: quote;
   max-width: 100%;
-  padding: 2% 15%;
-  z-index: 99;
+  padding: 0% 15%;
+  z-index: 1;
 }
 
 .g3-i-4 {
   grid-area: quote2;
   max-width: 100%;
-  padding: 2% 15%;
-  z-index: 99;
+  padding: 0% 15%;
+  z-index: 1;
 }
 
 .oval {
-  grid-area: quote;
-  height: 200%;
-  width: 95% !important;
-  background: #E1D0AE;
-  border-radius: 60%;
-  transform: rotate(5deg);
-  opacity: 0.4;
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+  height: 100%;
+  width: 95% ;
+  background-image: radial-gradient(circle at top right, #E1D0AE, #fdbc89 50%);
+  border-radius: 42% 58% 70% 30% / 48% 69% 31% 52% ;
+  opacity: 0.7;
   justify-self: center;
+  align-self: end;
+  box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+              inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
+              -7px -7px 20px rgba(255, 255, 255, 1),
+              inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+  z-index: 0;
+  animation: blob 30s cubic-bezier(.86,0,.07,1) alternate-reverse infinite;
+  -webkit-animation: blob 30s cubic-bezier(.86,0,.07,1) alternate-reverse infinite;
+}
+
+@media only screen and (max-width: 678px) {
+
+  .oval {
+    grid-column: 1 / 2;
+    grid-row: 2 / 5;
+  }
+  
+}
+
+
+
+@keyframes blob {
+  0%   {transform: scale(1) skew(1deg, 2deg)}
+  25%  {transform: skew(-1deg, 1deg)}
+  50%  {transform: skew(1deg, -1deg)}
+  100% {transform: scale(1.05) skew(2deg, 1deg)}
+}
+
+@-webkit-keyframes blob {
+  0%   {-webkit-transform: scale(1) skew(1deg, 2deg)}
+  25%  {-webkit-transform: skew(-1deg, 1deg)}
+  50%  {-webkit-transform: skew(1deg, -1deg)}
+  100% {-webkit-transform: scale(1.05) skew(2deg, 1deg)}
 }
 
 .three {
   height: 75%;
-  grid-template-rows: repeat(3, 18%);
-  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 25%);
+  grid-template-columns: 15% 85%;
   grid-template-areas: 
-    "sellbytel"
-    "desc-sell"
+    "references desc-ref"
+    "references quote"
+    "references quote2";
+  gap: 20px;
+}
+
+@media only screen and (max-width: 678px) {
+
+  .three {
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "references"
+    "desc-ref"
     "quote"
     "quote2";
-  gap: 20px;
+  }
+
 }
 
 .sheet.three h3{
@@ -175,6 +242,8 @@
   letter-spacing: 1px;
   line-height: 1.5em;
 }
+
+
 
 @media only screen and (max-width: 678px) {
 
@@ -260,3 +329,8 @@
 }
 
 /* ----- Small Screens ----- */
+
+
+.ref{
+  margin-left: 100px;
+}
