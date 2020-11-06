@@ -12,7 +12,7 @@
 
 @media(max-width: 1024px){
     .hero-arch {
-        background-image: url('../images/architecture/background-460.jpg');  
+        background-image: url('../images/architecture/background-900.jpg');  
      }
  }
 
@@ -401,7 +401,9 @@ h3 a:hover, h3 a:focus, h3 a:active {
 .comm-4 {
     grid-area: birdseye-c;
     border: solid 1px;
-    height: 100%;
+    background-image: url("images/architecture/04-community-centre/web/site-view.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 350px;
 }
 
