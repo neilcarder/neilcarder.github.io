@@ -37,6 +37,7 @@ $(document).ready(function(){
             }, 30);
 
     } else {
+     
         //creates shadow and gradients based on mouse location
         $(document).mousemove(function(event) {
             windowWidth = $(window).width();
@@ -45,6 +46,10 @@ $(document).ready(function(){
             //turns mouse location into percentage
             mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
             mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
+
+            if (mouseYpercentage > 100){
+              mouseYpercentage = 100;
+            };
     
             //turns mouse percentage into manageable pixel size for shadows
             shadowOneX = ((mouseXpercentage / 5) - 10)*(-1);
