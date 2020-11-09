@@ -76,14 +76,14 @@
 h3 a:link, h3 a:visited {
     text-decoration: none;
     color: #455C80;
-    padding-bottom: 2px;
+    padding-bottom: 1.5px;
     border-bottom: solid 2px #455C80;
 }
 
 h3 a:hover, h3 a:focus, h3 a:active {
     text-decoration: none;
     color: green;
-    padding-bottom: 2px;
+    padding-bottom: 1.5px;
     border-bottom: solid 2px green;
 }
 /* Paragraph links ends */
@@ -114,7 +114,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
     justify-content: center;
     flex-wrap: wrap;
     padding: 2% 0;
-    margin: 0 7% 150px 7%;
+    margin: 0 10% 150px 10%;
 }
 
 @media all and (min-width:1500px) {
@@ -142,7 +142,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
         display: flex; 
         flex-flow: row wrap; 
         justify-content: space-between;
-        margin: 200px 7%;
+        margin: 200px 10%;
         min-width: 700px;
         padding: 3.5%;
         height: 100%;
@@ -345,6 +345,10 @@ h3 a:hover, h3 a:focus, h3 a:active {
 .arch-9 {
     grid-area: interior3-a;
     border: solid 1px;
+    background-image: url("../images/architecture/03-archives-of-unfinished-work/web/vingette2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 
 .archives {
@@ -417,6 +421,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 350px;
+    background-position: center;
 }
 
 .comm-5 { grid-area: diagram-c }
@@ -497,7 +502,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
     grid-area: title-w;
     text-align: right;
     align-self: end;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 .wind-3 { grid-area: concept2-w }
@@ -510,6 +515,11 @@ h3 a:hover, h3 a:focus, h3 a:active {
 .wind-5 {
     grid-area: birdeye-w;
     border: solid 1px;
+    background-image: url("../images/architecture/05-wind-research-centre/web/birds-eye.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 }
 
 .wind-6 {
@@ -524,7 +534,10 @@ h3 a:hover, h3 a:focus, h3 a:active {
 
 .wind-8 { grid-area: rose-w }
 
-.wind-9 { grid-area: section-w }
+.wind-9 { 
+    grid-area: section-w;
+    align-self: center; 
+}
 
 .wind-10 {
     grid-area: elevation-w;
@@ -567,6 +580,84 @@ h3 a:hover, h3 a:focus, h3 a:active {
 }
 
 /* ----- End of RESEARCH CENTRE Page Setup ----- */
+
+/* ----- ARCHITECTURE DESK Page Setup ----- */
+
+.desk-1 {
+    grid-area: axo-d;
+    background: transparent;
+    width: 90%;
+    justify-self: end;
+}
+
+.desk-2 {
+    grid-area: title-d;
+    align-self: end;
+    justify-self: end;
+    text-align: right;
+    margin-right: -20%;
+}
+
+.desk-3 {
+    grid-area: descr-d;
+    font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (1600 - 320)));
+    line-height: 1.3;
+    text-align: left;
+    align-self: start;
+}
+/* .desk-4 {
+    grid-area: descr2-d;
+    font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (1600 - 320)));
+    line-height: 1.3;
+    text-align: left;
+    align-self: start;
+} */
+
+.desk-5 {
+    grid-area: tech-drawings-d;
+    align-self: center;
+}
+
+.desk-6 { 
+    grid-area: desk-closed-d;
+    border: solid 1x;
+}
+
+.desk-7 {
+    grid-area: desk-open-d;
+    background-image: url("../images/architecture/06-b22-legacy/web/desk-open.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border: solid 1x;
+}
+
+.desk {
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    grid-template-areas: 
+      "title-d axo-d axo-d"
+      "descr-d descr-d tech-drawings-d"
+      "desk-closed-d desk-closed-d desk-open-d";
+}
+
+/* DESK Mobile Grid */
+@media all and (max-width:767px) {
+ 
+    .wind { 
+        grid-template-columns: 80vw;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "axo-d"
+            "title-d"
+            "descr-d"
+            "tech-drawings-d"
+            "desk-closed-d"
+            "desk-open-d";
+    }
+
+}
+
+
 
 
 
