@@ -529,7 +529,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 
 .wind-7 {
     grid-area: exterior2-w;
-    border: solid 1x;
+    border: solid 1px;
 }
 
 .wind-8 { grid-area: rose-w }
@@ -620,7 +620,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 
 .desk-6 { 
     grid-area: desk-closed-d;
-    border: solid 1x;
+    border: solid 1px;
 }
 
 .desk-7 {
@@ -629,7 +629,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    border: solid 1x;
+    border: solid 1px;
 }
 
 .desk {
@@ -643,7 +643,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 /* DESK Mobile Grid */
 @media all and (max-width:767px) {
  
-    .wind { 
+    .desk { 
         grid-template-columns: 80vw;
         grid-template-rows: auto;
         grid-template-areas: 
@@ -656,6 +656,91 @@ h3 a:hover, h3 a:focus, h3 a:active {
     }
 
 }
+
+/* ----- End of ARCHITECTURE desk Page Setup ----- */
+
+/* ----- Start of SOUND INSTALLATION Page Setup ----- */
+
+.sound-1 {
+    grid-area: title-s;
+    background: transparent;
+    width: 90%;
+    justify-self: center;
+    text-align: center;
+}
+
+.sound-2 {
+    grid-area: pano-s;
+    align-self: center;
+    justify-self: center;
+}
+
+.sound-3 {
+    grid-area: descr-s;
+    font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (1600 - 320)));
+    line-height: 1.3;
+    text-align: left;
+    align-self: start;
+}
+.sound-4 {
+    grid-area: chart-s;
+    border: solid 1px;
+    align-self: center;
+}
+
+.sound-5 {
+    grid-area: listening-s;
+    background-image: url("../images/architecture/07-sound-installation/web/progress-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    border: solid 1px;
+}
+
+.sound-6 { 
+    grid-area: install1-s;
+    border: solid 1px;
+}
+
+.sound-7 {
+    grid-area: install2-s;
+    border: solid 1px;
+}
+
+.sound-8 {
+    grid-area: install3-s;
+    border: solid 1px;
+}
+
+
+.sound {
+    grid-template-columns: 3fr repeat(3, 1fr);
+    grid-template-areas: 
+      "title-s title-s title-s title-s"
+      "pano-s pano-s pano-s pano-s"
+      "descr-s chart-s chart-s chart-s"
+      "listening-s install1-s install2-s install3-s";
+}
+
+@media all and (max-width:767px) {
+ 
+    .sound { 
+        grid-template-columns: 80vw;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "title-s"
+            "pano-s"
+            "descr-s"
+            "chart-s"
+            "listening-s"
+            "install1-s"
+            "install2-s"
+            "install3-s";
+    }
+
+}
+
+/* ----- End of SOUND INSTALLATION Page Setup ----- */
 
 
 
