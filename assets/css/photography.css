@@ -1,13 +1,19 @@
 .content{
 	margin-left: 18%;
-	margin-top: 8%
+	margin-top: 8%;
+	/* margin-bottom: 300px; */
+}
+
+.content:last-child{
+	margin-bottom: 300px;
 }
 
 @media all and (max-width:767px) {
 
 	.content{
 		margin-left: 2%;
-		margin-top:30%
+		margin-top:30%;
+		/* margin-bottom: 100px; */
 	}
 	
 }
@@ -43,13 +49,6 @@
 .animate__animated.animate__fadeIn {
 	--animate-duration: 3s;
 }
-
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-	.modal-content {
-	  width: 100%;
-	}
-} 
 
 /* ---Mobile Adjustments--- */
 @media all and (max-width:767px) {

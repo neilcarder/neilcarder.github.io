@@ -31,9 +31,10 @@ $(document).ready(function() {
     counter = -1; //starts the counter at "two" becasue of counter + 1 
 
     $(document).scroll(function() {    
-        var scrollToBottom = $(window).scrollTop() == ($(document).height() - $(window).height()); // when scroll gets to bottom of page
-        //$(window).scrollTop() + $(window).height() > $(document).height() - 100
-        //$(window).scrollTop() == ($(document).height() - $(window).height())
+        //var scrollToBottom = $(window).scrollTop() == ($(document).height() - $(window).height()); // when scroll gets to bottom of page
+        var scrollHeight = $(document).height();
+	    var scrollPosition = $(window).height() + $(window).scrollTop();
+	    var scrollToBottom =(scrollHeight - scrollPosition) / scrollHeight === 0;
         //Lazy Load for Stills Section
         if ((scrollToBottom) && $("*").hasClass('stills')) { //when scroll reaches bottom and has the right class of .stills
             if(counter == 4){
