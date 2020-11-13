@@ -1,7 +1,7 @@
 //Photography scripts
 $(document).ready(function() {
 
-    // set global ajax options:
+    // Shows and Hides Spinner for AJAX Requests
      $.ajaxSetup({
         beforeSend: function(xhr, status) {
             // TODO: show spinner
@@ -32,6 +32,8 @@ $(document).ready(function() {
 
     $(window).scroll(function() {    
         var scrollToBottom = $(window).scrollTop() == ($(document).height() - $(window).height()); // when scroll gets to bottom of page
+        //$(window).scrollTop() + $(window).height() > $(document).height() - 100
+        //$(window).scrollTop() == ($(document).height() - $(window).height())
         //Lazy Load for Stills Section
         if ((scrollToBottom) && $("*").hasClass('stills')) { //when scroll reaches bottom and has the right class of .stills
             if(counter == 4){
@@ -50,7 +52,7 @@ $(document).ready(function() {
         } 
         //Lazy Load for Montage Section
         } else if ((scrollToBottom) && $("*").hasClass('montage-flex')) { //when scroll reaches bottom and has the right class of montage-flex
-            if(counter == 2){
+            if(counter == 3){
                 // If max html-files reached, Do Nothing
                 counter = counter
             } else {
@@ -77,7 +79,7 @@ $(document).ready(function() {
         });
     });
 
-    //Loading Stills Content on Click script - Only Loads the first Snippe
+    //Loading Joiner Content on Click script - Only Loads the first Snippet
     $('.joiner-content').click(function() {
         $("*").removeClass("stills"); //ensures class is removed for the lazy Loading loading statment to work
         $("#content").load("snippets/joiners.html");
