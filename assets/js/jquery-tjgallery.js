@@ -19,7 +19,7 @@
 			var $settings = $.extend({
 				selector		:'img',
 				row_min_height	: 370,
-				margin			: 24
+				margin			: 18
 			}, options);
 
 			

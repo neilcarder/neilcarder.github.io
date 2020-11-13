@@ -71,10 +71,13 @@ p {
 .spinner {
     width: 100vw;
     height: 100vh;
-    background-color: #eaeaea;
-    z-index: 9999998; 
+    background: transparent;
+    /* background: #eaeaea; */
+    position: fixed;
+    z-index: 998;
+    margin-left: 18%; 
 }
- 
+
 #spinner img {
     position: fixed;
     top: 50%;
@@ -82,7 +85,7 @@ p {
     transform: translate(-50%, -50%);
     height: 150px;
     width: 150px;
-    z-index: 9999999; 
+    z-index: 999; 
 }
 
 /* ----- Home Page Layout Begins -----*/
