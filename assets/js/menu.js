@@ -106,3 +106,8 @@ function toggleMobileMenu() {
         elemBody.classList.remove('no-scroll');                                
     }
 }
+
+//Removes hastags from internal links
+$(window).on('hashchange', function(e){
+    history.replaceState ("", document.title, e.originalEvent.oldURL);
+});
