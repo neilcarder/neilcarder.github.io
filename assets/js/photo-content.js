@@ -13,6 +13,9 @@ $(document).ready(function() {
         }
     });
 
+    //variable for Lightbox Gallery
+    var gallery = new SimpleLightbox('.content a', {});
+
     //Content of first load
     $("#content").load("snippets/stills.html", function() {
         // wait until image content is loaded....
@@ -20,9 +23,7 @@ $(document).ready(function() {
             $('.stills').tjGallery()(function() {
             });     
         });
-        (function() {
-            var $gallery = new SimpleLightbox('.stills a', {});
-        })();
+        gallery.refresh(); //destroys and rebuilds LightBox Gallery
     });
     
     // *****My version of a Lazy load script*****
@@ -44,9 +45,7 @@ $(document).ready(function() {
                     $("#content").waitForImages(function() { //applies Image layout after all images have been loaded
                         $('.stills.' + snippetNumber).tjGallery();
                     });
-                (function() {
-                    var $gallery = new SimpleLightbox('.content a', {}); // ensures lightbox is added to all new loaded images
-                })();       
+                    gallery.refresh(); //destroys and rebuilds LightBox Gallery
             }); 
         } 
         //Lazy Load for Montage Section
@@ -73,9 +72,7 @@ $(document).ready(function() {
             $("#content").waitForImages(function() {
                 $('.stills').tjGallery();
             });
-            (function() {
-                var $gallery = new SimpleLightbox('.stills a', {});
-            })();
+            gallery.refresh(); //destroys and rebuilds LightBox Gallery
             counter = -1; //resets the counter if user has previously scrolled through
         });
     });
