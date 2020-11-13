@@ -49,7 +49,7 @@ var SimpleLightbox = /*#__PURE__*/function () {
       close: true,
       closeText: '&times;',
       swipeClose: true,
-      showCounter: true,
+      showCounter: false,
       fileExt: 'png|jpg|jpeg|gif|webp',
       animationSlide: true,
       animationSpeed: 250,
