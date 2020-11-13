@@ -30,7 +30,7 @@ $(document).ready(function() {
     var snippets = ['two', 'three', 'four', 'five', 'six'], //array for snippet files
     counter = -1; //starts the counter at "two" becasue of counter + 1 
 
-    $(window).scroll(function() {    
+    $(document).scroll(function() {    
         var scrollToBottom = $(window).scrollTop() == ($(document).height() - $(window).height()); // when scroll gets to bottom of page
         //$(window).scrollTop() + $(window).height() > $(document).height() - 100
         //$(window).scrollTop() == ($(document).height() - $(window).height())
