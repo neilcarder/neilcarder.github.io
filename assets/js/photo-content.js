@@ -26,15 +26,15 @@ $(document).ready(function() {
     });
     
     // *****My version of a Lazy load script*****
-    var snippets = ['two', 'three', 'four'], //array for snippet files
+    var snippets = ['two', 'three', 'four', 'five', 'six'], //array for snippet files
     counter = -1; //starts the counter at "two" becasue of counter + 1 
 
     $(window).scroll(function() {    
         var scrollToBottom = $(window).scrollTop() == ($(document).height() - $(window).height()); // when scroll gets to bottom of page
         //Lazy Load for Stills Section
         if ((scrollToBottom) && $("*").hasClass('stills')) { //when scroll reaches bottom and has the right class of .stills
-            if(counter == 2){
-                // Do Nothing
+            if(counter == 4){
+                // If max html-files reached, Do Nothing
                 counter = counter
             } else {
                 counter = (counter + 1) // increment the counter - Add % snippets.length; to reset the counter to 0  
@@ -45,14 +45,14 @@ $(document).ready(function() {
                         $('.stills.' + snippetNumber).tjGallery();
                     });
                 (function() {
-                    var $gallery = new SimpleLightbox('.stills a', {}); // ensures lightbox is added to all new loaded images
+                    var $gallery = new SimpleLightbox('.content a', {}); // ensures lightbox is added to all new loaded images
                 })();       
             }); 
         } 
         //Lazy Load for Montage Section
         } else if ((scrollToBottom) && $("*").hasClass('montage-flex')) { //when scroll reaches bottom and has the right class of montage-flex
             if(counter == 2){
-                // Do Nothing
+                // If max html-files reached, Do Nothing
                 counter = counter
             } else {
                 counter = (counter + 1) // increment the counter - Add % snippets.length; to reset the counter to 0  
