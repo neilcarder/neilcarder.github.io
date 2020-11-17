@@ -124,7 +124,7 @@
 	}
 
 	.photo-nav *{
-		margin-bottom: 35%;
+		margin-bottom: 15%;
 		font-size: 12px;
 		padding: 1.5%; /* for flexbox */
 	}
@@ -135,8 +135,8 @@
 	}
 
 	.photo-nav {
-		height: 10%;
-		min-height: 150px;
+		height: 80px;
+		min-height: 100px;
 	}
 }
 
