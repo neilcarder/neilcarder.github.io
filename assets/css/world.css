@@ -71,7 +71,7 @@ p {
 
 .spinner {
     position: fixed;
-    left: 50%;
+    left: calc(50% - 35px);
     top: 50%;
     width: 70px;
   }
