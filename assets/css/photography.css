@@ -124,7 +124,7 @@
 	}
 
 	.photo-nav *{
-		margin-bottom: 20%;
+		margin-bottom: 35%;
 		font-size: 12px;
 		padding: 1.5%; /* for flexbox */
 	}
@@ -133,14 +133,10 @@
 		margin-right: 5%;
 		margin-left: 5%;
 	}
-}
-
-@media all and (max-width:480px) {
 
 	.photo-nav {
-		height: 15%;
-		min-height: 190px;
+		height: 10%;
+		min-height: 150px;
 	}
-
 }
 
