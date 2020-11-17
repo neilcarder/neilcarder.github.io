@@ -746,7 +746,7 @@ a.back-to-top {
 	
 @media (max-width: 767px) { 
 	a.back-to-top { 
-		right: 18px; bottom: 18px; width: 36px; height: 36px;
+		right: 18px; bottom: 18px; width: 36px; height: 36px; z-index: 2;
 	}
 	.back-to-top i { padding-top: 4px; font-size: 24px }
 }
