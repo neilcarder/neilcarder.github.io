@@ -110,21 +110,21 @@
 
 	.photo-nav {
 		position: fixed;
-		top: 85%;
+		top: auto;
+		bottom: 0px;
 		display: flex;
 		flex-direction: row;
-		height: 15%;
-		min-height: 120px;
 		/* margin-top: 0;
 		padding-bottom: 1.5%; */
 		width: 100%;
 		background-color:#e1d0ae;
 		z-index: 1;
 		justify-content: center;
+		height: 50px;
 	}
 
 	.photo-nav *{
-		margin-bottom: 15%;
+		margin-bottom: 5%;
 		font-size: 12px;
 		padding: 1.5%; /* for flexbox */
 	}
@@ -134,9 +134,5 @@
 		margin-left: 5%;
 	}
 
-	.photo-nav {
-		height: 80px;
-		min-height: 100px;
-	}
 }
 
