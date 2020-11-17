@@ -32,9 +32,9 @@ $(document).ready(function() {
 
     $(document).scroll(function() {    
         //var scrollToBottom = $(window).scrollTop() == ($(document).height() - $(window).height()); // when scroll gets to bottom of page
-        var scrollHeight = $(document).height();
-	    var scrollPosition = $(window).height() + $(window).scrollTop();
-	    var scrollToBottom =(scrollHeight - scrollPosition) / scrollHeight === 0;
+        var scrollToBottom =($(window).scrollTop() + $(window).height() >= $(document).height());
+        
+        
         //Lazy Load for Stills Section
         if ((scrollToBottom) && $("*").hasClass('stills')) { //when scroll reaches bottom and has the right class of .stills
             if(counter == 4){
@@ -97,4 +97,6 @@ $(document).ready(function() {
     $(document).on('contextmenu', 'img', function(e){
         return false;
       });
+
+      
 });
