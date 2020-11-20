@@ -146,7 +146,7 @@ h1 {
 .dynamic-background {
     height: 100%;
     width: 100%;
-    background: radial-gradient(#FFF, #f5eee6); 
+    background: #FFF; 
     /* background-color :#fff; */
     clip-path: polygon(0 2%, 100% 9%, 100% 100%, 0 100%, 0 94%, 100% 40%, 100% 13%, 0 37%);
 }
