@@ -132,9 +132,9 @@ h1 {
 /* ---------- layout for the shadowed background  ---------- */
 
 .clip-shadow {
-    filter: drop-shadow(-1px 2px 2px rgba(50, 50, 0, 0.2))
+    /* filter: drop-shadow(-1px 2px 2px rgba(50, 50, 0, 0.2))
             drop-shadow(-1px 4px 4px rgba(50, 50, 0, 0.2))
-            drop-shadow(-1px 8px 8px rgba(50, 50, 0, 0.2));
+            drop-shadow(-1px 8px 8px rgba(50, 50, 0, 0.2)); */
     position: absolute;
     z-index: -1;
     top:100vh;
@@ -277,7 +277,7 @@ h1 {
 
 .post a:hover .overlay {
     visibility: visible;
-    opacity: 40%;
+    opacity: 65%;
     background: #F2F2F2;
 }
 
