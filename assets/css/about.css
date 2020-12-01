@@ -251,7 +251,7 @@
 
 .three {
   height: 75%;
-  grid-template-rows: repeat(3, 25%);
+  grid-template-rows: 20% repeat(2, 35%);
   grid-template-columns: 15% 85%;
   grid-template-areas: 
     "references desc-ref"
