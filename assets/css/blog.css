@@ -80,6 +80,7 @@
     justify-content: center;
 	background: #fff;
 	transition: cubic-bezier(.79,.15,.25,.96) 0.65s;
+	z-index: 5;
 }
 
 .nav-box img {
@@ -196,7 +197,7 @@
 		position: fixed;
 		left: -30px;
 		bottom: calc(50% - 20px);
-		z-index: 2;
+		z-index: 6;
 		justify-content: center;
 		width: 90px;
 		height: 35px;
@@ -221,4 +222,9 @@
 
 #start {
 	cursor: pointer;
+}
+
+.current {
+	opacity: 1 !important;
+	color: black !important;
 }

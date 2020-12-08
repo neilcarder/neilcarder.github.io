@@ -1,8 +1,8 @@
 [
     {
     "date" : "2020.12.08", 
-    "title" : "Successfully Migrated My Blog!",
-    "post" : "This is the first post I have published since moving my blog from the Wix Platform to my github site neilcarder.com. Some of the code is a little rough around the edges (blog.js in particular) and there are some more details I want to work out with the web responsiveness, overall UX Design and appending the URL but I'm very proud of the work that I have put in to get to this point.<br><br>I have definitely gained a better understanding of how the front end would fetch and place information from the server side. I have managed to make this page somewhat automated in that I can write a new post in the JSON file and the layout of web page will automatically adjust itself.<br><br>It's interesting to look back and see when I started the blog on Wix I had no idea how to build a website. Now I'm definitely developing a strong understanding of the front end-static web page world. <br><br>I'm also realizing how much more there could be to learn. I could further develop my understanding of JavaScript/Jquery. I could dive into Angular or React which make web designing much more efficient. I could also look into understanding back-end languages; I know Python is used as a server-side language, data analytics language and also as a plugin for some 3D design software.<br><br>I'm also still keen to develop my skills in Architecture as well. There are many current incentives from the Irish Government to up skill - many colleges are offering their courses at very low prices or even free of charge. I think the hardest task ahead is where to focus my time!",
+    "title" : "Successfully Migrated my Blog!",
+    "post" : "This is the first post I have published since moving my blog from the Wix Platform to my github site neilcarder.com. Some of the code is a little rough around the edges (blog.js in particular) and there are some more details I want to work out with the web responsiveness, overall UX Design and appending URLs on click but I'm very proud of the work that I have put in to get to this point.<br><br>I have definitely gained a better understanding of how the front end would fetch and place information from the server side. I have managed to make this page somewhat automated in that I can write a new post in the JSON file and the layout of web page will automatically adjust itself.<br><br>It's interesting to look back and see when I started the blog on Wix I had no idea how to build a website. Now I'm definitely developing a strong understanding of the front end-static web page world. <br><br>I'm also realizing how much more there could be to learn. I could further develop my understanding of JavaScript/Jquery. I could dive into Angular or React which make web designing much more efficient. I could also look into understanding back-end languages; I know Python is used as a server-side language, data analytics language and also as a plugin for some 3D design software.<br><br>I'm also still keen to develop my skills in Architecture as well. There are many current incentives from the Irish Government to up skill - many colleges are offering their courses at very low prices or even free of charge. I think the hardest task ahead is where to focus my time!",
     "images" : "2020.12.08.jpg"
     },
     {
@@ -19,7 +19,7 @@
     },
     {
     "date" : "2020.12.01", 
-    "title" : "Trying to find a workaround with no server",
+    "title" : "Trying to find a Workaround with no Server",
     "post" : "I'm currently trying to make my dynamic blog page work off of a JSON file containing each blog post. I'm trying to populate all content and links based off of an array of information. My current issue is dynamically creating links that will load other page content.<br><br>Say I load an array of dates from JSON to create a list of links for each blog post. I then need to find a way to associate these new links with their correct blog posts so that when a user clicks on the date, the correct blog post content from the JSON file is loaded into the <section> tag. <br><br>I have been reading that a lot of these things could be better accomplished using a server side. Stack Overflow has been a great resource of information so far. People post their issues and others do their best to help out.",
     "images" : "2020.12.01.png"
     },
@@ -37,7 +37,7 @@
     },
     {
     "date" : "2020.11.03", 
-    "title" : "Understanding Synchronous and Asynchronous tasks in Javascripts",
+    "title" : "Understanding Synchronous and Asynchronous Tasks in Javascripts",
     "post" : "I'm currently re-working my landing page for my website as the previous setup was not originally my idea and it was severely slowing down the home page. It was a beautiful sketch done using processing language (you can see some amazing creative coding at openprocessing.org) but really hindered the page optimization.<br><br>I decided to go with a text that changes shadow based on the cursor location. It was fairly straight forward in Javascript/jquerey - I converted the X and Y coordinates of the screen to numbers associated with the required CSS properties to make a shadow effect. <br><br>The tricky part is getting an alternative shadow animation for mobile devices. I decided to try the route of using for loops to run through a series of numbers to change the position of shadows/light. I wanted the loop to run between 10 and -10; once this was done I want the loop to go in the reverse direction: from -10 to 10. This would create the animation of a light moving from one side of the screen to the other. So far this harder than it sounds; normally the first loop would run after the second loop like a synchronous call. However i think because I am using setInterval I currently have two loops(10 to -10 and -10 to 10) that run at the same time instead of one after another. I need to make the asynchronous setup work synchronously.",
     "images" : "2020.11.03.webm"
     },
@@ -73,13 +73,13 @@
     },
     {
     "date" : "2020.07.20", 
-    "title" : "Adding Srcset and playing with modal images",
+    "title" : "Adding Srcset and Playing with Modal Images",
     "post" : "I noticed that going onto the mobile site for images tends to get pretty slowly at times. I found an <a href=\"https://html.com/attributes/img-srcset/\">article on using Srcset</a> which tells the browser which image to pick depending on screen width. I'm hoping just two different sized images will work fine.<br><br>I've also finally started to dive into getting modal images for my photography section. This will allow a full screen image to pop up when clicking on my thumbnail - that way would can see all the goodness of my photos. So far it's just taking some CSS and a bit of javascript to get it working. For some reason though my Navbar is poking through the background image! I've been playing with the Z-index to try and get it to work but it's proving to be troublesome. I'll just have to keep plugging away at it.",
     "images" : "2020.07.20.webm"
     },
     {
     "date" : "2020.07.16", 
-    "title" : "Trying to \"Clean Up\" my code",
+    "title" : "Trying to \"Clean Up\" my Code",
     "post" : "I'm getting to the point where I feel like I have enough content to show. Now I'll just be going through my code and try to make it better. Making it more responsive is my main goal right now which should take a few days I think. I find it pretty interesting that the design of your website has to be intuitive and change for each user.<br><br>I learned a neat trick from yesterday's IBAT class regarding the ordering of items! you can set a media query and change the order of items in your html which would help greatly for mobile applications. I've currently applied to my flexbox children in my Architecture page.",
     "images" : "2020.07.16.jpg"
     },
@@ -91,19 +91,19 @@
     },
     {
     "date" : "2020.07.10", 
-    "title" : "Using Git to upload my files(different from Github!)",
+    "title" : "Using Git to Upload my Files(different from Github!)",
     "post" : "I'm going to put my half finished software on github to show my brother and current webdev teacher (Don't go on the mobile site yet). It will be nice to get some advice on the current progress!<br><br>Because I have a content heavy site with a lot of images (thanks to my photography hobby) I' m using something called Git to upload the majority of my files. I initially tried dumping all my files at once onto my Github web page and it did not like that (max number of files they allow to be uploaded at once is 100). And as I have a few layers within my file system I can't uploaded each file individually with making my Git page look like a dog's breakfast (thanks again Github)<br><br>So anyways the Git software took quite some time to understand as I'm still fairly accustomed to user-friendly interfaces - Git is just a command line where you need to enter some specific code for things to work. I manage to find some online tutorials in order to get where I needed to go (as well as some serious trial and error!)",
     "images" : "2020.07.10.png"
     },
     {
     "date" : "2020.07.09", 
-    "title" : "Photography page works and I bought a domain.",
+    "title" : "Photography Page Works and I Bought a Domain.",
     "post" : "Base of the photography page is done - it seemed to have gone by more quickly than the other pages as i just listed it as a simple list of photos - I used flexbox for the layouts which was fairly straightforward expect i was having some issues centering my montage photos on the screen. I'll also be adding a click to full screen option but will do that on my second pass.<br><br>I also bought a domain and am now the proud owner of neilcarder.com!",
     "images" : "2020.07.09.webm"
     },
     {
     "date" : "2020.07.08", 
-    "title" : "Working with fade effects",
+    "title" : "Working with Fade Effects",
     "post" : "So a seemingly small adjustment took a large part of the day today - I wanted to create a fade effect with a description over an image-link. Unfortunately I ran into a problem as I tried to use a standard hover property using CSS - this created an issue that prevented the \"a href\" tag from working - I had to organize the fade effect around the link tag and used a combination of block display with relative positions in order to get the effect that I wanted.<br><br>It was a long time creating this feature but I'm glad I managed to make it work. Now I'll have to think about how to organize the phone layout.",
     "images" : "2020.07.08.webm"
     },
@@ -121,25 +121,25 @@
     },
     {
     "date" : "2020.06.30", 
-    "title" : "Architecture pages is moving along.",
+    "title" : "Architecture Page is Moving Along.",
     "post" : "I've got my architecture page progressing. The first two sections (JFA and ICON) seem to be coming along nicely. I tried to simplify these layouts by just using the float property. My layouts from architecture school i think will work better using grid - I definitely feel like I'm already getting comfortable with the grid property.",
     "images" : "2020.06.30.webm"
     },
     {
     "date" : "2020.06.28", 
-    "title" : "Changing my mind: I decided to keep going with the side scroll",
+    "title" : "Changing my mind on the Side Scroll(Didin't Take Long)",
     "post" : "I took a look at it the next day and realized I'm doing pretty good with the side scroll - I just have to be careful with the screen versatility. I'm going leave it as it is right now because I feel pretty successful with it and come back to tweak it later. And after seeing it work on my laptop I would love to share it with others. On to my architecture portfolio!",
     "images" : "2020.06.28.webm"
     },
     {
     "date" : "2020.06.25", 
-    "title" : "Scraping the side scroll... for now",
+    "title" : "Scraping the Side Scroll... for now",
     "post" : "I've decided to take a U-Turn on my \"about\" page and go from a side scrolling page to a standard scroll for now. Once I'm done the site I can focus on re-working this page but I want to get things done in order to showcase myself. I have a feeling that making a side scroll page will be a longer process than I think. I haven't been defeated - just delayed!",
     "images" : "2020.06.25.webm"
     },
     {
     "date" : "2020.06.24", 
-    "title" : "Testing with a web browser (Firefox Developer)",
+    "title" : "Testing with a Web Browser (Firefox Developer)",
     "post" : "Today I realized a great benefit of the inspect element on the web browser - it very easily and quickly lets you test you code. At least for front end development, I can can load my html file onto the browser and play around if is doesn't look the way I want. This may sound average to the experienced developer but it felt like an amazing revelation to me!",
     "images" : "2020.06.24.jpg"
     },
@@ -151,13 +151,13 @@
     },
     {
     "date" : "2020.06.18", 
-    "title" : "Got a side scroll working",
+    "title" : "Got a Side Scroll Working",
     "post" : "I'm pretty sure I've been finding at least one additional tool/website per day. This one is code pen which is another useful place where people  store their code and share it with others. I was able to find a great setup for a side scroll on my about page. It unfortunately took a long  time cause I wasn't first aware that the script uses Jquery to make the  mouse wheel scroll sideways. But it works! I'm also trying to understand how to use grid in CSS as it will probably be efficient for my about page.",
     "images" : "2020.06.18.png"
     },
     {
     "date" : "2020.06.17", 
-    "title" : "On to the next page!",
+    "title" : "On to the Next Page!",
     "post" : "I've  got my index to a reasonable level of detail and I'm going to be  working on my about page. My weekly class from IBAT had given me a few  tip and tricks including the use of extensions in Visual studio. I've  also been looking at a site called css- tricks which has a lot of  information on how to understand some more modern css properties.",
     "images" : "2020.06.17.jpg"
     },
@@ -169,7 +169,7 @@
     },
     {
     "date" : "2020.06.15", 
-    "title" : "Working on the index page for the site",
+    "title" : "Working on the Index Page for the Site",
     "post" : "I've  started to work on the home page (or index) for the website. It's  really great to see a result after typing some code in! There's already been quite a lot of trial and error already but I still feel there has been some progress made.",
     "images" : "2020.06.15.jpg"
     },
@@ -217,13 +217,13 @@
     },
     {
     "date" : "2020.06.05", 
-    "title" : "Laying Out Art-boards",
+    "title" : "Laying Out Art-Boards",
     "post" : "Working  on the page layouts and lots of websites. Googling \"best portfolio websites\" brings up some amazing examples. Establishing links between  pages on XD definitely helps you understand more about what needs to be  placed on a website.<br><br> I've  also applied to a free online course from  IBAT College In Dublin. They  are currently offering one free course to front line workers and those  who had lost their job due to the COVID Pandemic. Let's hope it goes well!",
     "images" : "2020.06.05.png"
     },
     {
     "date" : "2020.06.04", 
-    "title" : "Switching to design",
+    "title" : "Switching to Design",
     "post" : "I've realized that just like architecture,  the product design can be laid out first and the details get worked out  later. So I'm going to work on how I want the website to look and feel;  then i'll hopefully take a steep learning curve while trying to design  the thing. I've downloaded a program called Adobe XD. It's fairly easy  to pick up the basics for me because I have some background experience  with photoshop and Illustrator - and its free!!",
     "images" : "2020.06.04.png"
     },
@@ -241,7 +241,7 @@
     },
     {
     "date" : "2020.06.01", 
-    "title" : "A new start",
+    "title" : "A New Start",
     "post" : "Well I've been let go from my job at an Architecture firm in Dublin. The firm was great - it had a relaxed  atmosphere and my employer let me bring my dog into work. I hope to keep  in touch with them. I'm definitely disappointed about the situation but  don't want to waste any time. That's why I've decided to learn a bit  more about software design while trying for further employment. I'll be  able to learn a valuable skill and advertise myself at the same time!",
     "images" : "2020.06.01.jpg"
     }

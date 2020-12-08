@@ -53,7 +53,7 @@ $(document).ready(function() {
 
             $.each(data, function(index,item) {
                 //loads side bar dates with ID
-                $('#directory').append('<a href="#">' + item.date + '</a>');
+                $('#directory').append(`<a href="#" id="${item.date}">${item.date}</a>`);
             });
         
             function loadMainPage() {
@@ -87,6 +87,9 @@ $(document).ready(function() {
                             fileExtension = fileName.replace(/^.*\./, '');
     
                             closeWhenClick();
+                
+                            $("a.current").removeClass("current");
+                            $(this).addClass("current");
                             
                             if (fileExtension == 'webm'){
                                     let fillSnippet = postSnippetVid.replaceAll("{date}", data[arrindex].date).replaceAll("{title}", data[arrindex].title).replaceAll("{post}", data[arrindex].post).replaceAll("{image}", data[arrindex].images);
@@ -99,8 +102,11 @@ $(document).ready(function() {
 
                         $("#content div").click(function(){                         
                             let arrindex = ($(this).index()-1);
+                            let childNumber = $(this).index();
                             fileName = data[arrindex].images;
                             fileExtension = fileName.replace(/^.*\./, '');
+
+                            $(`.directory :nth-child(${childNumber})`).addClass("current");
 
                             if (fileExtension == 'webm'){
                                 let fillSnippet = postSnippetVid.replaceAll("{date}", data[arrindex].date).replaceAll("{title}", data[arrindex].title).replaceAll("{post}", data[arrindex].post).replaceAll("{image}", data[arrindex].images);
@@ -109,6 +115,7 @@ $(document).ready(function() {
                                 let fillSnippet = postSnippetImg.replaceAll("{date}", data[arrindex].date).replaceAll("{title}", data[arrindex].title).replaceAll("{post}", data[arrindex].post).replaceAll("{image}", data[arrindex].images);
                                 $("#content").html(fillSnippet); 
                             }
+                            
                         });
                     };
                 });
@@ -118,6 +125,7 @@ $(document).ready(function() {
             $("#start").click(function(){ 
                 count = data.length;
                 $("#content").empty();
+                $("a.current").removeClass("current");
                 $.get('blog/blog-header.html', function(data){
                     $("#content").prepend(data);
                 });
@@ -125,34 +133,26 @@ $(document).ready(function() {
                 closeWhenClick();
             });
         });
-    
-    // Pop-out directory for mobiles
-    document.querySelector('.directory-slide').addEventListener('click', toggleMobileMenu)
 
-    function toggleMobileMenu() {
-        //toggle hamburger icon
-        const elemIcon = document.querySelector('.directory-slide');
-        elemIcon.classList.toggle("change");
-        const elemHTML = document.querySelector('html');
-        const elemBody = document.querySelector('body');            
-        const elemFlyOut = document.querySelector('.nav-box');
-
+    // Code Below is For Mobile Directory Tab
+    $('.directory-slide').on('click', function(){
+        $( '.directory-slide' ).toggleClass('change');
+        
         //if fly-out menu is currently closed, open it.
-        if (elemIcon.classList.contains('change')) {
-            elemFlyOut.classList.remove('nav-box-is-closed');
-            elemFlyOut.classList.add('nav-box-is-open');
-            elemHTML.classList.add('no-scroll');
-            elemBody.classList.add('no-scroll');
-            elemIcon.textContent="Close";    
+        if ($( '#testing' ).hasClass('change')) {
+            $('.nav-box').removeClass('nav-box-is-closed');
+            $('.nav-box').addClass('nav-box-is-open');
+            $('html').addClass('no-scroll');
+            $('body').addClass('no-scroll'); 
+            $('.directory-slide').html('Close');
         }    
         //if fly-out menu is currently open, close it.
         else {
-            elemFlyOut.classList.remove('nav-box-is-open');
-            elemFlyOut.classList.add('nav-box-is-closed');
-            elemHTML.classList.remove('no-scroll');
-            elemBody.classList.remove('no-scroll');
-            elemIcon.textContent="Entries";
+            $('.nav-box').addClass('nav-box-is-closed');
+            $('.nav-box').removeClass('nav-box-is-open');
+            $('html').removeClass('no-scroll');
+            $('body').removeClass('no-scroll');
+            $('.directory-slide').html('Entries');
         }
-    } 
-
+    });
 }); 
