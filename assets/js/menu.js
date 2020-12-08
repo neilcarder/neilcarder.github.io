@@ -59,7 +59,6 @@ swapMenuStyle();
 ToggleBackToHome();
 };
 
-
 // Code to detect click of option within fly-out menu
 let specifiedElement = document.querySelector('.flyout-menu');
 document.addEventListener('click', function(event) {
