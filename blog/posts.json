@@ -20,7 +20,7 @@
     {
     "date" : "2020.12.01", 
     "title" : "Trying to find a Workaround with no Server",
-    "post" : "I'm currently trying to make my dynamic blog page work off of a JSON file containing each blog post. I'm trying to populate all content and links based off of an array of information. My current issue is dynamically creating links that will load other page content.<br><br>Say I load an array of dates from JSON to create a list of links for each blog post. I then need to find a way to associate these new links with their correct blog posts so that when a user clicks on the date, the correct blog post content from the JSON file is loaded into the <section> tag. <br><br>I have been reading that a lot of these things could be better accomplished using a server side. Stack Overflow has been a great resource of information so far. People post their issues and others do their best to help out.",
+    "post" : "I'm currently trying to make my dynamic blog page work off of a JSON file containing each blog post. I'm trying to populate all content and links based off of an array of information. My current issue is dynamically creating links that will load other page content.<br><br>Say I load an array of dates from JSON to create a list of links for each blog post. I then need to find a way to associate these new links with their correct blog posts so that when a user clicks on the date, the correct blog post content from the JSON file is loaded into the &lt;section&gt; tag. <br><br>I have been reading that a lot of these things could be better accomplished using a server side. Stack Overflow has been a great resource of information so far. People post their issues and others do their best to help out.",
     "images" : "2020.12.01.png"
     },
     {
