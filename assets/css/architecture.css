@@ -143,7 +143,6 @@ h3 a:hover, h3 a:focus, h3 a:active {
         flex-flow: row wrap; 
         justify-content: space-between;
         margin: 200px 10%;
-        min-width: 700px;
         padding: 3.5%;
         height: 100%;
 }
@@ -366,13 +365,14 @@ h3 a:hover, h3 a:focus, h3 a:active {
 
 /* ARCHIVES Mobile Grid */
 @media all and (max-width:767px) {
-    
-    .arch-4 {
-        height: auto;
-    }
 
+    .arch-3 {
+        text-align: left;
+    }
+    
+    .arch-4,
     .arch-9 {
-        height: 100%;
+        height: 25em;
     }
 
     .archives{
@@ -472,7 +472,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 @media all and (max-width:767px) { 
 
     .comm-4 {
-        height: auto;
+        height: 20em;
     }
 
     .community { 
@@ -577,6 +577,10 @@ h3 a:hover, h3 a:focus, h3 a:active {
             "elevation-w";
     }
 
+    .wind-5 {
+        height: 20em;
+    }
+
 }
 
 /* ----- End of RESEARCH CENTRE Page Setup ----- */
@@ -596,6 +600,19 @@ h3 a:hover, h3 a:focus, h3 a:active {
     justify-self: end;
     text-align: right;
     margin-right: -20%;
+}
+
+@media all and (max-width:767px) {
+ 
+    .desk-2 { 
+        margin-right: 0;
+    }
+
+    .desk-4,
+    .desk-7 { 
+        height: 20em;
+    }
+
 }
 
 .desk-3 {
@@ -736,6 +753,10 @@ h3 a:hover, h3 a:focus, h3 a:active {
             "install1-s"
             "install2-s"
             "install3-s";
+    }
+
+    .sound-5 {
+        height: 20em;
     }
 
 }
