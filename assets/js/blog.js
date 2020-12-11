@@ -13,25 +13,25 @@ $(document).ready(function() {
         }
     });
 
-    var blogPost = "posts.json";
+    var blogPost = "blog/posts.json";
 
     var thumbSnippetVid;
-    $.get('templates/blog-thumb-vid.html', function(data){
+    $.get('blog/templates/blog-thumb-vid.html', function(data){
         thumbSnippetVid = data;
     });
 
     var thumbSnippetImg;
-    $.get('templates/blog-thumb-img.html', function(data){
+    $.get('blog/templates/blog-thumb-img.html', function(data){
         thumbSnippetImg = data;
     });
 
     var postSnippetVid;
-    $.get('templates/blog-post-vid.html', function(data){
+    $.get('blog/templates/blog-post-vid.html', function(data){
         postSnippetVid = data;
     });
 
     var postSnippetImg;
-    $.get('templates/blog-post-img.html', function(data){
+    $.get('blog/templates/blog-post-img.html', function(data){
         postSnippetImg = data;
     });
 
@@ -126,7 +126,7 @@ $(document).ready(function() {
                 count = data.length;
                 $("#content").empty();
                 $("a.current").removeClass("current");
-                $.get('templates/blog-header.html', function(data){
+                $.get('blog/templates/blog-header.html', function(data){
                     $("#content").prepend(data);
                 });
                 loadMainPage();
