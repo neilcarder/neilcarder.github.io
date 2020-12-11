@@ -13,32 +13,32 @@ $(document).ready(function() {
         }
     });
 
-    var blogPost = "blog/posts.json";
+    var blogPost = "posts.json";
 
     var thumbSnippetVid;
-    $.get('blog/blog-thumb-vid.html', function(data){
+    $.get('templates/blog-thumb-vid.html', function(data){
         thumbSnippetVid = data;
     });
 
     var thumbSnippetImg;
-    $.get('blog/blog-thumb-img.html', function(data){
+    $.get('templates/blog-thumb-img.html', function(data){
         thumbSnippetImg = data;
     });
 
     var postSnippetVid;
-    $.get('blog/blog-post-vid.html', function(data){
+    $.get('templates/blog-post-vid.html', function(data){
         postSnippetVid = data;
     });
 
     var postSnippetImg;
-    $.get('blog/blog-post-img.html', function(data){
+    $.get('templates/blog-post-img.html', function(data){
         postSnippetImg = data;
     });
 
     function closeWhenClick() {
         if ($(window).width() < 769) {
             $( ".nav-box" ).removeClass( "nav-box-is-open" ).addClass( "nav-box-is-closed" );
-            $('.directory-slide').removeClass( "change" ).text('Entries');
+            $('.directory-tab').removeClass( "change" ).text('Entries');
             $('body').removeClass('no-scroll');
             $('html').removeClass('no-scroll');
         }
@@ -126,7 +126,7 @@ $(document).ready(function() {
                 count = data.length;
                 $("#content").empty();
                 $("a.current").removeClass("current");
-                $.get('blog/blog-header.html', function(data){
+                $.get('templates/blog-header.html', function(data){
                     $("#content").prepend(data);
                 });
                 loadMainPage();
@@ -135,8 +135,8 @@ $(document).ready(function() {
         });
 
     // Code Below is For Mobile Directory Tab
-    $('.directory-slide').on('click', function(){
-        $( '.directory-slide' ).toggleClass('change');
+    $('.directory-tab').on('click', function(){
+        $( '.directory-tab' ).toggleClass('change');
         
         //if fly-out menu is currently closed, open it.
         if ($( '#testing' ).hasClass('change')) {
@@ -144,7 +144,7 @@ $(document).ready(function() {
             $('.nav-box').addClass('nav-box-is-open');
             $('html').addClass('no-scroll');
             $('body').addClass('no-scroll'); 
-            $('.directory-slide').html('Close');
+            $('.directory-tab').html('Close');
         }    
         //if fly-out menu is currently open, close it.
         else {
@@ -152,7 +152,7 @@ $(document).ready(function() {
             $('.nav-box').removeClass('nav-box-is-open');
             $('html').removeClass('no-scroll');
             $('body').removeClass('no-scroll');
-            $('.directory-slide').html('Entries');
+            $('.directory-tab').html('Entries');
         }
     });
 }); 

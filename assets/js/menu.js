@@ -36,8 +36,7 @@ function swapMenuStyle() {
 }
 
 // Back to Top Script
-  window.onscroll = function() {ToggleBackToHome()};
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  //window.scrollTo({ top: 0, behavior: 'smooth' });
   const UpArrow = document.querySelector('.back-to-top');
   const stickyUpArrow = UpArrow.offsetTop +400;
  
