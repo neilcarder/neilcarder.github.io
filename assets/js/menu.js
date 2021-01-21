@@ -109,3 +109,6 @@ function toggleMobileMenu() {
 $(window).on('hashchange', function(e){
     history.replaceState ("", document.title, e.originalEvent.oldURL);
 });
+
+//Auto Set vilume to 50%
+$("video").prop("volume", 0.5);

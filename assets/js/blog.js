@@ -94,13 +94,14 @@ $(document).ready(function() {
                             if (fileExtension == 'webm'){
                                     let fillSnippet = postSnippetVid.replaceAll("{date}", data[arrindex].date).replaceAll("{title}", data[arrindex].title).replaceAll("{post}", data[arrindex].post).replaceAll("{image}", data[arrindex].images);
                                     $("#content").html(fillSnippet);
+                                    $("video").prop("volume", 0.2);
                             } else if (fileExtension == 'jpg' || 'png') {
                                     let fillSnippet = postSnippetImg.replaceAll("{date}", data[arrindex].date).replaceAll("{title}", data[arrindex].title).replaceAll("{post}", data[arrindex].post).replaceAll("{image}", data[arrindex].images);
                                     $("#content").html(fillSnippet);
                             }
                         });
 
-                        $("#content div").click(function(){                         
+                        $("#content div").click(function(){
                             let arrindex = ($(this).index()-1);
                             let childNumber = $(this).index();
                             fileName = data[arrindex].images;
@@ -111,6 +112,8 @@ $(document).ready(function() {
                             if (fileExtension == 'webm'){
                                 let fillSnippet = postSnippetVid.replaceAll("{date}", data[arrindex].date).replaceAll("{title}", data[arrindex].title).replaceAll("{post}", data[arrindex].post).replaceAll("{image}", data[arrindex].images);
                                 $("#content").html(fillSnippet);
+                                //Any Audio Set volume to 50%
+                                $("video").prop("volume", 0.2);
                             } else if (fileExtension == 'jpg' || 'png') {
                                 let fillSnippet = postSnippetImg.replaceAll("{date}", data[arrindex].date).replaceAll("{title}", data[arrindex].title).replaceAll("{post}", data[arrindex].post).replaceAll("{image}", data[arrindex].images);
                                 $("#content").html(fillSnippet); 
