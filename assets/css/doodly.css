@@ -10,6 +10,14 @@
     height: 100vh;
 }
 
+@media only screen and (max-width: 480px) {
+
+    .hero-doodly {
+        background-image: url('../images/doodly/hero-small.jpg');
+    }
+
+}
+
 .block-it{
     display: flex;
     justify-content: space-between;
