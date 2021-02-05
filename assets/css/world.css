@@ -198,7 +198,7 @@ p {
 /* menu links aligned horizontally */
 .container-menu-desktop ul li {
     display: inline-block;
-    margin: 0 20px 0 0; /* spacing at right of menu links */
+    margin: 0 30px 0 0; /* spacing at right of menu links */
 }
 
 @media all and (max-width:767px) { 
@@ -214,7 +214,7 @@ p {
 
 /* style text for links */
 .container-menu-desktop ul li a {
-    font-size: calc(9px + (16 - 9) * ((100vw - 320px)/(1600 - 320)));
+    font-size: calc(7px + (16 - 7) * ((100vw - 320px)/(1600 - 320)));
     font-family: 'Maven Pro', sans-serif;
     font-weight: 600;
     letter-spacing: 2px;
