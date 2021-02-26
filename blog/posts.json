@@ -1,4 +1,11 @@
-[   {
+[   
+    {
+    "date" : "2021.02.26", 
+    "title" : "View Template Option in Revit",
+    "post" : "The Revit course was a mix of things I already know and some very useful information. One useful tip was the view template option in the Identity data section of the properties box. This allows the user to create a template of what is visible in view. This allows efficiency and consistency when incorporating views into sheet. There is also an option for saving a template in the graphic display settings so that you can create specific graphic layouts for every view (e.g. One display for plans, one for section, One for elevations, etc….) I am hoping to learn more about how best to streamline a Revit project in the next few months!",
+    "images" : "2021.02.26.jpg"
+    },
+    {
     "date" : "2021.02.23", 
     "title" : "Project Management and NZEB",
     "post" : "I am still on the road to learning as lockdown is currently very strict in Ireland. I have continued to take advantage of all the educational courses offered and am currently enrolled in three:<br><ol><li><b>Project Management: Certified Associate</b> – I feel that knowing project management is essential for many professions now. I know it is something that I wish I knew more about when working is Architecture firms. The course is quite extensive which should take a lot of my spare time!</li><li><b>NZEB: fundamental Awareness</b> – This two-day course teaches trades and others the requirements of NZEB and Passive House standard in Ireland. It is now very important to achieve an efficient, warm and airtight building in Ireland. </li><li><b>Certificate in BIM</b> – So far I am essential taking this course as a refresher to my understanding of Revit Architecture. I am hoping to gain some further insight on how to be more efficient with Revit and collaborating tools.</li></ol>",
