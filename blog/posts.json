@@ -1,5 +1,11 @@
 [   
     {
+    "date" : "2021.04.01", 
+    "title" : "Almost done my CAPM Course!",
+    "post" : "I have been spending quite some time studying for the CAPM Examination (which I might just try to take the PMP exam which requires 2 year working experience – something I technically have from Architecture firms). The content is the fundamentals of project management. It's straightforward but by no means easy. It has taken a lot of hours just getting through the course – Next I will have to study for the exam!",
+    "images" : "2021.04.01.jpg"
+    },
+    {
     "date" : "2021.02.26", 
     "title" : "View Template Option in Revit",
     "post" : "The Revit course was a mix of things I already know and some very useful information. One useful tip was the view template option in the Identity data section of the properties box. This allows the user to create a template of what is visible in view. This allows efficiency and consistency when incorporating views into sheet. There is also an option for saving a template in the graphic display settings so that you can create specific graphic layouts for every view (e.g. One display for plans, one for section, One for elevations, etc….) I am hoping to learn more about how best to streamline a Revit project in the next few months!",
