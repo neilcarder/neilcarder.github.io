@@ -34,7 +34,7 @@ $(document).ready(function() {
     
     // *****My version of a Lazy load script*****
        
-    var snippets = ['two', 'three', 'four', 'five', 'six'], //array for html snippet files
+    var snippets = ['two', 'three', 'four', 'five', 'six', 'seven'], //array for html snippet files
     counter = -1; //starts the counter at "two" becasue of (counter + 1) in loadAction
 
     function getDocHeight() {
@@ -51,7 +51,7 @@ $(document).ready(function() {
         var scrollToBottom =($(window).scrollTop() + $(window).height() >= (getDocHeight() - 500));
 
         if ((scrollToBottom) && $("*").hasClass("stills")) { //when scroll reaches bottom and has the right class of .stills
-            if(counter == 4){
+            if(counter == 5){
                 // If max html-files reached, Stop counting
                 counter = counter
             } else {
