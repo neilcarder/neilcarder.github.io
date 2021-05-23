@@ -645,6 +645,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
     background-image: url("../images/architecture/06-b22-legacy/web/desk-open.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     border: solid 1px;
 }
@@ -670,6 +671,13 @@ h3 a:hover, h3 a:focus, h3 a:active {
             "tech-drawings-d"
             "desk-closed-d"
             "desk-open-d";
+    }
+
+    .desk-7 {
+    background-size: contain;
+    width: 100%;
+    height: 0;
+    padding-top: 61.40%; /* Properly adjusts background image (img height/image width)*/
     }
 
 }
