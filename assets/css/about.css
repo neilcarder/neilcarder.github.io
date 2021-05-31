@@ -166,7 +166,7 @@
   transform: rotate(-90deg) translateX(-85%) translateY(50%);
   -moz-transform: rotate(-90deg) translateX(-85%) translateY(50%);
   -webkit-transform: rotate(-90deg) translateX(-85%) translateY(50%);
-  font-size: calc(24px + (130 - 24) * ((100vw - 320px) / (1600 - 320)));;;
+  font-size: calc(24px + (100 - 24) * ((100vw - 320px) / (1600 - 320)));;;
   z-index: 1;
   /* text-align: right; */
 }

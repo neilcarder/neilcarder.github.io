@@ -50,6 +50,17 @@
 	--animate-duration: 3s;
 }
 
+/* ---Large Screens--- */
+@media all and (min-width:1900px) {
+
+	.montage-flex {
+		margin-right: 20%;
+		margin-left: 20%;
+	}
+	
+
+}
+
 /* ---Mobile Adjustments--- */
 @media all and (max-width:767px) {
 
