@@ -4,7 +4,6 @@ html { height: 100%; scroll-behavior: smooth; }
 body { min-height: 100%; margin: 0px; }  
 img { width: 100%; height: auto; max-width: 1600px; display: block }
 
-/*  ============= Quick CSS fade effect ============ */
 body {
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
