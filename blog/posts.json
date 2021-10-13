@@ -1,0 +1,296 @@
+[   {
+    "date" : "2021.09.14", 
+    "title" : "Catching up after a very busy few months!",
+    "post" : "It’s been quite a long time since I have posted anything mainly because It has been a busy few months since starting my position as Designer at Kaneco Limited! Unfortunately, not a lot of coding in the past few months but definitely a lot of other things! <br><br><ul><li>Very busy at my new position as Designer with Kaneco. Learning a lot of aspects about commercial kitchen design and am wearing many hats in my new role! Back creating drawings and visuals with AutoCAD/Sketchup. One role includes building the company website!</li><li>My working holiday visa has expired in Ireland and I am applying for a critical skills visa in order to stay in this beautiful country! I can’t be in the country for the process so my wife and I are temporary living across the pond in the UK!</li><li>I completed my Revit architecture course at Griffith college! Still waiting for my final grade but by the look of my assignment marks I have passed with flying colors!</li><li>My CAPM has taken a back seat due to a full-time job and my whole visa situation. Hopefully I will be able to finish this course on time in the next month!</li></ul>",
+    "images" : "2021.09.14.jpg"
+    },
+    {
+    "date" : "2021.05.31", 
+    "title" : "Taking a break from CAPM and learning about APT Testing/NZEB!",
+    "post" : "I have been pretty preoccupied for the last month learning as much as I can about building efficiency and NZEB. The current goal of Ireland is to make new buildings comply with Nearly Zero Energy Building Standard – This means that building need to be insulated to a very high standard and must be airtight. Part my recent position with Evolved Energy was to test a building’s airtightness using an APT (Air Pressure test). This involved using software with a highly calibrated fan to determine how much air is exchanged in a building over time (Air changes per hour, or l/m2/s). Spending a month with Evolved Energy Solutions gave me a great understanding of what is required to achieve an efficient building! I hope to learn more about this in the future.",
+    "images" : "2021.05.31.jpg"
+    },
+    {
+    "date" : "2021.04.01", 
+    "title" : "Almost done my CAPM Course!",
+    "post" : "I have been spending quite some time studying for the CAPM Examination (which I might just try to take the PMP exam which requires 2 year working experience – something I technically have from Architecture firms). The content is the fundamentals of project management. It's straightforward but by no means easy. It has taken a lot of hours just getting through the course – Next I will have to study for the exam!",
+    "images" : "2021.04.01.jpg"
+    },
+    {
+    "date" : "2021.02.26", 
+    "title" : "View Template Option in Revit",
+    "post" : "The Revit course was a mix of things I already know and some very useful information. One useful tip was the view template option in the Identity data section of the properties box. This allows the user to create a template of what is visible in view. This allows efficiency and consistency when incorporating views into sheet. There is also an option for saving a template in the graphic display settings so that you can create specific graphic layouts for every view (e.g. One display for plans, one for section, One for elevations, etc….) I am hoping to learn more about how best to streamline a Revit project in the next few months!",
+    "images" : "2021.02.26.jpg"
+    },
+    {
+    "date" : "2021.02.23", 
+    "title" : "Project Management and NZEB",
+    "post" : "I am still on the road to learning as lockdown is currently very strict in Ireland. I have continued to take advantage of all the educational courses offered and am currently enrolled in three:<br><ol><li><b>Project Management: Certified Associate</b> – I feel that knowing project management is essential for many professions now. I know it is something that I wish I knew more about when working is Architecture firms. The course is quite extensive which should take a lot of my spare time!</li><li><b>NZEB: fundamental Awareness</b> – This two-day course teaches trades and others the requirements of NZEB and Passive House standard in Ireland. It is now very important to achieve an efficient, warm and airtight building in Ireland. </li><li><b>Certificate in BIM</b> – So far I am essential taking this course as a refresher to my understanding of Revit Architecture. I am hoping to gain some further insight on how to be more efficient with Revit and collaborating tools.</li></ol>",
+    "images" : "2021.02.23.png"
+    },
+    {
+    "date" : "2021.01.26", 
+    "title" : "Continuous Learning",
+    "post" : "I’ve been doing a variety of thing that are a little less focused on learning web development. These things are geared towards learning a variety of things:<br><br><ul><li>Getting employment as a Junior BER Assessor! Hopefully to be starting once level 5 lockdown has ended.</li><li>Doing some light reading such as Python for Beginners, AutoDesk Revit, the Architecture Practice Handbook and Ireland’s Technical Guidance Documents.</li><li>Working on Doodly Animations for a Financial Planning Company.</li><li>Enrolling in the ‘Project Management Certified Associate’ course on ecollege This course is fully self-guided and online so I’m hoping to spend a strong amount of time on this during lockdown.</li><li>Doing some introductory course work for my Revit Course at Griffith College (classes start mid-February).</li></ul>",
+    "images" : "2021.01.26.jpg"
+    },
+    {
+    "date" : "2021.01.08", 
+    "title" : "Testing Out a New Software: Doodly",
+    "post" : "I have started to look into doing some whiteboard animations for a Financial planning company. They have investigated a software called Doodly to make some webinar-based videos. The videos will easily attract attention to their company while also teaching people the basics of investing. The software itself is very easy to learn and has large library of graphics to use. The basis of the software is that you paste your desired graphics/symbols/writing onto a board which then generates a whiteboard animation for you to use in your social media, blog posts, etc… The attached video is my first attempt (voice over not yet included).",
+    "images" : "2021.01.08.webm"
+    },
+    {
+    "date" : "2020.12.14", 
+    "title" : "Accepted into the BIM and Graphic Illustration Course at Griffith College",
+    "post" : "Good news! I have just been informed that my application to the BIM course at Griffith was accepted. The part-time course focuses on Revit with some addition information on construction which will hopefully benefit me.  I hope to gain some further insight into the technical side of BIM while also gaining some further information on construction documentation for the Irish construction industry. I will update you on how it goes!",
+    "images" : "2020.12.14.jpg"
+    },
+    {
+    "date" : "2020.12.08", 
+    "title" : "Successfully Migrated my Blog!",
+    "post" : "This is the first post I have published since moving my blog from the Wix Platform to my github site neilcarder.com. Some of the code is a little rough around the edges (blog.js in particular) and there are some more details I want to work out with the web responsiveness, overall UX Design and appending URLs on click but I'm very proud of the work that I have put in to get to this point.<br><br>I have definitely gained a better understanding of how the front end would fetch and place information from the server side. I have managed to make this page somewhat automated in that I can write a new post in the JSON file and the layout of web page will automatically adjust itself.<br><br>It's interesting to look back and see when I started the blog on Wix I had no idea how to build a website. Now I'm definitely developing a strong understanding of the front end-static web page world. <br><br>I'm also realizing how much more there could be to learn. I could further develop my understanding of JavaScript/Jquery. I could dive into Angular or React which make web designing much more efficient. I could also look into understanding back-end languages; I know Python is used as a server-side language, data analytics language and also as a plugin for some 3D design software.<br><br>I'm also still keen to develop my skills in Architecture as well. There are many current incentives from the Irish Government to up skill - many colleges are offering their courses at very low prices or even free of charge. I think the hardest task ahead is where to focus my time!",
+    "images" : "2020.12.08.jpg"
+    },
+    {
+    "date" : "2020.12.04", 
+    "title" : "Storing Ajax Requests as Variables",
+    "post" : "I was noticing in the console of my blog page that when I have the Ajax request .get() in a for loop(in my case jquery .each()) the request for my html template gets called every time the loop runs. This seems like a lot of repeated unnecessary work.<br><br>My solution is to just store the Ajax call in a variable. This way there is only one call for the data which can be reused whenever I call the variable. It seems to make for much less work for the browser and has seemed to solve a second issue of mine.<br><br>I have also been trying to resolve an issue with the asynchronous loading of my html snippets - My For Loop runs Synchronously; however when you put an Ajax Request (An Asynchronous Operation) inside a for loop the result is essentially an Asynchronous process.<br><br>I expected my posts and images to load in order on the web page but the order was instead determined based on my Ajax request. Putting the Ajax request as a variable outside of the loop seemed to resolve this issue.",
+    "images" : "2020.12.04.jpg"
+    },
+    {
+    "date" : "2020.12.03", 
+    "title" : "Creating Dynamic Links Using the Array Index",
+    "post" : "I've currently decided to go with using the array index to connect links to dynamically loaded content. The below is how things will probably go:<br><br>1. When the web page is accessed, an Array (Jquery .each()) loads the content in the correct location.<br><br>2. Once the Array has finished loading the content, an onClick() event will launch. This will get the index of the <a> that was clicked in the html file and load that index content I have done a quick test of this by using console.log<br><br>$(\"#directory a\").click(function(){<br>var arrNumber = $(this).index();<br>console.log(data[arrNumber].date)<br>});",
+    "images" : "2020.12.03.webm"
+    },
+    {
+    "date" : "2020.12.01", 
+    "title" : "Trying to find a Workaround with no Server",
+    "post" : "I'm currently trying to make my dynamic blog page work off of a JSON file containing each blog post. I'm trying to populate all content and links based off of an array of information. My current issue is dynamically creating links that will load other page content.<br><br>Say I load an array of dates from JSON to create a list of links for each blog post. I then need to find a way to associate these new links with their correct blog posts so that when a user clicks on the date, the correct blog post content from the JSON file is loaded into the &lt;section&gt; tag. <br><br>I have been reading that a lot of these things could be better accomplished using a server side. Stack Overflow has been a great resource of information so far. People post their issues and others do their best to help out.",
+    "images" : "2020.12.01.png"
+    },
+    {
+    "date" : "2020.11.25", 
+    "title" : "Transferring this blog to my website",
+    "post" : "I'm currently looking into transferring this blog from the Wix platform to my webpage. I wanted to dive into more back end stuff with this task. However GitHub does not really support a back end language such as PHP. <br><br>I've decided to try using JSON to store my posts and generate almost all the web page content by using Jquery and the JSON file. My plan is to make everything automatic when adding a new post - I just have to add the date, title and my content as a new array object my JSON file and the scripts will do the rest.",
+    "images" : "2020.11.25.jpg"
+    },
+    {
+    "date" : "2020.11.18", 
+    "title" : "Don't Judge a Book by its Cover",
+    "post" : "I've reached a snag with my dynamically loaded web page where I want to load snippets of content as the user scrolls down the screen. This seemed easy enough when setting this action to occur at the very bottom of the screen:<br><br> <code>$(window).scrollTop() + $(window).height() == ($(document).height()</code><br><br>I then wanted to change the action to occur before the user hits the bottom of the page - this is a better User Experience option as the content would seamlessly load without the user hitting the bottom of the web page abruptly. Five second change, right? NOPE.<br><br><code>// fires code before user gets to bottom ($(window).scrollTop() + $(window).height() > ($(document).height() - 300)</code> <br><br>My issue is that the action is called on every scroll with the new piece of code above - this cascades and calls all functions in the event multiple times. Unfortunately the script for my photo gallery gets called multiple times and causes an error. I really like my photo gallery though so it's not getting replaced!<br><br>What I need to do is trigger the event only once when the user scrolls near the bottom instead of every scroll. I've seen options such as adding a boolean flag or turning the scroll action off but nothing has fully worked just yet. I'm hoping to solve this issue with a little more trial and error.<br><br><br>UPDATE & SOLUTION: So I'm going to explain my solution to this as it took a while to work out. I ended up turning the bulk of the code into a function and having the function call itself to reset the scroll: <br><br>1. I added <code>$(window).off(\"scroll\"); inside the function to stop the scroll command from firing multiple times.</code> <br><br>2. The big trick was to 'reset' the scroll event. To do this I called the function inside itself, something like this (simplified):<br><br><code>function loadAction() {if (//page gets close to bottom)$(window).off(\"scroll\"); //code that loads content goes here$(window).scroll(function() {loadAction();});}</code><br><br>The other methods I tried never turned the scroll event back on. This was important because my page loads several snippets as the user scrolls down.<br><br> 3. I then created the initial .scroll event for when the page loads:<br><br><code>$(window).scroll(function() {loadAction();});</code>",
+    "images" : "2020.11.18.webm"
+    },
+    {
+    "date" : "2020.11.03", 
+    "title" : "Understanding Synchronous and Asynchronous Tasks in Javascripts",
+    "post" : "I'm currently re-working my landing page for my website as the previous setup was not originally my idea and it was severely slowing down the home page. It was a beautiful sketch done using processing language (you can see some amazing creative coding at openprocessing.org) but really hindered the page optimization.<br><br>I decided to go with a text that changes shadow based on the cursor location. It was fairly straight forward in Javascript/jquerey - I converted the X and Y coordinates of the screen to numbers associated with the required CSS properties to make a shadow effect. <br><br>The tricky part is getting an alternative shadow animation for mobile devices. I decided to try the route of using for loops to run through a series of numbers to change the position of shadows/light. I wanted the loop to run between 10 and -10; once this was done I want the loop to go in the reverse direction: from -10 to 10. This would create the animation of a light moving from one side of the screen to the other. So far this harder than it sounds; normally the first loop would run after the second loop like a synchronous call. However i think because I am using setInterval I currently have two loops(10 to -10 and -10 to 10) that run at the same time instead of one after another. I need to make the asynchronous setup work synchronously.",
+    "images" : "2020.11.03.webm"
+    },
+    {
+    "date" : "2020.10.16", 
+    "title" : "Second Iteration of Website & IBAT Degree",
+    "post" : "Well it's been a while but I have definitely been busy going through coursera - I've learned quite a few different things for both web design and architecture. I also found out that I completed the IBAT Developer course with distinction!<br><br>The second iteration of my website has definitely been an improvement - I realize that web design, like architecture, can go through several phases before achieving something seen as 'complete'. On top of incorporating a processing sketch into my webpage, I have also tried my hand at using AJAX in JQuery for my photography page.<br><br> I would normally post and image of the web page but this time I'm showing a pencil drawing I recently did for this past week - something I haven't done in a while! The drawing is graphite on paper. Please take a look at the site as well by just going to neilcarder.com ",
+    "images" : "2020.10.16.jpg"
+    },
+    {
+    "date" : "2020.09.18", 
+    "title" : "Continuing with Learning - Coursera",
+    "post" : "I've been doing the best I can to find my next direction by finding online learning opportunities. There are a few free apps that help you learn code (like grasshopper) and there are many courses on coursera for free that contain a lot of interesting and useful information. There is usually an \"audit\" button located in each course that allows you to view the course for free (No certificate though!) Below is a list of a few Courses I have been auditing;<br><br>Foundations of Data Science: K-Means Clustering in Python (University of London)<br><br>Creative Programming for Digital Media & Mobile Apps (University of London)<br><br>Programming for Everybody: Getting started with Python (University of London)<br><br>Front end Web Development with React (The Hong Kong University of Science and Technology)<br><br>Design Computing: 3D Modeling in Rhinoceros with Python/Rhinoscript (university of Michigan)<br><br>The Image below was created for the K-Means Clustering course. The graph is created using python with a series of libraries (matplot, numpy). The graph is basically an excel dataset that has been plotted and turned into a set of two clusters using the K-means Algorithm. Its amazing how we use mathematics to determine and identify patters!",
+    "images" : "2020.09.18.png"
+    },
+    {
+    "date" : "2020.08.12", 
+    "title" : "JavaScript Tutorials and my Next Steps",
+    "post" : "I've been somewhat vacant on this blog as I'm trying to get a more in-depth understanding of Javascript and figure out another project/programs to use. I have a strong sense learn either React or Python next but haven't fully decided what to focus on.<br><br>I found a seemingly good app for learning JavaScript called Grasshopper. It's a mix between snippits of information and \"puzzles\" to solve. Again, like almost everything I've mentioned on this blog, it's free!",
+    "images" : "2020.08.12.jpg"
+    },
+    {
+    "date" : "2020.07.23", 
+    "title" : "Less is More",
+    "post" : "I have been trying to make my architecture page more responsive - I was finding that there were a lot of awkward gaps when checking the different sizes of the screens. This is partly because I was pretty dead set on showing a two- column layout for my projects.<br><br>I finally came to the conclusion that I was putting too many constraints on the rows. I ended taking the row measurements out of the grid and just let the rows stack themselves as the page changes shape. The page is looking like it's keeping the image proportions much more stable while avoiding awkward excess gaps. One way I achieved this was that I had set one \"buffer\" image in my grid. I set the image as a background, the height to 100% and let the sides crop as the grid changes. This helps me achieve responsiveness while maintaining a two-column grid system (See the video below).",
+    "images" : "2020.07.23.webm"
+    },
+    {
+    "date" : "2020.07.21", 
+    "title" : "Learning Something New Every Day",
+    "post" : "So last night I learned that I don't want a MODAL Image for my photo web page - I want a LIGHTBOX. This will let the user pick and image and then move left to right using arrow keys. I originally thought that I would be using a Modal image and then add adjustments in order to navigate through each image. But lo and behold someone has already coded <a href=\"https://github.com/lokesh/lightbox2/releases\">something like this and is nice enough to share it with the world</a> (Thanks Lokesh!).<br><br>I also learned how to <a href=\"https://www.riecks.com/forphotogs/copyrightaction.html\">create an automated process</a> on photoshop which is pretty darn awesome! I made a process that opens the file, saves the file with my copyright info and then closes it.",
+    "images" : "2020.07.21.webm"
+    },
+    {
+    "date" : "2020.07.20", 
+    "title" : "Adding Srcset and Playing with Modal Images",
+    "post" : "I noticed that going onto the mobile site for images tends to get pretty slowly at times. I found an <a href=\"https://html.com/attributes/img-srcset/\">article on using Srcset</a> which tells the browser which image to pick depending on screen width. I'm hoping just two different sized images will work fine.<br><br>I've also finally started to dive into getting modal images for my photography section. This will allow a full screen image to pop up when clicking on my thumbnail - that way would can see all the goodness of my photos. So far it's just taking some CSS and a bit of javascript to get it working. For some reason though my Navbar is poking through the background image! I've been playing with the Z-index to try and get it to work but it's proving to be troublesome. I'll just have to keep plugging away at it.",
+    "images" : "2020.07.20.webm"
+    },
+    {
+    "date" : "2020.07.16", 
+    "title" : "Trying to \"Clean Up\" my Code",
+    "post" : "I'm getting to the point where I feel like I have enough content to show. Now I'll just be going through my code and try to make it better. Making it more responsive is my main goal right now which should take a few days I think. I find it pretty interesting that the design of your website has to be intuitive and change for each user.<br><br>I learned a neat trick from yesterday's IBAT class regarding the ordering of items! you can set a media query and change the order of items in your html which would help greatly for mobile applications. I've currently applied to my flexbox children in my Architecture page.",
+    "images" : "2020.07.16.jpg"
+    },
+    {
+    "date" : "2020.07.14", 
+    "title" : "Making Things Responsive and Changing the Nav Bar",
+    "post" : "I've been looking through the web pages and trying to make them more responsive (particularly the About page). Much harder to do than I thought - consistency through every size of screen is very difficult. I think the key is just to make the page as versatile as possible.<br><br>Because I'm looking at responsiveness I've decided to change the nav bar of my web page - I found a pull-out menu instead of my previous hover option which is much more friendly for phones (and its a much smoother experience). I found a great menu option on github and changed around the graphics (Thank you <a href = \"https://github.com/oncebot\">Oncebot!!!</a>).",
+    "images" : "2020.07.14.webm"
+    },
+    {
+    "date" : "2020.07.10", 
+    "title" : "Using Git to Upload my Files(different from Github!)",
+    "post" : "I'm going to put my half finished software on github to show my brother and current webdev teacher (Don't go on the mobile site yet). It will be nice to get some advice on the current progress!<br><br>Because I have a content heavy site with a lot of images (thanks to my photography hobby) I' m using something called Git to upload the majority of my files. I initially tried dumping all my files at once onto my Github web page and it did not like that (max number of files they allow to be uploaded at once is 100). And as I have a few layers within my file system I can't uploaded each file individually with making my Git page look like a dog's breakfast (thanks again Github)<br><br>So anyways the Git software took quite some time to understand as I'm still fairly accustomed to user-friendly interfaces - Git is just a command line where you need to enter some specific code for things to work. I manage to find some online tutorials in order to get where I needed to go (as well as some serious trial and error!)",
+    "images" : "2020.07.10.png"
+    },
+    {
+    "date" : "2020.07.09", 
+    "title" : "Photography Page Works and I Bought a Domain.",
+    "post" : "Base of the photography page is done - it seemed to have gone by more quickly than the other pages as i just listed it as a simple list of photos - I used flexbox for the layouts which was fairly straightforward expect i was having some issues centering my montage photos on the screen. I'll also be adding a click to full screen option but will do that on my second pass.<br><br>I also bought a domain and am now the proud owner of neilcarder.com!",
+    "images" : "2020.07.09.webm"
+    },
+    {
+    "date" : "2020.07.08", 
+    "title" : "Working with Fade Effects",
+    "post" : "So a seemingly small adjustment took a large part of the day today - I wanted to create a fade effect with a description over an image-link. Unfortunately I ran into a problem as I tried to use a standard hover property using CSS - this created an issue that prevented the \"a href\" tag from working - I had to organize the fade effect around the link tag and used a combination of block display with relative positions in order to get the effect that I wanted.<br><br>It was a long time creating this feature but I'm glad I managed to make it work. Now I'll have to think about how to organize the phone layout.",
+    "images" : "2020.07.08.webm"
+    },
+    {
+    "date" : "2020.07.07", 
+    "title" : "Architecture Page is Almost Completed",
+    "post" : "I've got the Architecture page almost done - enough that I will come back later to tweak some final things. I initially wanted to do a Parallax scroll effect for this page but once i put the script in in realized it didn't work very well with the layouts. I put in a fade effect instead for each project sheet.",
+    "images" : "2020.07.07.webm"
+    },
+    {
+    "date" : "2020.07.06", 
+    "title" : "Box, Section and Panels at IBAT",
+    "post" : "Unfortunately I missed the last web development class from IBAT but had reviewed the class online today. A lot of the content I had already picked up from working on my own site but some of it was fairly handy - an example is being able to apply properties to one child in an element and using several classes in one DIV in order to create a more efficient CSS file.",
+    "images" : "2020.07.06.jpg"
+    },
+    {
+    "date" : "2020.06.30", 
+    "title" : "Architecture Page is Moving Along.",
+    "post" : "I've got my architecture page progressing. The first two sections (JFA and ICON) seem to be coming along nicely. I tried to simplify these layouts by just using the float property. My layouts from architecture school i think will work better using grid - I definitely feel like I'm already getting comfortable with the grid property.",
+    "images" : "2020.06.30.webm"
+    },
+    {
+    "date" : "2020.06.28", 
+    "title" : "Changing my mind on the Side Scroll(Didin't Take Long)",
+    "post" : "I took a look at it the next day and realized I'm doing pretty good with the side scroll - I just have to be careful with the screen versatility. I'm going leave it as it is right now because I feel pretty successful with it and come back to tweak it later. And after seeing it work on my laptop I would love to share it with others. On to my architecture portfolio!",
+    "images" : "2020.06.28.webm"
+    },
+    {
+    "date" : "2020.06.25", 
+    "title" : "Scraping the Side Scroll... for now",
+    "post" : "I've decided to take a U-Turn on my \"about\" page and go from a side scrolling page to a standard scroll for now. Once I'm done the site I can focus on re-working this page but I want to get things done in order to showcase myself. I have a feeling that making a side scroll page will be a longer process than I think. I haven't been defeated - just delayed!",
+    "images" : "2020.06.25.webm"
+    },
+    {
+    "date" : "2020.06.24", 
+    "title" : "Testing with a Web Browser (Firefox Developer)",
+    "post" : "Today I realized a great benefit of the inspect element on the web browser - it very easily and quickly lets you test you code. At least for front end development, I can can load my html file onto the browser and play around if is doesn't look the way I want. This may sound average to the experienced developer but it felt like an amazing revelation to me!",
+    "images" : "2020.06.24.jpg"
+    },
+    {
+    "date" : "2020.06.23", 
+    "title" : "Replaced Hard Drive",
+    "post" : "Not as bad as the title sounds. Over the weekend I noticed that my laptop's performance was really slowing down (it's five years old). I decided to hold off on using it very much until I replaced my hard drive with a new SSD. Just put the SSD in the laptop and it works great! Now I'm also trying to purge old files and images as I lost some hard drive size with a smaller SSD.",
+    "images" : "2020.06.23.png"
+    },
+    {
+    "date" : "2020.06.18", 
+    "title" : "Got a Side Scroll Working",
+    "post" : "I'm pretty sure I've been finding at least one additional tool/website per day. This one is code pen which is another useful place where people  store their code and share it with others. I was able to find a great setup for a side scroll on my about page. It unfortunately took a long  time cause I wasn't first aware that the script uses Jquery to make the  mouse wheel scroll sideways. But it works! I'm also trying to understand how to use grid in CSS as it will probably be efficient for my about page.",
+    "images" : "2020.06.18.png"
+    },
+    {
+    "date" : "2020.06.17", 
+    "title" : "On to the Next Page!",
+    "post" : "I've  got my index to a reasonable level of detail and I'm going to be  working on my about page. My weekly class from IBAT had given me a few  tip and tricks including the use of extensions in Visual studio. I've  also been looking at a site called css- tricks which has a lot of  information on how to understand some more modern css properties.",
+    "images" : "2020.06.17.jpg"
+    },
+    {
+    "date" : "2020.06.16", 
+    "title" : "The Learning Curve",
+    "post" : "So learning to code is definitely a challenge.... I'm constantly testing  with the browser to see how things are going. I'm trying to think what  what I want to build and then looking up a good way to code it -  W3schools.com seems to be a very helpful list on how to building using  html and css (I haven't even touched javascript yet.) After so  frustration i managed to get my nav bar set up!!!",
+    "images" : "2020.06.16.png"
+    },
+    {
+    "date" : "2020.06.15", 
+    "title" : "Working on the Index Page for the Site",
+    "post" : "I've  started to work on the home page (or index) for the website. It's  really great to see a result after typing some code in! There's already been quite a lot of trial and error already but I still feel there has been some progress made.",
+    "images" : "2020.06.15.jpg"
+    },
+    {
+    "date" : "2020.06.14", 
+    "title" : "Lets get Coding!",
+    "post" : "So I've got my desktop layout to a reasonable design (will probably look  at the mobile version after the desktop version is up and running). Now i  want starting going through the process of coding. I'm going to go  through the IBAT lesson first to hopefully get a further grasp on what  the hell I'm doing. Then I'll try to put my layout on the web!",
+    "images" : "2020.06.14.jpg"
+    },
+    {
+    "date" : "2020.06.13", 
+    "title" : "Desktop Layout Coming Along Nicely",
+    "post" : "I'm  really seeing some development with the desktop layout! Once I have the  architecture page sorted out I'll start my journey building the  website. I could play and tweak the layout for ever but I have to remind  myself that I want to develop an understanding of programming - this  means I'll have to stop focusing on the page layouts and get into how to  code the webpage. The font type is really starting to get to me though -  I don't think I'll be able to stop thinking about what the best font could be!",
+    "images" : "2020.06.13.jpg"
+    },
+    {
+    "date" : "2020.06.12", 
+    "title" : "First class at IBAT",
+    "post" : "I  received an email for my web development course at IBAT! I was a little late to the course so the first lesson was a few days ago but luckily the classes are recorded. <br><br> The first class was useful as it introduced me to some very helpful tools - all of which have no cost.<br><br>1. A free place to host your website: Github 2. Free software to assist in writing code: Visual Studio 3. A browser specifically designed to assit in web development: Firefox Developer Edition",
+    "images" : "2020.06.12.png"
+    },
+    {
+    "date" : "2020.06.11", 
+    "title" : "Enrolled in IBAT",
+    "post" : "Received  confirmation that I'm enrolled in the web development class at IBAT!  Hopefully it comes in handy. I was either thinking to participate in web  development or the python course - I think the web development course  made sense with my current task <br><br> Also I found a quick way to re-size my standard images using Adobe bridge/photoshop! A tool called image processor can resize images in bulk to a maximum pixel dimension. It's a great time saver.",
+    "images" : "2020.06.11.png"
+    },
+    {
+    "date" : "2020.06.10", 
+    "title" : "Image Organizing and Optimization",
+    "post" : "So I've almost got my images fully ordered in the way I want to present in  my website. I'm looking further into naming methods for the images.  I'll be looking at all my photos and ensuring that the naming is  relevant to each photo. Such as adding location and photo type (E.g.  Places-Seville-Travel). If I were really want some traffic in my website I might have to look into companies that  provide search number statistics. However I'm just doing this to learn  and advertise myself so just some relevant naming should be fine.<br><br>I will have to also spend some time optimizing the size of my images as they  are sized fro print quality. This would be too large for a web application.",
+    "images" : "2020.06.10.png"
+    },
+    {
+    "date" : "2020.06.09", 
+    "title" : "Organizing",
+    "post" : "I realized that all my web images will need file paths when creating the  website. I've been spending all day just organizing images on my  desktop! Mind you my site will have a photography section so it will be a  very image heavy site - but still its amazing how much time and effort goes into just organizing the web content even before it gets built. <br><br>I'm getting all my images in a folder per page - then I'll figure the naming system for the images (Maybe just numbers?)",
+    "images" : "2020.06.09.png"
+    },
+    {
+    "date" : "2020.06.08", 
+    "title" : "Further Learning on Mimo",
+    "post" : "Spent  the weekend looking at some more CSS lessons and a little bit of  JavaScript!. I got an important lesson on variables for the first two  lessons. I also stumbled upon javascript.com which seems to have some useful resources on getting started.<br><br>I'm also trying to get a least a base design made for the web page so I can start developing the code the desktop site.",
+    "images" : "2020.06.08.png"
+    },
+    {
+    "date" : "2020.06.05", 
+    "title" : "Laying Out Art-Boards",
+    "post" : "Working  on the page layouts and lots of websites. Googling \"best portfolio websites\" brings up some amazing examples. Establishing links between  pages on XD definitely helps you understand more about what needs to be  placed on a website.<br><br> I've  also applied to a free online course from  IBAT College In Dublin. They  are currently offering one free course to front line workers and those  who had lost their job due to the COVID Pandemic. Let's hope it goes well!",
+    "images" : "2020.06.05.png"
+    },
+    {
+    "date" : "2020.06.04", 
+    "title" : "Switching to Design",
+    "post" : "I've realized that just like architecture,  the product design can be laid out first and the details get worked out  later. So I'm going to work on how I want the website to look and feel;  then i'll hopefully take a steep learning curve while trying to design  the thing. I've downloaded a program called Adobe XD. It's fairly easy  to pick up the basics for me because I have some background experience  with photoshop and Illustrator - and its free!!",
+    "images" : "2020.06.04.png"
+    },
+    {
+    "date" : "2020.06.03", 
+    "title" : "Continued Learning",
+    "post" : "Going  through Mimo again - I've also inspected some code from a few web pages  and am picking up a few of the lines! I had no idea you could take a  look at how any website has been built. But I notice I have a long  way to go to make a detailed web page. <br><br>I've  also been looking up some other sources for learning. I found a web  site called W3schools.com but haven't taken a good look at it yet!",
+    "images" : "2020.06.03.png"
+    },
+    {
+    "date" : "2020.06.02", 
+    "title" : "Back to Basics",
+    "post" : "I've  got to start somewhere. And it looks like for me it's a mobile app  called Mimo. It's got a wide range of tasks and starts from the bottom  which is perfect for a newbie like me. I've got the very basics of HTML  and understand what CSS is now! More detailed lessons and tasks can be  unlocked with the pro version ($$$).<br><br>I've  also asked my brother a few questions already as he has been in software development for a while now. However I think he will come in  handy when I've further developed my understanding.",
+    "images" : "2020.06.02.jpg"
+    },
+    {
+    "date" : "2020.06.01", 
+    "title" : "A New Start",
+    "post" : "Well I've been let go from my job at an Architecture firm in Dublin. The firm was great - it had a relaxed  atmosphere and my employer let me bring my dog into work. I hope to keep  in touch with them. I'm definitely disappointed about the situation but  don't want to waste any time. That's why I've decided to learn a bit  more about software design while trying for further employment. I'll be  able to learn a valuable skill and advertise myself at the same time!",
+    "images" : "2020.06.01.jpg"
+    }
+]
+

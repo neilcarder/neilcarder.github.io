@@ -1,0 +1,145 @@
+/* ----- Hero Layout----- */
+
+.hero-doodly {
+    z-index: 0;
+    background-image: url('../images/doodly/hero.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .hero-doodly {
+        background-image: url('../images/doodly/hero-small.jpg');
+    }
+
+}
+
+.block-it{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+     /* padding: 5px; */
+     /* background:rgba(0, 0, 0, 0.5); */
+}
+
+
+.block-it h4 {
+    font-size: calc(52px + (92 - 52) * ((100vw - 320px) / (1600 - 320)));
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    margin: 0 auto 15% auto;
+    align-self: flex-end;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .block-it h4{
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .block-it h4{
+        width: 90%;
+    }
+
+}
+
+.container-section-heading{
+    background-color: #EAEAEA;
+    width: 100%;
+    height: 30%;
+    z-index: 99;
+    position: relative;
+}
+
+.arch-intro {
+    text-align: center;
+    margin: auto;
+    padding: 8% 0;
+    width: 70%;
+}
+
+/* ----- End Hero Layout----- */
+
+/* End Standard grid features */
+/* ----- End Standard Sheet Layouts ----- */
+
+/* ----- JFA & ICON Page Setup ----- */
+
+.title-right { 
+    padding: 0 50px;
+    width: 100%;
+    text-align: right;
+    margin: -70px 0px 0px 0px;
+}
+
+.title-left { 
+    padding: 0 50px;
+    width: 100%;
+    margin: -70px 0px 0px 0px;
+}
+
+.vid-box { 
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .vid-box{
+        width: 60%;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .vid-box{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+.vid-box video { 
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 15%;
+}
+
+.vid-box video:hover { 
+    cursor: pointer;
+}
+
+.bg-color { 
+    background-color: #EAEAEA;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

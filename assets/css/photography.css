@@ -1,0 +1,149 @@
+.content{
+	margin-left: 18%;
+	margin-top: 8%;
+	/* margin-bottom: 300px; */
+}
+
+.content:last-child{
+	margin-bottom: 300px;
+}
+
+@media all and (max-width:767px) {
+
+	.content{
+		margin-left: 2%;
+		margin-top:30%;
+		/* margin-bottom: 100px; */
+	}
+	
+}
+
+.stills{
+	margin-right: 2%;
+	margin-bottom: 18px;
+}
+
+.thumbnail {
+	padding: 12px;
+}
+
+.thumbnail:hover,
+.thumbnail:focus {
+  opacity: 80%;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.montage-flex {
+	display: flex;
+	flex-direction: column;
+	margin-right: 15%;
+	margin-left: 10%;
+}
+
+.montage-flex img {
+	margin: 100px 0;
+}
+
+.animate__animated.animate__fadeIn {
+	--animate-duration: 3s;
+}
+
+/* ---Large Screens--- */
+@media all and (min-width:1900px) {
+
+	.montage-flex {
+		margin-right: 20%;
+		margin-left: 20%;
+	}
+	
+
+}
+
+/* ---Mobile Adjustments--- */
+@media all and (max-width:767px) {
+
+	.thumbnail {
+		padding: 10px;
+	}
+
+	.montage-flex {
+		padding: 0px 5% 50px 5%;
+	}
+
+}
+
+/* ----- Simple side-nav for photography ----- */
+
+.photo-nav {
+	position: fixed;
+	top: 0px;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 18%;
+	background-color: transparent;
+	justify-content: center;
+	
+}
+
+.photo-nav *{
+	font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (1600 - 320)));;;
+    color:#3e5769; 
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-weight: 600;
+	line-height: 1.4;
+	opacity: 0.6;
+	align-self: center; /* for flexbox */
+	padding: 5%; /* for flexbox */
+	cursor: pointer;
+	text-decoration: none; 
+	
+}
+
+.photo-nav a:hover,
+.photo-nav a:active {
+	opacity: 1;
+	color: black;
+	transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+}
+
+.current {
+	opacity: 1;
+	color: black;
+}
+
+
+@media all and (max-width:767px) {
+
+	.photo-nav {
+		position: fixed;
+		top: auto;
+		bottom: 0px;
+		display: flex;
+		flex-direction: row;
+		/* margin-top: 0;
+		padding-bottom: 1.5%; */
+		width: 100%;
+		background-color:#e1d0ae;
+		z-index: 1;
+		justify-content: center;
+		height: 50px;
+	}
+
+	.photo-nav *{
+		margin-bottom: 5%;
+		font-size: 12px;
+		padding: 1.5%; /* for flexbox */
+	}
+
+	.montage-flex {
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+
+}
+

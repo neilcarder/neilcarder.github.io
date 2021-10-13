@@ -1,0 +1,241 @@
+.content{
+	margin-left: 22%;
+	margin-top: 8%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* margin-bottom: 300px; */
+}
+
+.content div {
+	width: 28%;
+	margin: 5%;
+}
+
+.content h2 {
+	font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1600 - 320)));
+	font-family: 'Oswald', sans-serif;
+	width: 70%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content img,
+.content video {
+	width: 80%;
+	height: 250px;
+	object-fit: cover;
+	margin-top: 5%;
+	margin-bottom: 3%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 1px black;
+	display: block;
+}
+
+.content div:first-child {
+	width: 100%;
+}
+
+.content div:first-child img {
+	width: 70%;
+	height: auto;
+	object-fit: fill;
+	margin-top: 5%;
+	margin-bottom: 3%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	display: block;
+}
+
+.montage-flex {
+	display: flex;
+	flex-direction: column;
+	margin-right: 15%;
+	margin-left: 10%;
+}
+
+.montage-flex img {
+	margin: 100px 0;
+}
+
+.animate__animated.animate__fadeIn {
+	--animate-duration: 3s;
+}
+
+/* ----- Simple side-nav for Blog ----- */
+.nav-box {
+	position: fixed;
+	top: 0px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	min-height: 480px;
+	width: 22%;
+    justify-content: center;
+	background: #fff;
+	transition: cubic-bezier(.79,.15,.25,.96) 0.65s;
+	z-index: 5;
+}
+
+.nav-box img {
+	width: 40%;
+	align-self: center;
+	margin-bottom: 5%;
+}
+
+.nav-box h3 {
+	width: 65%;
+	align-self: center;
+	text-align: left;
+	padding: 0 0.5px;
+	margin-bottom: 2%;
+	border-bottom: solid 1.5px #3e5769;
+	border-top: solid 1.5px #3e5769;
+}
+
+.nav-box a:hover,
+.nav-box a:active {
+	opacity: 1;
+	color: black;
+	transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.5s;
+}
+
+.nav-box-is-open {
+	margin-left: 0;
+}
+
+.nav-box-is-closed {
+	margin-left: -75%;
+}
+
+#start {
+	cursor: pointer;
+}
+
+.directory a {
+	font-size: calc(8px + (14 - 8) * ((100vw - 320px) / (1600 - 320)));;;
+    color:#3e5769; 
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-weight: 600;
+	line-height: 1.4;
+	opacity: 0.6;
+	display: block;
+	cursor: pointer;
+	text-decoration: none; 
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.content h5 {
+	font-size: calc(14px + (32 - 14) * ((100vw - 320px) / (1600 - 320)));;;
+	font-family: 'Oswald', sans-serif;
+}
+
+.directory {
+	height: 35%;
+	overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.directory::-webkit-scrollbar { /* WebKit hide scrollbar */
+    width: 0;
+    height: 0;
+}
+
+.content .blog-post p,
+.content .blog-post h4 {
+	padding-bottom: 30px;
+}
+
+.blog-post ul,
+.blog-post ol {
+	font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));
+	line-height: 1.4;
+	color: #3e5769;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+.content .blog-post {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+/* Changes Side Directory into a Movign Tab */
+.directory-tab {
+	color:#3e5769; 
+	font-size: 16px;
+	font-family: 'Oswald', sans-serif;
+	display: inline-block;
+	position: fixed;
+	left: -30px;
+	bottom: calc(50% - 20px);
+	z-index: 6;
+	justify-content: center;
+	width: 90px;
+	height: 35px;
+	background: #f1f3f6;
+	border-radius: 5%;
+	box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
+	inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
+	-7px -7px 20px rgba(255, 255, 255, 1),
+	inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+	transform: rotate(90deg);
+}
+
+.directory-tab {display: none;}
+
+.current {
+	opacity: 1 !important;
+	color: black !important;
+}
+
+@media all and (max-width:768px) {
+
+	.content img, .content video {
+		width: 100%;
+	}
+
+	.nav-box {
+		width: 75%;
+		margin-left: -75%;
+	}
+
+	.nav-box img {
+		width: 30%;
+	}
+
+	.thumbnail {
+		padding: 10px;
+	}
+
+	.montage-flex {
+		padding: 0px 5% 50px 5%;
+	}
+
+	.content{
+		margin-left: 2%;
+		margin-top:30%;
+		/* margin-bottom: 100px; */
+	}
+
+	.content div {
+		width: 80%;
+		margin: 5%;
+	}
+
+}
+
+
+
+
+
+
