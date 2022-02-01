@@ -1,0 +1,35 @@
+/* ----- Hero Layout----- */
+.bg-color { 
+    background-color: #EAEAEA;
+}
+
+.hero-drawing { 
+    margin: 10% 30%;
+    text-align: center;
+}
+
+.hero-drawing h2 { 
+    font-size: calc(16px + (60 - 16) * ((100vw - 320px) / (1600 - 320)));;;
+}
+
+.hero-drawing img { 
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
