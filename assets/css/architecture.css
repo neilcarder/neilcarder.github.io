@@ -1,20 +1,18 @@
-body { background-color: #f0f0f0; } 
-
 /* ----- Hero Layout----- */
 
 .hero-arch {
     z-index: 0;
-    background-image: url('../images/architecture/background.webp');
+    background-image: url('../images/architecture/background.jpg');
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
 }
 
 @media(max-width: 1024px){
     .hero-arch {
-        background-image: url('../images/architecture/background-900.webp');  
+        background-image: url('../images/architecture/background-900.jpg');  
      }
  }
 
@@ -22,7 +20,7 @@ body { background-color: #f0f0f0; }
     display: flex;
     justify-content: space-between;
     position: absolute;
-    bottom: 0%;
+    bottom: 30%;
     width: 100%;
      /* padding: 5px; */
      /* background:rgba(0, 0, 0, 0.5); */
@@ -37,7 +35,7 @@ body { background-color: #f0f0f0; }
 }
 
 .block-it h4 {
-    font-size: calc(34px + (60 - 34) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(32px + (52 - 32) * ((100vw - 320px) / (1600 - 320)));
     color: white;
     margin-bottom: 7%;
     width: 50%;
@@ -91,7 +89,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 /* Paragraph links ends */
 
 .container-section-heading{
-    background-color: #f0f0f0;
+    background-color: #EAEAEA;
     width: 100%;
     height: 30%;
     margin-bottom: 100px;
@@ -115,15 +113,15 @@ h3 a:hover, h3 a:focus, h3 a:active {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 3%;
-    margin: 0 8% 150px 8%;
+    padding: 2% 0;
+    margin: 0 10% 150px 10%;
 }
 
 @media all and (min-width:1500px) {
 
     .flex-back {
-        margin: 75px 12%;
-        padding: 3%;
+        margin: 75px 15%;
+        padding: 5%;
     } 
 
 }
@@ -144,7 +142,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
         display: flex; 
         flex-flow: row wrap; 
         justify-content: space-between;
-        margin: 200px 8%;
+        margin: 200px 10%;
         padding: 3.5%;
         height: 100%;
 }
@@ -152,8 +150,8 @@ h3 a:hover, h3 a:focus, h3 a:active {
 @media all and (min-width:1500px) {
 
     .flex-grid {
-        margin: -20px 12% 200px 12%;
-        padding: 4%;
+        margin: -20px 15% 200px 15%;
+        padding: 5%;
     } 
 
 }
@@ -221,13 +219,13 @@ h3 a:hover, h3 a:focus, h3 a:active {
 }
 
 .flex-back div { 
-    width: 50%; 
+    width: 58%; 
     padding: 2% 1%;
     align-self: center;
 }
 
 .flex-back img { 
-    width: 50%;
+    width: 38%;
     padding: 2% 1%;
     align-self: center;
 }
@@ -313,7 +311,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 .arch-4 {
     grid-area: interior1-a;
     border: solid 1px;
-    background-image: url("../images/architecture/03-archives-of-unfinished-work/web/vingette.webp");
+    background-image: url("../images/architecture/03-archives-of-unfinished-work/web/vingette.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -346,7 +344,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 .arch-9 {
     grid-area: interior3-a;
     border: solid 1px;
-    background-image: url("../images/architecture/03-archives-of-unfinished-work/web/vingette2.webp");
+    background-image: url("../images/architecture/03-archives-of-unfinished-work/web/vingette2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -419,7 +417,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 .comm-4 {
     grid-area: birdseye-c;
     border: solid 1px;
-    background-image: url("../images/architecture/04-community-centre/web/site-view.webp");
+    background-image: url("../images/architecture/04-community-centre/web/site-view.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 350px;
@@ -517,7 +515,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 .wind-5 {
     grid-area: birdeye-w;
     border: solid 1px;
-    background-image: url("../images/architecture/05-wind-research-centre/web/birds-eye.webp");
+    background-image: url("../images/architecture/05-wind-research-centre/web/birds-eye.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -644,7 +642,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 
 .desk-7 {
     grid-area: desk-open-d;
-    background-image: url("../images/architecture/06-b22-legacy/web/desk-open.webp");
+    background-image: url("../images/architecture/06-b22-legacy/web/desk-open.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -717,7 +715,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 
 .sound-5 {
     grid-area: listening-s;
-    background-image: url("../images/architecture/07-sound-installation/web/progress-3.webp");
+    background-image: url("../images/architecture/07-sound-installation/web/progress-3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
