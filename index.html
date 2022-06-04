@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/world.css">
     <link rel="stylesheet" type="text/css" href="assets/css/home.css">
     <link rel="stylesheet" type="text/css" href="assets/css/aos.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/moving-graphics.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
     <!-- Link to icons for Font Awesome 5 -->
@@ -97,16 +98,21 @@
   <!-- End mobile menu slide-out options -->
 
   <!-- Hero Page -->
-  <div class="hero r-gradient text-shadow">
-    <h1>Neil Carder</h1>
+  <div class="hero text-shadow">
+    <div class="circle color wave-1"></div>
+    <div class="circle color wave-2"></div>
+    <div class="circle color wave-3"></div>
+    <div class="circle color wave-4"></div>
+    <div class="circle color wave-5"></div>
+    <h1 class="inset">Neil<br>Carder</h1>
+    <div class= "hello-intro">
+      <a href="#cta" class="cta">
+        <i class="fas fa-arrow-down"></i>
+      </a>
+      <h3>This website showcases my understanding of design and my technical knowledge. It also offers a glimpse into my interests and who I am. Please have a look around!</h3>
+    </div>
   </div>
 
-  <div class= "hello-intro">
-    <a href="#cta" class="cta">
-      <i class="fas fa-arrow-down"></i>
-    </a>
-    <h3>This website showcases my understanding of design and my technical knowledge. It also offers a glimpse into my interests and who I am. Please have a look around!</h3>
-  </div>
 
   <!-- Angled Background -->
   <div class="clip-shadow">
@@ -160,19 +166,21 @@
   <!-- Jquerey Call -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
 
-  <!-- Hero Scripts -->
-  <script src="assets/js/landing.js"></script>
-
   <!-- Fade Script -->
   <script src="assets/js/aos.js"></script>
   <script>
   AOS.init({
     easing: 'ease-in-out-sine'
   });
+  
   </script>
+  <!-- hero script -->
+  <script type="text/javascript" src="assets/js/hero-hover.js"></script>
 
   <!-- Menu Scripts -->
   <script type="text/javascript" src="assets/js/menu.js"></script>
+
+  
 
   <!-- Cookie Consent Message -->
   <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
