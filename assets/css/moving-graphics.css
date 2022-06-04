@@ -1,0 +1,168 @@
+/*  ============= WEB BROWSER RESETS SPECIFIC FOR HOME PAGE ============ */
+html { min-height: 100%; height: auto; position:relative; }
+body { height: 100%; min-height: auto;  margin: 0px; overflow-x: hidden;} 
+
+/* ----- wavy lines at hero-----*/
+
+.circle {
+    position: absolute;
+    border-radius: 121% 128% 125% 124%/125% 120% 127% 125%;
+    opacity: 0.7;
+    margin-left: auto; 
+    margin-right: auto;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+    z-index: 0;
+}
+
+@media all and (max-width:480px) { 
+
+  body {overflow-x: auto;} 
+
+  .circle {
+    border-radius: 100% 100% 100% 100%/100% 100% 100% 100%;
+    transform: scale(0.9);
+}
+
+}
+
+.circle-bg{
+  background: #e1d0ae;
+  z-index: -1;
+}
+
+.color{
+  border: solid 7px #dbdbdb;
+  box-shadow: inset 0 0 15px rgb(55 84 170 / 0%), inset 0 0 20px rgb(255 255 255 / 0%), 7px 7px 15px rgb(55 84 170 / 15%), -7px -7px 20px rgb(255 255 255), inset 0px 0px 4px rgb(255 255 255 / 20%), inset 0px 0px 20px 10px rgb(224 217 217 / 60%);
+}
+
+.color-change{
+  border: solid 5px #363535;
+  box-shadow: none;
+}
+
+.scale1{
+  transform: scale(1.9);
+}
+
+.scale2{
+  transform: scale(1.5);
+}
+
+.scale3{
+  transform: scale(1.1);
+}
+
+.wave-1 {
+    width: 80vmin; 
+    height: 80vmin;
+    animation: transform 30s ease-in-out infinite both alternate, movement 30s ease-in-out infinite both;
+    -webkit-animation: transform 30s ease-in-out infinite both alternate, movement 30s ease-in-out infinite both;
+}
+
+.wave-2 {
+  width: 90vmin; 
+  height: 90vmin;
+  animation: transform2 50s ease-in-out infinite, movement2 5s ease-in-out infinite both;
+  animation-direction: alternate, reverse;
+  -webkit-animation: transform2 50s ease-in-out infinite, movement2 5s ease-in-out infinite both;
+  -webkit-animation-direction: alternate, reverse;
+}
+
+.wave-3 {
+  width: 100vmin; 
+  height: 100vmin;
+  animation: transform 60s ease-in-out infinite, movement2 15s ease-in-out infinite both;
+  animation-direction: alternate, reverse;
+  -webkit-animation: transform 60s ease-in-out infinite, movement2 15s ease-in-out infinite both;
+  -webkit-animation-direction: alternate, reverse;
+}
+
+.wave-4 {
+  width: 85vmin; 
+  height: 85vmin;
+  animation: transform3 20s ease-in-out infinite, movement2 10s ease-in-out infinite both;
+  animation-direction: alternate, reverse;
+  -webkit-animation: transform3 20s ease-in-out infinite, movement2 10s ease-in-out infinite both;
+  -webkit-animation-direction: alternate, reverse;
+}
+
+.wave-5 {
+  width: 95vmin; 
+  height: 95vmin;
+  animation: transform1 15s ease-in-out infinite, movement2 15s ease-in-out infinite both;
+  animation-direction: alternate, reverse;
+  -webkit-animation: transform1 15s ease-in-out infinite, movement2 15s ease-in-out infinite both;
+  -webkit-animation-direction: alternate, reverse;
+
+}
+
+    @keyframes transform {
+      0%,
+    100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+     14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+     28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+     42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+     56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+     70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+     84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+  }
+
+  @keyframes transform2 {
+    0%,
+  100% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+   14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+   28% { border-radius: 54% 30% 50% 42% / 60% 47% 52% 46%; } 
+   42% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+   56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+   70% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+   84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+@keyframes transform3 {
+  0%,
+100% { border-radius: 50% 40% 50% 40% / 52% 52% 52% 52%; } 
+ 14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+ 28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+ 42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+ 56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+ 70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+ 84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+/*   @keyframes movement {
+    0%, 100% { transform: none; }
+   50% { transform: translateY(5%) rotateY(3deg); }
+}
+
+@keyframes movement2 {
+  0%, 100% { transform: none; }
+ 50% { transform: translateY(-5%) rotateY(-2deg); }
+} */
+
+h1 {
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.inset{
+  background: radial-gradient(#777, #000);
+  color: transparent;
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
+.outset{
+  color:rgb(54, 54, 54);
+  /* text-shadow: 1px 3px 8px #8d8d8d; */
+  text-shadow: 2px 2px 5px #c8c8c8, -2px -2px 5px white;
+}
+
+@media all and (max-width:480px) { 
+
+  .hero {
+      height: 50vh;
+  }
+
+}

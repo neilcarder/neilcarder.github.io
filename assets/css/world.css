@@ -57,7 +57,7 @@ h5 {
 }
 
 h6 {
-    font-size: 18px;
+    font-size: 16px;
     color:#3e5769; 
     font-family: 'Maven Pro', sans-serif;
     font-weight: 600;
@@ -66,7 +66,7 @@ h6 {
 }
 
 h7 {
-    font-size: calc(30px + (80 - 30) * ((100vw - 320px) / (1600 - 320)));;;
+    font-size: calc(34px + (90 - 34) * ((100vw - 320px) / (1600 - 320)));;;
     color:#3e5769; 
     font-family: 'Oswald', sans-serif;
     letter-spacing: 0px;
@@ -176,7 +176,9 @@ p {
 .container-menu-desktop, 
 .flyout-menu { z-index: 100 }
 .container-menu-bar-mobile { z-index: 999 }
-.container-menu-desktop, .container-menu-bar-mobile { width:100% }
+.container-menu-desktop, .container-menu-bar-mobile { width:100vw}
+
+
 
 
 /* on mobiles - hide desktop menu */
@@ -206,7 +208,7 @@ p {
 	display: flex;
     justify-content: space-between;
     padding: 1% 4% 0 4%;
-    width: 100%;
+    width: 100vw;
 }
 
 /* menu links aligned horizontally */
@@ -309,7 +311,7 @@ p {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-    width: 100%;
+    width: 100vw;
     padding: 0 6% 0 6%;
 }
 
