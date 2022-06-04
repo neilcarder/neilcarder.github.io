@@ -67,11 +67,12 @@ h1 {
 
 }
 
-@media all and (min-width:481px) and (max-width:768px) { 
+@media all and (max-width:768px) { 
 
     .hero {
         background-size: 90% auto;
         background-position: center;
+        margin-bottom: 150px;
     }
 
 }
