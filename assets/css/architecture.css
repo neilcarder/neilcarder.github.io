@@ -2,7 +2,7 @@
 
 .hero-arch {
     z-index: 0;
-    background-image: url('../images/architecture/background.jpg');
+    background-image: url('../images/architecture/background.webp');
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 
 @media(max-width: 1024px){
     .hero-arch {
-        background-image: url('../images/architecture/background-900.jpg');  
+        background-image: url('../images/architecture/background-900.webp');  
      }
  }
 
