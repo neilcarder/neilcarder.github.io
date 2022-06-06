@@ -311,7 +311,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 .arch-4 {
     grid-area: interior1-a;
     border: solid 1px;
-    background-image: url("../images/architecture/03-archives-of-unfinished-work/web/vingette.jpg");
+    background-image: url("../images/architecture/03-archives-of-unfinished-work/web/vingette.webp");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -344,7 +344,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 .arch-9 {
     grid-area: interior3-a;
     border: solid 1px;
-    background-image: url("../images/architecture/03-archives-of-unfinished-work/web/vingette2.jpg");
+    background-image: url("../images/architecture/03-archives-of-unfinished-work/web/vingette2.webp");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -417,7 +417,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 .comm-4 {
     grid-area: birdseye-c;
     border: solid 1px;
-    background-image: url("../images/architecture/04-community-centre/web/site-view.jpg");
+    background-image: url("../images/architecture/04-community-centre/web/site-view.webp");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 350px;
@@ -515,7 +515,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 .wind-5 {
     grid-area: birdeye-w;
     border: solid 1px;
-    background-image: url("../images/architecture/05-wind-research-centre/web/birds-eye.jpg");
+    background-image: url("../images/architecture/05-wind-research-centre/web/birds-eye.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -642,7 +642,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 
 .desk-7 {
     grid-area: desk-open-d;
-    background-image: url("../images/architecture/06-b22-legacy/web/desk-open.jpg");
+    background-image: url("../images/architecture/06-b22-legacy/web/desk-open.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -715,7 +715,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
 
 .sound-5 {
     grid-area: listening-s;
-    background-image: url("../images/architecture/07-sound-installation/web/progress-3.jpg");
+    background-image: url("../images/architecture/07-sound-installation/web/progress-3.webp");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
