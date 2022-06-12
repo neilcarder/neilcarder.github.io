@@ -109,10 +109,11 @@ $(document).ready(function() {
 
     //Loading Joiner Content on Click script - Only Loads the first Snippet
     $(".joiner-content").click(function() {
-            $("#content").load("snippets/joiners.html"); 
+            $("#content").load("snippets/joiners.html", function(){
+                $("#content").justifiedGallery('destroy'); //allows montage content to load properly
+            });
             $("#content").removeClass("stills justified-gallery");
             $("#content").addClass("auto-height"); //Quick fix for height issue with Justified Gallery    
-            $("#content").justifiedGallery('destroy'); //allows montage content to load properly
             counter = -1; //resets the counter if user has previously scrolled through
     });
 
