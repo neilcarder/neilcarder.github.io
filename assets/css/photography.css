@@ -8,6 +8,11 @@
 	margin-bottom: 300px;
 }
 
+.content a:hover{
+	opacity: 0.85;
+	transition: ease-in-out 0.5s;
+}
+
 @media all and (max-width:767px) {
 
 	.content{
@@ -20,7 +25,10 @@
 
 .stills{
 	margin-right: 2%;
-	margin-bottom: 18px;
+}
+
+.stills{
+	margin-bottom: 200px;
 }
 
 .thumbnail {
@@ -38,8 +46,8 @@
 .montage-flex {
 	display: flex;
 	flex-direction: column;
-	margin-right: 15%;
-	margin-left: 10%;
+	margin-right: 20%;
+	margin-left: 15%;
 }
 
 .montage-flex img {
@@ -116,6 +124,10 @@
 	color: black;
 }
 
+/* This is used in photo-content.js for height issue with justifoed gallery */
+.auto-height{
+	height: auto !important;
+}
 
 @media all and (max-width:767px) {
 
@@ -131,7 +143,7 @@
 		background-color:#e1d0ae;
 		z-index: 1;
 		justify-content: center;
-		height: 50px;
+		height: 80px;
 	}
 
 	.photo-nav *{
@@ -146,4 +158,5 @@
 	}
 
 }
+
 

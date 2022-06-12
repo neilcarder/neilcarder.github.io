@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/world.css">
     <link rel="stylesheet" type="text/css" href="assets/css/photography.css">
     <link rel="stylesheet" type="text/css" href="assets/css/simple-lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/justifiedGallery.min.css" />
     
     <!-- Fade In CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
@@ -106,7 +107,7 @@
   </div>
 
   <!-- DYNAMIC CONTENT -->
-  <section class="content" id="content"></section>
+  <div class="content stills animate__animated animate__fadeIn " id="content"></div>
 
   <!-- Back to top -->
   <a href="#" class="back-to-top scroll display-none"><i class="fas fa-chevron-up"></i></a>
@@ -118,11 +119,19 @@
     <div class="bounce3"></div>
   </div>
 
-  <!-- Jquerey Call -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Footer -->
+  <div class= "footer">
+    <div class= "info-centre">
+      <p><b>Contact:</b><br>carderna@gmail.com</p>
+      <p><b>Living In:</b><br>Dublin</p>
+      <p><b>Currently working for:</b><br>Open to new positions</p>
+    </div>
+  </div>
+  <!-- End footer -->
 
-  <!-- Photo Gallery Script -->
-  <script  type="text/javascript" src="assets/js/jquery-tjgallery.min.js"></script>
+   <!-- Jquerey Call -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="assets/js/jquery.justifiedGallery.min.js"></script>
   
   <!-- Script that waits for imges to load (for AJAX with TJ Gallery)-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js"></script>
@@ -132,6 +141,9 @@
 
   <!-- Photograph Content Script (& Ajax)-->
   <script type="text/javascript" src="assets/js/photo-content.js"></script>
+
+  <!-- Masonry Grid layout-->
+  <!-- <script src="js/jquery.justifiedGallery.js"></script> -->
 
   <!-- Menu Scripts -->
   <script type="text/javascript" src="assets/js/menu.js"></script>

@@ -15,26 +15,26 @@ $(document).ready(function() {
         }
     });
 
+    // Settings for the Justified Gallery Script
+    var galleryDetails = $('#content').justifiedGallery({
+        margins : 8, 
+        rowHeight : 375,
+        captions : false,
+    });
+
     //variable for Lightbox Gallery
     var gallery = new SimpleLightbox(".content a", {});
 
-    //Function for TJ Gallery (Photo Grid)
-    function launchTJGallery() {
-        $(".stills").tjGallery();
-     };
-
     //Content of first load
     $("#content").load("snippets/stills.html", function() {
-        // wait until image content is loaded....
-        $("#content").waitForImages(function() {
-            launchTJGallery(); 
-        });
+        galleryDetails;
+        $('#content').justifiedGallery('norewind');
         gallery.refresh(); //destroys and rebuilds LightBox Gallery
     });
-    
+
     // *****My version of a Lazy load script*****
-       
-    var snippets = ['two', 'three', 'four', 'five', 'six', 'seven'], //array for html snippet files
+
+    var snippets = ['two', 'three', 'four', 'five', 'six'], //array for html snippet files
     counter = -1; //starts the counter at "two" becasue of (counter + 1) in loadAction
 
     function getDocHeight() {
@@ -51,25 +51,23 @@ $(document).ready(function() {
         var scrollToBottom =($(window).scrollTop() + $(window).height() >= (getDocHeight() - 500));
 
         if ((scrollToBottom) && $("*").hasClass("stills")) { //when scroll reaches bottom and has the right class of .stills
-            if(counter == 5){
+            if(counter == 4){
                 // If max html-files reached, Stop counting
                 counter = counter
             } else {
-                $(window).off("scroll"); // Performs the action only once. Important for TJ Gallery
+                $(window).off("scroll"); // Performs the action only once.
                 counter = (counter + 1); // increment the counter - Add % snippets.length; to reset the counter to 0  
                 snippetNumber = snippets[counter]; // changes the array item for each count
                 $.get("snippets/stills-" + snippetNumber + ".html", function(data){ //fecthes next Snippet in Line
                     $("#content").append(data); //adds data into the photo content section
-                    $("#content").waitForImages(function() { //applies Image layout after all images have been loaded
-                        $(".stills." + snippetNumber).tjGallery();
                         // The action below resets the scroll action on the lazy load
                         $(window).scroll(function() {    
                             loadAction(); 
                             //console.log(toggle);
-                        });
                     });
                     gallery.refresh(); //destroys and rebuilds LightBox Gallery
-                });             
+                    $('#content').justifiedGallery('norewind'); 
+                });     
             } 
         //Lazy Load for Montage Section
         } else if ((scrollToBottom) && $("*").hasClass("montage-flex")) { //when scroll reaches bottom and has the right class of montage-flex
@@ -101,27 +99,27 @@ $(document).ready(function() {
     //Loading Stills Content on Click script - Only Loads the first Snippet
     $(".still-content").on("click", function() {
         $("#content").load("snippets/stills.html", function() {
-            $("*").removeClass("joiners"); // Needed for Lazy loader
-            // wait until image content is loaded....
-            $("#content").waitForImages(function() {
-                launchTJGallery();
-            });
+            $("*").removeClass("joiners auto-height"); // Needed for Lazy loader
+            $(this).addClass("stills justified-gallery");
             gallery.refresh(); //destroys and rebuilds LightBox Gallery
+            $('#content').justifiedGallery('norewind'); //Runs Justified Gallery
             counter = -1; //resets the counter if user has previously scrolled through
         });
     });
 
     //Loading Joiner Content on Click script - Only Loads the first Snippet
     $(".joiner-content").click(function() {
-        $("*").removeClass("stills"); //ensures class is removed for the lazy Loading loading statment to work
-        $("#content").load("snippets/joiners.html");
-        counter = -1; //resets the counter if user has previously scrolled through
+            $("#content").load("snippets/joiners.html"); 
+            $("#content").removeClass("stills justified-gallery");
+            $("#content").addClass("auto-height"); //Quick fix for height issue with Justified Gallery    
+            $("#content").justifiedGallery('destroy'); //allows montage content to load properly
+            counter = -1; //resets the counter if user has previously scrolled through
     });
 
     //Toggle Active Settings - Stills and Montage
     $("#toggleActive a").on("click", function(){
         $("a.current").removeClass("current");
-        $(this).addClass("current");
+        $(this).addClass("current ");
     });
 
     //Dissable Right click over images
