@@ -82,6 +82,19 @@ body { background-color: #f0f0f0; }
     transform: scale(1.2);
     opacity: 0.4;
   }
+  
+  @media all and (max-width:767px) {
+    
+    .hovercap {
+        visibility: visible;
+        opacity: 1;
+        background-color: rgba(205, 205, 205, 0.564);  
+        backdrop-filter: blur(5px);
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+    
+  }
 
 /* ----- End List of Projects----- */
 
@@ -439,18 +452,28 @@ h3 a:hover, h3 a:focus, h3 a:active {
       "interior2-a interior3-a interior3-a";
 }
 
-/* ARCHIVES Desktop */
+/* ARCHIVES Mobile & tablet*/
 
-/* ARCHIVES Mobile Grid */
+@media (min-width:450px) and (max-width:766px) {
+
+    .arch-4,
+    .arch-9 {
+        height: 40em;
+    }
+
+}
+
+@media all and (max-width:449px) {
+    .arch-4,
+    .arch-9 {
+        height: 25em;
+    }
+}
+
 @media all and (max-width:767px) {
 
     .arch-3 {
         text-align: left;
-    }
-    
-    .arch-4,
-    .arch-9 {
-        height: 25em;
     }
 
     .archives{
@@ -793,9 +816,10 @@ h3 a:hover, h3 a:focus, h3 a:active {
 
 .sound-5 {
     grid-area: listening-s;
-    background-image: url("../images/architecture/07-sound-installation/web/progress-3.webp");
+    background-image: url("../images/architecture/07-sound-installation/web/listening.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
     border: solid 1px;
 }
@@ -810,19 +834,13 @@ h3 a:hover, h3 a:focus, h3 a:active {
     border: solid 1px;
 }
 
-.sound-8 {
-    grid-area: install3-s;
-    border: solid 1px;
-}
-
-
 .sound {
     grid-template-columns: 3fr repeat(3, 1fr);
     grid-template-areas: 
       "title-s title-s title-s title-s"
       "pano-s pano-s pano-s pano-s"
       "descr-s chart-s chart-s chart-s"
-      "listening-s install1-s install2-s install3-s";
+      "listening-s listening-s install2-s install1-s";
 }
 
 @media all and (max-width:767px) {
