@@ -45,8 +45,6 @@ body { background-color: #f0f0f0; }
   }
 
   .box-flex {
-    display: flex;
-    flex-flow: row nowrap;
     align-items: flex-start;
     justify-content: center;
     position: relative;
