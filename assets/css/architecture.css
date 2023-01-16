@@ -42,6 +42,7 @@ body { background-color: #f0f0f0; }
     height: 100%;
     vertical-align: middle;
     transition: .85s ease;
+    padding: 3px;
   }
 
   .box-flex {
@@ -139,7 +140,7 @@ body { background-color: #f0f0f0; }
 }
 
 .big-letter {
-    font-size: calc(250px + (550 - 250) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(200px + (450 - 200) * ((100vw - 320px) / (1600 - 320)));
     font-weight: 500;
     line-height: 0.7;
     color: #EAEAEA;
@@ -201,14 +202,14 @@ h3 a:hover, h3 a:focus, h3 a:active {
     justify-content: center;
     flex-wrap: wrap;
     padding: 2% 0;
-    margin: 150px 7.5% 100px 7.5%;
+    margin: 150px 9% 100px 9%;
 }
 
-@media all and (min-width:1500px) {
+@media all and (min-width:1540px) {
 
     .flex-back {
-        margin: 75px 12.5%;
-        padding: 5%;
+        margin: 100px 17%;
+        padding: 3%;
     } 
 
 }
