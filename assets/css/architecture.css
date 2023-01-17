@@ -205,10 +205,10 @@ h3 a:hover, h3 a:focus, h3 a:active {
     margin: 150px 9% 100px 9%;
 }
 
-@media all and (min-width:1540px) {
+@media all and (min-width:1600px) {
 
     .flex-back {
-        margin: 100px 17%;
+        margin: 100px 20%;
         padding: 3%;
     } 
 
@@ -230,15 +230,15 @@ h3 a:hover, h3 a:focus, h3 a:active {
         display: flex; 
         flex-flow: row wrap; 
         justify-content: space-between;
-        margin: 200px 7.5%;
+        margin: 200px 9%;
         padding: 3.5%;
         height: 100%;
 }
 
-@media all and (min-width:1500px) {
+@media all and (min-width:1600px) {
 
     .flex-grid {
-        margin: -20px 10% 200px 10%;
+        margin: -20px 20% 200px 20%;
         padding: 5%;
     } 
 
