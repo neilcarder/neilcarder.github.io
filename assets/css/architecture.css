@@ -3,7 +3,8 @@ body { background-color: #f0f0f0; }
 /* ----- Hero Layout----- */
 
 .hero-arch {
-    z-index: 0;
+    position:relative;
+    z-index: -1;
     background-image: url('../images/architecture/background.webp');
     background-position: center top;
     background-size: cover;
@@ -14,10 +15,13 @@ body { background-color: #f0f0f0; }
 
 /* ----- Start List of Projects----- */
 
+
 .intro-gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding: 3%;
+    background-color: #d9d9d9;
   }
   
   .intro-gallery > div {
@@ -34,7 +38,6 @@ body { background-color: #f0f0f0; }
 
 }
 
-  
   .intro-gallery a img {
     z-index: 1;
     object-fit: cover;
@@ -42,14 +45,14 @@ body { background-color: #f0f0f0; }
     height: 100%;
     vertical-align: middle;
     transition: .85s ease;
-    padding: 3px;
+    padding: 10px;
   }
 
   .box-flex {
     position: relative;
     text-align: center;
     font-size: 1.2rem;
-    background-color: #d9d9d9;
+    /* background-color: #d9d9d9; */
   }
   
   /* (C) CAPTION */

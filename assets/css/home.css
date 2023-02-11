@@ -5,7 +5,7 @@ body { height: 100%; min-height: auto;  margin: 0px; }
 /* ----- Home Page Layout Begins -----*/
 
 h1 {
-    font-size: calc(30px + (140 - 30) * ((100vw - 320px) / (1600 - 320)));;;
+    font-size: calc(20px + (120 - 20) * ((100vw - 320px) / (1600 - 320)));;;
     font-family: 'Maven Pro', sans-serif;
     font-weight: 700;
     text-align: center;

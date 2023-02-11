@@ -54,16 +54,16 @@ body { height: 100%; min-height: auto;  margin: 0px; overflow-x: hidden;}
 }
 
 .wave-1 {
-    width: 80vmin; 
-    height: 80vmin;
+    width: 70vmin; 
+    height: 70vmin;
     animation: transform 30s ease-in-out infinite both alternate, movement 30s ease-in-out infinite both;
     -webkit-animation: transform 30s ease-in-out infinite both alternate, movement 30s ease-in-out infinite both;
     transition-delay: 300ms;
 }
 
 .wave-2 {
-  width: 90vmin; 
-  height: 90vmin;
+  width: 80vmin; 
+  height: 80vmin;
   animation: transform2 50s ease-in-out infinite, movement2 5s ease-in-out infinite both;
   animation-direction: alternate, reverse;
   -webkit-animation: transform2 50s ease-in-out infinite, movement2 5s ease-in-out infinite both;
@@ -72,8 +72,8 @@ body { height: 100%; min-height: auto;  margin: 0px; overflow-x: hidden;}
 }
 
 .wave-3 {
-  width: 100vmin; 
-  height: 100vmin;
+  width: 90vmin; 
+  height: 90vmin;
   animation: transform 60s ease-in-out infinite, movement2 15s ease-in-out infinite both;
   animation-direction: alternate, reverse;
   -webkit-animation: transform 60s ease-in-out infinite, movement2 15s ease-in-out infinite both;
@@ -81,8 +81,8 @@ body { height: 100%; min-height: auto;  margin: 0px; overflow-x: hidden;}
 }
 
 .wave-4 {
-  width: 85vmin; 
-  height: 85vmin;
+  width: 75vmin; 
+  height: 75vmin;
   animation: transform3 20s ease-in-out infinite, movement2 10s ease-in-out infinite both;
   animation-direction: alternate, reverse;
   -webkit-animation: transform3 20s ease-in-out infinite, movement2 10s ease-in-out infinite both;
@@ -91,8 +91,8 @@ body { height: 100%; min-height: auto;  margin: 0px; overflow-x: hidden;}
 }
 
 .wave-5 {
-  width: 95vmin; 
-  height: 95vmin;
+  width: 85vmin; 
+  height: 85vmin;
   animation: transform1 15s ease-in-out infinite, movement2 15s ease-in-out infinite both;
   animation-direction: alternate, reverse;
   -webkit-animation: transform1 15s ease-in-out infinite, movement2 15s ease-in-out infinite both;
