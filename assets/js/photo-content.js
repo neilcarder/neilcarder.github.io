@@ -98,24 +98,32 @@ $(document).ready(function() {
 
     //Loading Stills Content on Click script - Only Loads the first Snippet
     $(".still-content").on("click", function() {
-        $("#content").load("snippets/stills.html", function() {
-            $("*").removeClass("joiners auto-height"); // Needed for Lazy loader
-            $(this).addClass("stills justified-gallery");
-            gallery.refresh(); //destroys and rebuilds LightBox Gallery
-            $('#content').justifiedGallery('norewind'); //Runs Justified Gallery
-            counter = -1; //resets the counter if user has previously scrolled through
+        if($("#content").hasClass("joiners")) {
+            $("#content, #footer").hide();
+            $("#content").load("snippets/stills.html", function() {
+                $("*").removeClass("joiners auto-height"); // Needed for Lazy loader
+                $(this).addClass("stills justified-gallery");
+                gallery.refresh(); //destroys and rebuilds LightBox Gallery
+                $('#content').justifiedGallery('norewind'); //Runs Justified Gallery
+                $("#content, #footer").show();
+                counter = -1; //resets the counter if user has previously scrolled through
+            });
+        }   
         });
-    });
 
     //Loading Joiner Content on Click script - Only Loads the first Snippet
     $(".joiner-content").click(function() {
+        $("#content, #footer").hide();
+        $("#content").justifiedGallery('destroy'); //allows montage content to load properly
             $("#content").load("snippets/joiners.html", function(){
-                $("#content").justifiedGallery('destroy'); //allows montage content to load properly
+                $("#content, #footer").show();
             });
             $("#content").removeClass("stills justified-gallery");
-            $("#content").addClass("auto-height"); //Quick fix for height issue with Justified Gallery    
+            $("#content").addClass("auto-height joiners"); //Quick fix for height issue with Justified Gallery    
             counter = -1; //resets the counter if user has previously scrolled through
     });
+
+    
 
     //Toggle Active Settings - Stills and Montage
     $("#toggleActive a").on("click", function(){
