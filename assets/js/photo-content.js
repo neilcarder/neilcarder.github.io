@@ -18,7 +18,7 @@ $(document).ready(function() {
     // Settings for the Justified Gallery Script
     var galleryDetails = $('#content').justifiedGallery({
         margins : 8, 
-        rowHeight : 375,
+        rowHeight : 325,
         captions : false,
     });
 
