@@ -69,6 +69,7 @@
   width: 90%;
   padding: 2%;
   margin: 8% auto;
+  border-radius: 10px;
 }
 
 .sheet.four {
@@ -146,7 +147,7 @@
 
 .two {
   display: grid;
-  grid-template-columns: repeat(2, 49%);
+  /*grid-template-columns: repeat(2, 49%);*/
   grid-template-areas: 
     "work1 work1"
     "work2 work3";
