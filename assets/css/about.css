@@ -181,6 +181,11 @@
   /* text-align: right; */
 }
 
+
+.g3-i-2 {
+  font-weight: 700;
+}
+
 @media only screen and (max-width: 678px) {
 
   .g3-i-1 {

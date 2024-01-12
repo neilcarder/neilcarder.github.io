@@ -282,7 +282,7 @@ h1 {
 }
 
 .post h3 {
-    font-size: calc(9px + (18 - 9) * ((100vw - 320px)/(1600 - 320)));
+    font-size: calc(11px + (20 - 11) * ((100vw - 320px)/(1600 - 320)));
     font-family: 'Maven Pro', sans-serif;
     font-weight: 600;
     letter-spacing: 2px;
@@ -366,6 +366,13 @@ h1 {
     background-image: linear-gradient(to right, #3e5769 75%, transparent 75%);
     background-position: 0 2.2em;
     background-repeat: repeat-x;
+  }
+
+  /* ----- Web Design image CSS-----*/
+
+  .webdes-image {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 10px;
   }
 
   
