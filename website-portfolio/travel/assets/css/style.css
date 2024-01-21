@@ -10,6 +10,10 @@ body { background-color: #eff8f5 }
 
 .unhide-content-under-menu { padding-top: 72px }
 
+p{
+    font-family: 'Raleway', sans-serif;
+}
+
 /* === ALL SCREEN SIZES ====== */
 
 /* Positions all menus in front of page content */
@@ -530,7 +534,7 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 /* Mobiles - inside padding */
 @media all and (max-width:767px) {
-	.container-flexbox { padding: 7% 8% 1% 8%}
+	.container-flexbox { padding: 7%}
 }
 
 /* Background color */
@@ -556,16 +560,19 @@ a[href^=tel] { text-decoration: none; color: #fff }
 	padding: 1% 6% 0% 6%;
 }
 
+.container-flexbox .item-3 { 
+    padding: 2%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(116, 124, 133, 0.649) 0px -2px 6px 0px inset;
+}
+
 /* =======INNER FLEXBOX COLUMNS: 3 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES ===== */
 /* Desktops - 3 columns */
 @media all and (min-width:768px) { 
 	.container-flexbox .item-3 { 
 		width: 28%; 
 		margin-bottom: 3%;
-        padding: 2%;
-        border-radius: 10px;
-        background-color: white;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(116, 124, 133, 0.649) 0px -2px 6px 0px inset;
 	}
 	
 }
@@ -575,8 +582,8 @@ a[href^=tel] { text-decoration: none; color: #fff }
 	.container-flexbox .item-3 { 
 		width: 100%;
 		margin-bottom: 10%; 
+        
 	}
-	
 }
 
 /* ==== INNER FLEXBOX COLUMNS: 4 COLUMNS ON DESKTOPS, 2 COLUMNS ON MOBILES ======= */
@@ -631,6 +638,12 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 /* ================ HEADINGS, PARAGRAPHS, IMAGES AND FAUX BUTTONS ============== */
 /* Single column */
+
+.container-flexbox .item-1 p {
+    font-family: 'Roboto Slab', serif;
+    font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320))); 
+}
+
 .container-flexbox .item-1 h2 { 
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700; 
@@ -645,7 +658,7 @@ a[href^=tel] { text-decoration: none; color: #fff }
 .container-flexbox .item-1 .white{ 
 	color: white;
 }
-rgb(255, 255, 255)
+
 .container-flexbox .item-1 p { 
 	font-family: 'Raleway', sans-serif;
 	font-weight: 400; 
