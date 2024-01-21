@@ -245,6 +245,8 @@ h1 {
     padding: 0px;
     justify-content: space-between;
 }
+
+
 .post a{
     width: 40%; 
     text-decoration: none;
@@ -326,8 +328,8 @@ h1 {
 @media all and (min-width:1367px) { 
 
     .post {
-        width: 85%; 
-        margin: 50px auto 50px auto;
+        width: 90%; 
+        margin: 150px auto;
     }
 
     .post a {
