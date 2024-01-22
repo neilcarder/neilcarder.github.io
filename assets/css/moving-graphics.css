@@ -32,17 +32,17 @@ body { height: 100%; min-height: auto;  margin: 0px; overflow-x: hidden;}
 }
 
 .color{
-  border: solid 7px #dbdbdb;
+  border: solid 45px #fffdfd00;
   box-shadow: inset 0 0 15px rgb(55 84 170 / 0%), inset 0 0 20px rgb(255 255 255 / 0%), 7px 7px 15px rgb(55 84 170 / 15%), -7px -7px 20px rgb(255 255 255), inset 0px 0px 4px rgb(255 255 255 / 20%), inset 0px 0px 20px 10px rgb(224 217 217 / 60%);
 }
 
 .color-change{
-  border: solid 5px #363535;
-  box-shadow: none;
+  border: solid rgb(134, 134, 134) 0.2px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .scale1{
-  transform: scale(1.9);
+  transform: scale(1.8);
 }
 
 .scale2{
@@ -50,12 +50,12 @@ body { height: 100%; min-height: auto;  margin: 0px; overflow-x: hidden;}
 }
 
 .scale3{
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 .wave-1 {
-    width: 70vmin; 
-    height: 70vmin;
+    width: 65vmin; 
+    height: 65vmin;
     animation: transform 30s ease-in-out infinite both alternate, movement 30s ease-in-out infinite both;
     -webkit-animation: transform 30s ease-in-out infinite both alternate, movement 30s ease-in-out infinite both;
     transition-delay: 300ms;
@@ -72,8 +72,8 @@ body { height: 100%; min-height: auto;  margin: 0px; overflow-x: hidden;}
 }
 
 .wave-3 {
-  width: 90vmin; 
-  height: 90vmin;
+  width: 95vmin; 
+  height: 95vmin;
   animation: transform 60s ease-in-out infinite, movement2 15s ease-in-out infinite both;
   animation-direction: alternate, reverse;
   -webkit-animation: transform 60s ease-in-out infinite, movement2 15s ease-in-out infinite both;

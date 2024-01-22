@@ -19,10 +19,11 @@ body {
 }
 
 h2 {
-    font-size: calc(24px + (52 - 24) * ((100vw - 320px) / (1600 - 320)));;;
+    font-size: calc(24px + (60 - 24) * ((100vw - 320px) / (1600 - 320)));;;
     color:#3e5769; 
-    font-family: 'Maven Pro', sans-serif;
-    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1.2px;
+    font-weight: 500;
     margin: -.5em 0 0 0;
 }
 
@@ -66,8 +67,8 @@ h6 {
 }
 
 h7 {
-    font-size: calc(34px + (90 - 34) * ((100vw - 320px) / (1600 - 320)));;;
-    color:#3e5769; 
+    font-size: calc(36px + (100 - 36) * ((100vw - 320px) / (1600 - 320)));;;
+    color:#314553; 
     font-family: 'Oswald', sans-serif;
     letter-spacing: 0px;
     font-weight: 500;

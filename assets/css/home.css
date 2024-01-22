@@ -252,10 +252,35 @@ h1 {
     text-decoration: none;
     color: #551a8b
 }
+
 .post div{
     align-self: center;
     margin: 0 auto;
-    width: 30%
+    width: 25%
+}
+
+.letter{
+    width: 20%;
+    opacity: 50%;
+    animation: fadeBackground 15s;
+    animation-iteration-count: 2;
+}
+
+@keyframes fadeBackground {
+    0%   {opacity: 60%;}
+    25%  {opacity: 75%;}
+    50%  {opacity: 90%;}
+    75%  {opacity: 70%;}
+    85%  {opacity: 60%;}
+    100% {opacity: 60%;}
+  }
+
+.left-push{
+    padding: 0 3% 0 0;
+}
+
+.right-push{
+    padding: 0 0 0 5%;
 }
 
 .post h2{
@@ -328,7 +353,7 @@ h1 {
 @media all and (min-width:1367px) { 
 
     .post {
-        width: 90%; 
+        width: 95%; 
         margin: 150px auto;
     }
 
