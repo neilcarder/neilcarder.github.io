@@ -267,13 +267,21 @@ h1 {
 }
 
 @keyframes fadeBackground {
-    0%   {opacity: 60%;}
-    25%  {opacity: 75%;}
-    50%  {opacity: 90%;}
+    0%   {opacity: 55%;}
+    25%  {opacity: 60%;}
+    50%  {opacity: 70%;}
     75%  {opacity: 70%;}
     85%  {opacity: 60%;}
-    100% {opacity: 60%;}
+    100% {opacity: 55%;}
   }
+
+  @media all and (max-width:767px) { 
+
+  .letter {
+    display:none;
+  }
+    
+}
 
 .left-push{
     padding: 0 3% 0 0;
