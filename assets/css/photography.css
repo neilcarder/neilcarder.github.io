@@ -13,22 +13,21 @@
 	transition: ease-in-out 0.5s;
 }
 
-@media all and (max-width:767px) {
-
-	.content{
-		margin-left: 2%;
-		margin-top:30%;
-		/* margin-bottom: 100px; */
-	}
-	
-}
-
 .stills{
 	margin-right: 10%;
 }
 
 .stills{
 	margin-bottom: 200px;
+}
+
+@media all and (max-width:767px) {
+
+	.content{
+		margin: 30% 2% 200px 2%;
+		/* margin-bottom: 100px; */
+	}
+	
 }
 
 .thumbnail {
