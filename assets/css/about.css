@@ -335,6 +335,13 @@
   box-shadow: 12px 6px 6px #9C9C9C;
 }
 
+.g4-i-5 {
+  grid-area: edutitle;
+  width: 100%;
+  margin-bottom: -50px;
+}
+
+
 @media only screen and (max-width: 678px) {
 
   .g4-i-4 {
@@ -348,6 +355,7 @@
   grid-template-columns: repeat(1fr);
   grid-template-areas: 
     "image title title"
+    "image edutitle ."
     "image edu1 edu2";
   gap: 50px;
 }
@@ -360,9 +368,15 @@
       "image"
       "title"
       "header"
+      "edutitle"
       "edu1"
       "edu2";
   }
+
+  .g4-i-2 {
+    margin-bottom: -50px;
+  }
+
 }
 
 /* ----- End of Grid - Page 4 ----- */
@@ -371,7 +385,7 @@
 @media only screen and (max-width: 678px) {
 
   h5 {
-    font-size: 16px;
+    font-size: 24px;
   }
 
   h6 {
