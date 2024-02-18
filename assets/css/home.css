@@ -261,19 +261,7 @@ h1 {
 
 .letter{
     width: 20%;
-    opacity: 50%;
-    animation: fadeBackground 15s;
-    animation-iteration-count: 2;
 }
-
-@keyframes fadeBackground {
-    0%   {opacity: 55%;}
-    25%  {opacity: 60%;}
-    50%  {opacity: 70%;}
-    75%  {opacity: 70%;}
-    85%  {opacity: 60%;}
-    100% {opacity: 55%;}
-  }
 
   @media all and (max-width:767px) { 
 
