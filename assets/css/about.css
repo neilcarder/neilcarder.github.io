@@ -345,8 +345,8 @@
 @media only screen and (max-width: 678px) {
 
   .g4-i-4 {
-    width: 65%;
-    justify-self: start;
+    width: 100%;
+    justify-self: center;
   }
 
 }
@@ -360,7 +360,7 @@
   gap: 50px;
 }
 
-@media only screen and (max-width: 678px) {
+@media all and (min-width:481px) and (max-width:768px) { 
 
   .one {
     grid-template-columns: 100%;
@@ -371,10 +371,32 @@
       "edutitle"
       "edu1"
       "edu2";
+    gap: 20px;
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  .one {
+    grid-template-columns: 100%;
+    grid-template-areas: 
+      "image"
+      "title"
+      "header"
+      "edutitle"
+      "edu1"
+      "edu2";
+    gap: 20px;
   }
 
   .g4-i-2 {
-    margin-bottom: -50px;
+    margin-bottom: 0px;
+  }
+
+  .g4-i-5 {
+    margin-bottom: 0px;
   }
 
 }
