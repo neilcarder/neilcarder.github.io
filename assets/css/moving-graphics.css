@@ -85,6 +85,7 @@ body { height: 100%; min-height: auto;  margin: 0px; overflow-x: hidden;}
 }
 
 .wave-3 {
+  z-index: -1000;
   width: 95vmin; 
   height: 95vmin;
   animation: transform 60s ease-in-out infinite, movement2 25s ease-in-out infinite both;
