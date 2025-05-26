@@ -195,11 +195,3 @@ h1 {
   text-shadow: 1px 3px 8px #8d8d8d;
   text-shadow: 2px 2px 5px #c8c8c8, -2px -2px 5px white;
 } */
-
-@media all and (max-width:480px) { 
-
-  .hero {
-      height: 50vh;
-  }
-
-}
