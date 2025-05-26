@@ -4,6 +4,13 @@ body { height: 100%; min-height: auto;  margin: 0px; }
 
 /* ----- Home Page Layout Begins -----*/
 
+/* ----- TURN ON TO FIND OVERFLOW ISSUES -----*/
+/* * {
+  outline: 1px solid #f00 !important;
+} */
+/* -----  -----*/
+
+
 h1 {
     font-size: calc(20px + (120 - 20) * ((100vw - 320px) / (1600 - 320)));;;
     font-family: 'Maven Pro', sans-serif;
@@ -280,6 +287,7 @@ h1 {
     margin: 15% 10% 50px 0;
     padding: 0px;
     justify-content: space-between;
+    overflow: hidden; /* ----- Needed to fix overflow issue with AOS Animation-----*/
 }
 
 
