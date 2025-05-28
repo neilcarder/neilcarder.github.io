@@ -277,7 +277,6 @@ h1 {
     position: relative;
     width: 100%;
     margin: 15% 10% 50px 0;
-    padding: 0px;
     justify-content: space-between;
     overflow: hidden; /* ----- Needed to fix overflow issue with AOS Animation-----*/
 }
@@ -323,10 +322,6 @@ h1 {
 /* .last {
     margin-bottom: 500px;
 } */
-
-.reduce-margin {
-    margin: 5% 10% 0 0;
-}
   
 .overlay {
     display: block;
@@ -432,7 +427,6 @@ h1 {
   /* ----- Web Design image CSS-----*/
 
   .webdes-image {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 10px;
   }
 

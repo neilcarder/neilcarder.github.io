@@ -15,7 +15,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/world.css">
     <link rel="stylesheet" type="text/css" href="assets/css/home.css">
     <link rel="stylesheet" type="text/css" href="assets/css/aos.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/moving-graphics.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     
 	<!-- Google Fonts -->
@@ -68,7 +67,7 @@
   <!-- Begin mobile menu bar -->
   <div class="container-menu-bar-mobile menu-transparent menu-sticky" id="navbar-2">
     <!-- first child -->
-    <a class="logo" href="index.html">Neil Carder</a>
+    <a class="logo" href="index">Neil Carder</a>
     <!-- second child -->
     <div class="item-icon">
       <div class="bar1"></div>
@@ -79,12 +78,12 @@
   
   <!-- End mobile menu bar -->
 
-  <!-- Begin mobile menu slide-out options -->
+   <!-- Begin mobile menu slide-out options -->
   <div class="flyout-menu flyout-menu-is-closed menu-light">
     <ul>
-      <li><a href="architecture.html">Architecture</a></li>
-      <li><a href="photography.html">Photography</a></li>
-      <li><a href="about.html">About Me</a></li>
+      <li><a href="architecture">Architecture</a></li>
+      <li><a href="photography">Photography</a></li>
+      <li><a href="about">About Me</a></li>
       <li><a href="web-design">Web Design</a></li>
       <li><a href="charcoal">Charcoal</a></li>
     </ul>
@@ -98,7 +97,6 @@
   <!-- End mobile menu slide-out options -->
 		
     <!-- Begin hero block -->
-    
 	<div class="container-hero-block home-page">
         <h1><span class="fade-in" id="namechange1">Web</span>  <span class="fade-in2 white" id="namechange2">Design</span></h1>
         <!-- <h3 class="fade-in3">A collection of website designs I occiasonally work on using HTML, CSS and javascript.</h3> -->
@@ -122,11 +120,11 @@
 
   
     
-  <div class="post reduce-margin" id="cta">
-    <div class="switch">
-      <h2>Smooth Smoothies</h2><p>Offering tasty alternatives to sugary and unhealthy snacks for busy, on-the-go, on-trend professionals.</p>
-      <a class="box" href="website-portfolio/smoothies/index.html" class="aos-item data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
-        <h3 class="aos-item" data-aos="fade-right" data-aos-duration="850" data-aos-once="true">View Site</h3>
+  <div class="post" id="cta">
+    <div class="switch post-text">
+      <h2 class="reveal-text">Smooth Smoothies</h2><p class="aos-item" data-aos="fade-up" data-aos-duration="700" data-aos-once="true">Offering tasty alternatives to sugary and unhealthy snacks for busy, on-the-go, on-trend professionals.</p>
+      <a class="box" href="website-portfolio/smoothies/index.html" class="aos-item" data-aos="fade-right" data-aos-duration="500" data-aos-once="true">
+        <h3 class="aos-item" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">View Site</h3>
       </a>
     </div>
     <a class="switch" href="website-portfolio/smoothies/index.html">
@@ -135,24 +133,24 @@
   </div>
   <div class="post">
     <a href="website-portfolio/software/index.html">
-      <img src="assets/images/web-design/project-software.png" alt="Software Site" class="aos-item webdes-image" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+      <img src="assets/images/web-design/project-software.png" alt="Software Site" class="aos-item webdes-image" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
     </a>
-    <div class="h3-hover">
-      <h2>Software Analytics</h2><p>Everything you need to know about your website traffic, without spying on visitors' personal information.</p>
+    <div class="post-text">
+      <h2 class="reveal-text">Software Analytics</h2><p class="aos-item" data-aos="fade-up" data-aos-duration="700" data-aos-once="true">Everything you need to know about your website traffic, without spying on visitors' personal information.</p>
       <a class="box" href="website-portfolio/software/index.html">
-        <h3 class="aos-item " data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">See Design</h3>
+        <h3 class="aos-item " data-aos="fade-uo" data-aos-duration="1000" data-aos-once="true">See Design</h3>
       </a>
     </div>
   </div>
   <div class="post last">
-    <div class="switch">
-      <h2>IBAT Tours</h2><p>Need a holiday? IBAT Tours provides happy holiday experiences at affordable prices.</p>
+    <div class="switch post-text">
+      <h2 class="reveal-text">IBAT Tours</h2><p class="aos-item" data-aos="fade-up" data-aos-duration="700" data-aos-once="true">Need a holiday? IBAT Tours provides happy holiday experiences at affordable prices.</p>
       <a class="box" href="website-portfolio/travel/index.html">
-        <h3 class="aos-item" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">View Site</h3>
+        <h3 class="aos-item" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">View Site</h3>
       </a>
     </div>
     <a class="switch" href="website-portfolio/travel/index.html">
-      <img src="assets/images/web-design/project-travel.png" alt="IBAT Tours" class="aos-item webdes-image" data-aos="fade-up" data-aos-duration="900" data-aos-once="true">
+      <img src="assets/images/web-design/project-travel.png" alt="IBAT Tours" class="aos-item webdes-image" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
     </a>
   </div>
 
@@ -166,29 +164,69 @@
   </div>
   <!-- End Footer -->
 
+   <!-- Back to top -->
+  <a href="#" class="back-to-top scroll display-none"><i class="fas fa-chevron-up"></i></a>
+
+  <!-- Library and Script for Letter-sliding animation -->
+  <!-- GSAP and ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- SplitType CDN -->
+  <script src="https://unpkg.com/split-type"></script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Select all elements with .reveal-text
+    document.querySelectorAll('.reveal-text').forEach((el) => {
+      const split = new SplitType(el, { types: 'chars' });
+
+      gsap.fromTo(split.chars,
+        { y: '100%', opacity: 0 },
+        {
+          y: '0%',
+          opacity: 1,
+          duration: 1,
+          ease: 'power2.out',
+          stagger: 0.05,
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 80%',
+            toggleActions: 'play none none none',
+          }
+        }
+      );
+    });
+  </script>
+  <!-- End Letter-sliding animation -->
+
   <!-- Jquerey Call -->
   <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
 
-    <!-- JavaScript for Cookie Consent Popup Message -->
-	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-	<script>
-	window.cookieconsent.initialise({
-	  	"palette": {
-			"popup": {
-				"background": "#000"
-			},
-			"button": {
-				"background": "#f1d600"
-			}
-		},
-	  	"content": {
-			"href": "https://carderdesign.github.io/privacy.html"
-		}
-	});
-    </script>
+    <!-- Menu Scripts -->
+  <script type="text/javascript" src="assets/js/menu.js"></script>
+
+	<!-- Cookie Consent Message -->
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#f0f0f0"
+      },
+      "button": {
+        "background": "#ffffff",
+        "text": "##3D3D3D"
+      }
+    },
+    "content": {
+      "href": "privacy"
+    }
+  });
+  </script>
 
     <!-- Color Scheme for atom animation-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -221,20 +259,5 @@
     });
     </script>
 
-    <!-- Menu Scripts -->
-    <script type="text/javascript" src="assets/js/menu.js"></script>
-
-    <!-- Rellax Script -->
-    <script type="text/javascript" src="assets/js/rellax.js"></script>
-    <script>
-        var rellax = new Rellax('.rellax', {
-        // center: true
-        callback: function (position) {
-            // callback every position change
-            console.log(position);
-        },
-        breakpoints: [576, 768, 1024]
-        });
-    </script> 
 </body>
 </html>
