@@ -1,15 +1,23 @@
 /* ----- Hero Layout----- */
-.bg-color { 
+/* .bg-color { 
     background-color: #EAEAEA;
-}
+} */
 
 .hero-drawing { 
     margin: 10% 30%;
     text-align: center;
 }
 
+@media all and (max-width:768px) { 
+
+    .hero-drawing {
+    margin: 150px 20px;
+    }
+
+}
+
 .hero-drawing h2 { 
-    font-size: calc(16px + (60 - 16) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(30px + (60 - 30) * ((100vw - 320px) / (1600 - 320)));
     margin-bottom: 50px;
 }
 

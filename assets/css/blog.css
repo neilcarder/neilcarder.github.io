@@ -11,7 +11,6 @@
 .content div {
 	width: 28%;
 	margin: 5%;
-	padding: 20px;
 }
 
 .content h2 {
@@ -22,11 +21,6 @@
 	margin-left: auto;
 	margin-right: auto;
 }
-
-.content h4 {
-	font-size: calc(12px + (34 - 12) * ((100vw - 320px) / (1600 - 320)));
-}
-
 
 .content img,
 .content video {
@@ -98,7 +92,7 @@
 .nav-box h3 {
 	width: 65%;
 	align-self: center;
-	text-align: center;
+	text-align: left;
 	padding: 0 0.5px;
 	margin-bottom: 2%;
 	border-bottom: solid 1.5px #3e5769;
@@ -141,7 +135,7 @@
 }
 
 .content h5 {
-	font-size: calc(12px + (24 - 12) * ((100vw - 320px) / (1600 - 320)));;;
+	font-size: calc(14px + (32 - 14) * ((100vw - 320px) / (1600 - 320)));;;
 	font-family: 'Oswald', sans-serif;
 }
 
@@ -173,7 +167,6 @@
 .content .blog-post {
 	margin-left: 15%;
 	margin-right: 15%;
-	padding: 50px;
 }
 
 /* Changes Side Directory into a Movign Tab */
@@ -236,7 +229,7 @@
 
 	.content div {
 		width: 80%;
-		margin: 4%;
+		margin: 5%;
 	}
 
 }

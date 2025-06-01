@@ -18,57 +18,72 @@ body {
     }
 }
 
+h1 {
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+  color: #252b2f;
+  text-shadow: 2px 2px 5px #c8c8c8, -2px -2px 5px white;
+}
+
 h2 {
-    font-size: calc(24px + (60 - 24) * ((100vw - 320px) / (1600 - 320)));;;
-    color:#3e5769; 
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 1.2px;
-    font-weight: 500;
+    font-size: calc(25px + (45 - 25) * ((100vw - 320px) / (1600 - 320)));;;
+    color:#252b2f; 
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
     margin: -.5em 0 0 0;
 }
 
 h3 {
-    font-size: calc(12px + (20 - 12) * ((100vw - 320px) / (1600 - 320)));;;
-    color:#3e5769; 
-    font-family: 'Maven Pro', sans-serif;
-    font-weight: 600;
-   /*  margin-bottom: 0px;
-    margin-left: 30px;
-    margin-right: 10%;
-    margin: 0; */
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1600 - 320)));;;
+    color:#252b2f; 
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
     letter-spacing: 0px;
-    font-weight: 600;
     line-height: 1.3;
 }
 
 h4 {
     font-size: calc(24px + (48 - 24) * ((100vw - 320px) / (1600 - 320)));;;
-    color:#3e5769; 
-    font-family: 'Maven Pro', sans-serif;
+    color:#252b2f; 
+    font-family: "minion-pro-caption", serif;
     font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
     letter-spacing: 3px;
 }
 
 h5 {
     font-size: calc(15px + (42 - 15) * ((100vw - 320px) / (1600 - 320)));;;
-    color:#3e5769; 
-    font-family: 'Maven Pro', sans-serif;
-    font-weight: 600;
+    color:#252b2f; 
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
     padding-bottom: 2px;
 }
 
 h6 {
     font-size: 16px;
-    color:#3e5769; 
-    font-family: 'Maven Pro', sans-serif;
-    font-weight: 600;
+    color:#252b2f; 
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
     padding: 0px;
     margin: 0px;
 }
 
 h7 {
     font-size: calc(36px + (100 - 36) * ((100vw - 320px) / (1600 - 320)));;;
-    color:#314553; 
+    color:#252b2f; 
     font-family: 'Oswald', sans-serif;
     letter-spacing: 0px;
     font-weight: 500;
@@ -76,10 +91,14 @@ h7 {
 }
 
 p {
-    font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1600 - 320)));
     line-height: 1.4;
-    color:#3e5769; 
-    font-family: 'Maven Pro', sans-serif;
+    color:#252b2f; 
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
 }
 
 /* loading gif */
@@ -129,7 +148,7 @@ p {
 
 /* For body background color */
 .body-bg{ 
-    background: #EAEAEA;
+    background: #f8f4f4;
 }
 
 
@@ -142,7 +161,7 @@ p {
 .display-block { display: block }
 .display-none  { display: none }
 
-.bg-light-gray { background-color: #EAEAEA; 
+.bg-light-gray { background-color: #f0ecec; 
                 box-shadow: inset 0 0 15px rgba(55, 84, 170, 0),
                 inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15),
                 -7px -7px 20px rgba(255, 255, 255, 1),
@@ -160,7 +179,7 @@ p {
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
-    color: #3e5769; 
+    color: #252b2f; 
     letter-spacing: 1.2px;
     align-self: center;
     text-align: center;
@@ -232,11 +251,13 @@ p {
 /* style text for links */
 .container-menu-desktop ul li a {
     font-size: calc(7px + (16 - 7) * ((100vw - 320px)/(1600 - 320)));
-    font-family: 'Maven Pro', sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 600;
+    font-style: normal;
     letter-spacing: 2px;
     text-decoration: none;
-    color: #3e5769
+    color: #252b2f
     /* text-transform: uppercase */
 }
 
@@ -252,9 +273,9 @@ p {
 }
 
 /*
-.menu-light ul li a:link,  .menu-light ul li a:visited { color:#3e5769 }
+.menu-light ul li a:link,  .menu-light ul li a:visited { color:#252b2f }
 .menu-light ul li a:hover, .menu-light ul li a:active  { color: #222; border-bottom: solid #131313 0.5px; transition: all 1s ease}
-.menu-transparent ul li a:link,  .menu-transparent ul li a:visited { color: #3e5769 }
+.menu-transparent ul li a:link,  .menu-transparent ul li a:visited { color: #252b2f }
 .menu-transparent ul li a:hover, .menu-transparent ul li a:active  { color: #222; border-bottom: solid #131313 1px; } 
 */
 
@@ -276,7 +297,7 @@ p {
     height: 1px;
     width: 0%;
     left: 5%;
-    background-color: #3e5769;
+    background-color: #252b2f;
     transition: cubic-bezier(.77,0,.18,1) all .2s;
 }
 
@@ -296,7 +317,7 @@ p {
     position: absolute;
     left: 5%;
     right: 5%;
-    border-bottom: 1px solid #3e5769;
+    border-bottom: 1px solid #252b2f;
     display: block;
   }
 
@@ -319,7 +340,7 @@ p {
 /* three bars hozizontal in hamburger icon */
 .item-icon .bar1, 
 .item-icon .bar2, 
-.item-icon .bar3 { width: 28px; height: 3px; margin: 5px 0; transition: 0.4s; background-color:#3e5769; }
+.item-icon .bar3 { width: 28px; height: 3px; margin: 5px 0; transition: 0.4s; background-color:#252b2f; }
 
 /* hamburger icons shape to 'X' when fly-out menu is visible */
 .change .bar1 { transform: rotate(-45deg) translate(-4px, 3px) }
@@ -378,14 +399,16 @@ p {
     margin: 0 40px 18px 0; 
     list-style-type: none;
     font-size: 24px;
-    font-family: 'Maven Pro', sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 500;
+    font-style: normal;
     padding-bottom: 4px;  
 }
 
 .flyout-menu ul li a { 
     text-decoration: none;
-    color: #3e5769;
+    color: #252b2f;
 }
 
 /* ---------- Footer Style ---------- */
@@ -403,8 +426,10 @@ p {
 }
 
 .info-centre p {
-    font-family: 'Maven Pro', sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 500;
+    font-style: normal;
     padding: 0 5%;
     color:#707070;
     font-size: 22px;
@@ -437,7 +462,7 @@ p {
 /* ---------- BACK TO TOP ICON ---------- */
 
 a.back-to-top {
-	position: fixed; text-align: center; text-decoration: none; border-radius: 100%;
+	position: fixed; text-align: center; text-decoration: none; border-radius: 100%; z-index: 100;
 }
 
 @media (min-width: 768px) { 
@@ -449,7 +474,7 @@ a.back-to-top {
 	
 @media (max-width: 767px) { 
 	a.back-to-top { 
-		right: 18px; bottom: 18px; width: 36px; height: 36px; z-index: 2;
+		right: 18px; bottom: 18px; width: 36px; height: 36px;
 	}
 	.back-to-top i { padding-top: 4px; font-size: 24px }
 }
@@ -477,7 +502,7 @@ a.back-to-top:active {
 }
 
 .privacy h2{
-    margin: 100px auto;
+    margin: 100px auto 10px;
 }
 
 .privacy h3{
@@ -494,7 +519,6 @@ a.back-to-top:active {
 @media all and (max-width:767px) {
     .privacy { 
          padding: 7% 7% 10% 7%;
-         text-align: center;
     }
 }
 /* ---------- End Privacy Layout  ---------- */
