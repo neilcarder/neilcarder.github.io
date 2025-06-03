@@ -338,9 +338,24 @@
 .g4-i-5 {
   grid-area: edutitle;
   width: 100%;
-  margin-bottom: -50px;
+  margin-bottom: -30px;
 }
 
+@media (max-width:961px)  {
+
+  .g4-i-5 {
+    margin-bottom: -10px;
+  }
+
+}
+
+@media (max-width:678px)  {
+
+  .g4-i-5 {
+    margin-bottom: -5px;
+  }
+
+}
 
 @media only screen and (max-width: 678px) {
 
@@ -357,7 +372,7 @@
     "image title title"
     "image edutitle ."
     "image edu1 edu2";
-  gap: 50px;
+  gap: 25px;
 }
 
 @media all and (min-width:481px) and (max-width:768px) { 
