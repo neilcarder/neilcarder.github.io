@@ -108,7 +108,7 @@ $(document).ready(function() {
                 $("#content, #footer").show();
                 counter = -1; //resets the counter if user has previously scrolled through
             });
-        }   
+        }      
         });
 
     //Loading Joiner Content on Click script - Only Loads the first Snippet

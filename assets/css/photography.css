@@ -24,8 +24,11 @@
 @media all and (max-width:767px) {
 
 	.content{
-		margin: 30% 2% 200px 2%;
-		/* margin-bottom: 100px; */
+		margin: 0;
+	}
+
+	.stills{
+	margin: 100px 2%;
 	}
 	
 }
@@ -53,6 +56,14 @@
 	margin: 100px 0;
 }
 
+@media all and (max-width:767px) {
+
+	.montage-flex img {
+		margin: 50px 0;
+}
+	
+}
+
 .animate__animated.animate__fadeIn {
 	--animate-duration: 3s;
 }
@@ -75,9 +86,9 @@
 		padding: 10px;
 	}
 
-	.montage-flex {
+	/* .montage-flex {
 		padding: 0px 5% 50px 5%;
-	}
+	} */
 
 }
 
@@ -151,10 +162,10 @@
 		padding: 1.5%; /* for flexbox */
 	}
 
-	.montage-flex {
-		margin-right: 5%;
-		margin-left: 5%;
+	.montage-flex{
+		margin: 100px 5%;
 	}
+
 
 }
 
