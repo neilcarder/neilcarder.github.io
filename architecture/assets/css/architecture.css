@@ -417,7 +417,7 @@ h3 a:hover, h3 a:focus, h3 a:active {
         align-self: center;
     }
 
-    /* Mobiles: Re-order columns for ICON */
+    /* Mobiles: Re-order columns for ICON & Kaneco */
     .right-just *:nth-child(2) { order: 3; }
     .right-just *:nth-child(3) { order: 2; }
     .right-just *:nth-child(4) { order: 5; }
@@ -430,7 +430,22 @@ h3 a:hover, h3 a:focus, h3 a:active {
     .right-just *:nth-child(11) { order: 10; }
     .right-just *:nth-child(12) { order: 13; }
     .right-just *:nth-child(13) { order: 12; }
-
+    .right-just *:nth-child(14) { order: 15; }
+    .right-just *:nth-child(15) { order: 14; }
+    .right-just *:nth-child(16) { order: 17; }
+    .right-just *:nth-child(17) { order: 16; }
+    .right-just *:nth-child(18) { order: 19; }
+    .right-just *:nth-child(19) { order: 18; }
+    .right-just *:nth-child(20) { order: 21; }
+    .right-just *:nth-child(21) { order: 20; }
+    .right-just *:nth-child(22) { order: 23; }
+    .right-just *:nth-child(23) { order: 22; }
+    .right-just *:nth-child(24) { order: 25; }
+    .right-just *:nth-child(25) { order: 24; }
+    .right-just *:nth-child(26) { order: 27; }
+    .right-just *:nth-child(27) { order: 26; }
+    .right-just *:nth-child(28) { order: 29; }
+    .right-just *:nth-child(29) { order: 28; }
 }
 
 /* ----- End of JFA & ICON Page Setup ----- */
