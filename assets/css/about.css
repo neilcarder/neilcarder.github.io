@@ -62,6 +62,17 @@
   font-weight: 700;
 }
 
+ul {
+  font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1600 - 320)));
+    line-height: 1.4;
+    color: #252b2f;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding-left: 30px;
+}
 /* ----- Standard Grid Sheets ----- */
 
 .sheet {
